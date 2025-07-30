@@ -1,0 +1,1378 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2022.09
+# platform  : Linux 3.10.0-1160.el7.x86_64
+# version   : 2022.09p001 64 bits
+# build date: 2022.10.25 11:32:28 UTC
+# ----------------------------------------
+# started   : 2025-04-29 06:26:18 CST
+# hostname  : icpc.(none)
+# pid       : 26252
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:33702' '-nowindow' '-style' 'windows' '-data' 'AAABCHicbY7NCgIxDIS/Kl7FF/HnAfYm3hRRQb1JcVdZWLbFrSBe9FF9kzpWBAUDycwkaToGyG4xRlK0ryo9psxYMlGdsxbCliEFFzyOE0FqJXYQ22DVKdQZi+ViNfukK8rEapo/eqBdq/cpzOONZIbvMIv7D0Lns6hsKbv0ddCx48hZH8AonQ9SXl2raS70MulUi2S/FDayEGSoep17AmkTJ18=' '-proj' '/home/master/verification-benchmarks/hackatdac19/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/master/verification-benchmarks/hackatdac19/jgproject/.tmp/.initCmds.tcl' 'setup_and_properties.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2022 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc.
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+Jasper Apps Analysis Session - /home/master/verification-benchmarks/hackatdac19/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fpv".
+INFO: reading configuration file "/home/master/.config/cadence/jasper.conf".
+% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+% 
+% analyze -sv design/src/axi/src/axi_pkg.sv
+[-- (VERI-1482)] Analyzing Verilog file '/export/SoftWare/Cadence/JASPERGOLD22.09.001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi/src/axi_pkg.sv'
+% analyze -sv design/src/debug/dm_pkg.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/debug/dm_pkg.sv'
+% analyze -sv design/include/riscv_pkg.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/include/riscv_pkg.sv'
+% analyze -sv design/include/ariane_pkg.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/include/ariane_pkg.sv'
+% analyze -sv design/include/ariane_axi_pkg.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/include/ariane_axi_pkg.sv'
+% analyze -sv design/include/serpent_cache_pkg.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/include/serpent_cache_pkg.sv'
+% analyze -sv design/include/std_cache_pkg.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/include/std_cache_pkg.sv'
+% analyze -sv design/include/axi_intf.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/include/axi_intf.sv'
+% analyze -sv design/src/util/instruction_tracer_pkg.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/util/instruction_tracer_pkg.sv'
+% analyze -sv design/src/util/instruction_tracer_if.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/util/instruction_tracer_if.sv'
+% analyze -sv design/src/util/sram.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/util/sram.sv'
+% analyze -sv design/src/util/axi_master_connect.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/util/axi_master_connect.sv'
+% analyze -sv design/src/util/axi_master_connect_rev.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/util/axi_master_connect_rev.sv'
+% analyze -sv design/src/util/axi_slave_connect.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/util/axi_slave_connect.sv'
+% analyze -sv design/src/util/axi_slave_connect_rev.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/util/axi_slave_connect_rev.sv'
+% analyze -sv design/src/common_cells/src/fifo_v1.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/fifo_v1.sv'
+% analyze -sv design/src/common_cells/src/fifo_v2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/fifo_v2.sv'
+% analyze -sv design/src/common_cells/src/fifo_v3.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/fifo_v3.sv'
+% analyze -sv design/src/common_cells/src/lzc.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/lzc.sv'
+% analyze -sv design/src/common_cells/src/rrarbiter.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/rrarbiter.sv'
+% analyze -sv design/src/common_cells/src/rstgen_bypass.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/rstgen_bypass.sv'
+% analyze -sv design/src/common_cells/src/sync_wedge.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/sync_wedge.sv'
+% analyze -sv design/src/common_cells/src/cdc_2phase.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/cdc_2phase.sv'
+% analyze -sv design/src/common_cells/src/pipe_reg_simple.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/pipe_reg_simple.sv'
+% analyze -sv design/src/fpga-support/rtl/SyncSpRamBeNx64.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/fpga-support/rtl/SyncSpRamBeNx64.sv'
+% analyze -sv design/src/axi_mem_if/src/axi2mem.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_mem_if/src/axi2mem.sv'
+% analyze -sv design/src/tech_cells_generic/src/cluster_clock_inverter.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/tech_cells_generic/src/cluster_clock_inverter.sv'
+% analyze -sv design/src/tech_cells_generic/src/pulp_clock_mux2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/tech_cells_generic/src/pulp_clock_mux2.sv'
+% analyze -sv design/src/axi_adapter.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_adapter.sv'
+% analyze -sv design/src/alu.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/alu.sv'
+% analyze -sv design/src/fpu_wrap.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/fpu_wrap.sv'
+% 
+% 
+% 
+% 
+% 
+% analyze -sv design/src/branch_unit.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/branch_unit.sv'
+% analyze -sv design/src/compressed_decoder.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/compressed_decoder.sv'
+% analyze -sv design/src/controller.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/controller.sv'
+% analyze -sv design/src/csr_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/csr_buffer.sv'
+% analyze -sv design/src/csr_regfile.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/csr_regfile.sv'
+% analyze -sv design/src/decoder.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/decoder.sv'
+% analyze -sv design/src/ex_stage.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/ex_stage.sv'
+% analyze -sv design/src/frontend/btb.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/frontend/btb.sv'
+% analyze -sv design/src/frontend/bht.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/frontend/bht.sv'
+% analyze -sv design/src/frontend/ras.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/frontend/ras.sv'
+% analyze -sv design/src/frontend/instr_scan.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/frontend/instr_scan.sv'
+% analyze -sv design/src/frontend/frontend.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/frontend/frontend.sv'
+% analyze -sv design/src/id_stage.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/id_stage.sv'
+% analyze -sv design/src/instr_realigner.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/instr_realigner.sv'
+% analyze -sv design/src/issue_read_operands.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/issue_read_operands.sv'
+% analyze -sv design/src/issue_stage.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/issue_stage.sv'
+% analyze -sv design/src/load_unit.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/load_unit.sv'
+% 
+% analyze -sv design/src/amo_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/amo_buffer.sv'
+% analyze -sv design/src/store_unit.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/store_unit.sv'
+% analyze -sv design/src/load_store_unit.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/load_store_unit.sv'
+% 
+% analyze -sv design/src/ariane.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/ariane.sv'
+% analyze -sv design/src/common_cells/src/stream_arbiter.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/stream_arbiter.sv'
+% analyze -sv design/src/common_cells/src/stream_mux.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/stream_mux.sv'
+% analyze -sv design/src/common_cells/src/stream_demux.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/stream_demux.sv'
+% analyze -sv design/src/cache_subsystem/std_cache_subsystem.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/std_cache_subsystem.sv'
+% analyze -sv design/src/cache_subsystem/std_icache.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/std_icache.sv'
+% analyze -sv design/src/cache_subsystem/std_nbdcache.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/std_nbdcache.sv'
+% 
+% analyze -sv design/src/cache_subsystem/cache_ctrl.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/cache_ctrl.sv'
+% analyze -sv design/src/cache_subsystem/miss_handler.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/miss_handler.sv'
+% analyze -sv design/src/cache_subsystem/tag_cmp.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/tag_cmp.sv'
+% 
+% analyze -sv design/src/common_cells/src/lfsr_8bit.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/common_cells/src/lfsr_8bit.sv'
+% analyze -sv design/src/cache_subsystem/amo_alu.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/amo_alu.sv'
+% 
+% 
+% 
+% analyze -sv design/src/mmu.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/mmu.sv'
+% analyze -sv design/src/mult.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/mult.sv'
+% analyze -sv design/src/multiplier.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/multiplier.sv'
+% analyze -sv design/src/serdiv.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/serdiv.sv'
+% analyze -sv design/src/perf_counters.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/perf_counters.sv'
+% analyze -sv design/src/ptw.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/ptw.sv'
+% analyze -sv design/src/ariane_regfile_ff.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/ariane_regfile_ff.sv'
+% analyze -sv design/src/re_name.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/re_name.sv'
+% analyze -sv design/src/scoreboard.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/scoreboard.sv'
+[WARN (VERI-1905)] design/src/scoreboard.sv(271): converting multi concatenation to multi assignment pattern
+% analyze -sv design/src/store_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/store_buffer.sv'
+% analyze -sv design/src/tlb.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/tlb.sv'
+% analyze -sv design/src/commit_stage.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/commit_stage.sv'
+% analyze -sv design/src/cache_subsystem/serpent_dcache_ctrl.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/serpent_dcache_ctrl.sv'
+% analyze -sv design/src/cache_subsystem/serpent_dcache_mem.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/serpent_dcache_mem.sv'
+% analyze -sv design/src/cache_subsystem/serpent_dcache_missunit.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/serpent_dcache_missunit.sv'
+% analyze -sv design/src/cache_subsystem/serpent_dcache_wbuffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/serpent_dcache_wbuffer.sv'
+% analyze -sv design/src/cache_subsystem/serpent_dcache.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/serpent_dcache.sv'
+% analyze -sv design/src/cache_subsystem/serpent_icache.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/serpent_icache.sv'
+% analyze -sv design/src/cache_subsystem/serpent_l15_adapter.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/serpent_l15_adapter.sv'
+% analyze -sv design/src/cache_subsystem/serpent_cache_subsystem.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/cache_subsystem/serpent_cache_subsystem.sv'
+% analyze -sv design/src/debug/debug_rom/debug_rom.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/debug/debug_rom/debug_rom.sv'
+% analyze -sv design/src/debug/dm_csrs.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/debug/dm_csrs.sv'
+% analyze -sv design/src/clint/clint.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/clint/clint.sv'
+% analyze -sv design/src/clint/axi_lite_interface.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/clint/axi_lite_interface.sv'
+% analyze -sv design/src/debug/dm_mem.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/debug/dm_mem.sv'
+% analyze -sv design/src/debug/dm_top.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/debug/dm_top.sv'
+% analyze -sv design/src/debug/dmi_cdc.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/debug/dmi_cdc.sv'
+% analyze -sv design/src/debug/dmi_jtag.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/debug/dmi_jtag.sv'
+% analyze -sv design/src/debug/dm_sba.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/debug/dm_sba.sv'
+% analyze -sv design/src/debug/dmi_jtag_tap.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/debug/dmi_jtag_tap.sv'
+% analyze -sv design/openpiton/ariane_verilog_wrap.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/openpiton/ariane_verilog_wrap.sv'
+% analyze -sv design/openpiton/serpent_peripherals.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/openpiton/serpent_peripherals.sv'
+% analyze -sv design/bootrom/bootrom.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/bootrom/bootrom.sv'
+% analyze -sv design/src/plic/plic.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/plic/plic.sv'
+% analyze -sv design/src/plic/plic_claim_complete_tracker.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/plic/plic_claim_complete_tracker.sv'
+% analyze -sv design/src/plic/plic_comparator.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/plic/plic_comparator.sv'
+% analyze -sv design/src/plic/plic_find_max.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/plic/plic_find_max.sv'
+% analyze -sv design/src/plic/plic_gateway.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/plic/plic_gateway.sv'
+% analyze -sv design/src/plic/plic_interface.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/plic/plic_interface.sv'
+% analyze -sv design/src/plic/plic_target_slice.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/plic/plic_target_slice.sv'
+% analyze -sv design/fpga/src/axi2apb/src/axi2apb_wrap.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi2apb/src/axi2apb_wrap.sv'
+% analyze -sv design/fpga/src/axi2apb/src/axi2apb.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi2apb/src/axi2apb.sv'
+% analyze -sv design/fpga/src/axi2apb/src/axi2apb_64_32.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi2apb/src/axi2apb_64_32.sv'
+% analyze -sv design/fpga/src/axi_slice/src/axi_w_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi_slice/src/axi_w_buffer.sv'
+% analyze -sv design/fpga/src/axi_slice/src/axi_b_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi_slice/src/axi_b_buffer.sv'
+% analyze -sv design/fpga/src/axi_slice/src/axi_slice_wrap.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi_slice/src/axi_slice_wrap.sv'
+% analyze -sv design/fpga/src/axi_slice/src/axi_slice.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi_slice/src/axi_slice.sv'
+% analyze -sv design/fpga/src/axi_slice/src/axi_single_slice.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi_slice/src/axi_single_slice.sv'
+% analyze -sv design/fpga/src/axi_slice/src/axi_ar_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi_slice/src/axi_ar_buffer.sv'
+% analyze -sv design/fpga/src/axi_slice/src/axi_r_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi_slice/src/axi_r_buffer.sv'
+% analyze -sv design/fpga/src/axi_slice/src/axi_aw_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/fpga/src/axi_slice/src/axi_aw_buffer.sv'
+% analyze -sv design/src/register_interface/src/apb_to_reg.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/register_interface/src/apb_to_reg.sv'
+% analyze -sv design/src/register_interface/src/reg_intf.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/register_interface/src/reg_intf.sv'
+% analyze -sv design/src/axi_node/src/axi_node_intf_wrap.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_node_intf_wrap.sv'
+% analyze -sv design/src/axi_node/src/axi_node.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_node.sv'
+% analyze -sv design/src/axi_node/src/axi_request_block.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_request_block.sv'
+% analyze -sv design/src/axi_node/src/axi_AR_allocator.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_AR_allocator.sv'
+% analyze -sv design/src/axi_node/src/axi_ArbitrationTree.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_ArbitrationTree.sv'
+% analyze -sv design/src/axi_node/src/axi_RR_Flag_Req.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_RR_Flag_Req.sv'
+% analyze -sv design/src/axi_node/src/axi_AW_allocator.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_AW_allocator.sv'
+% analyze -sv design/src/axi_node/src/axi_DW_allocator.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_DW_allocator.sv'
+% analyze -sv design/src/axi_node/src/axi_multiplexer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_multiplexer.sv'
+% analyze -sv design/src/axi_node/src/axi_address_decoder_BW.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_address_decoder_BW.sv'
+% analyze -sv design/src/axi_node/src/axi_address_decoder_BR.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_address_decoder_BR.sv'
+% analyze -sv design/src/axi_node/src/axi_regs_top.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_regs_top.sv'
+% analyze -sv design/src/axi_node/src/axi_BW_allocator.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_BW_allocator.sv'
+% analyze -sv design/src/axi_node/src/axi_BW_allocator.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_BW_allocator.sv'
+[WARN (VERI-1206)] design/src/axi_node/src/axi_BW_allocator.sv(311): overwriting previous definition of module 'axi_BW_allocator'
+[INFO (VERI-2142)] design/src/axi_node/src/axi_BW_allocator.sv(311): previous definition of design element 'axi_BW_allocator' is here
+% analyze -sv design/src/axi_node/src/axi_response_block.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_response_block.sv'
+% analyze -sv design/src/axi_node/src/axi_BR_allocator.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_BR_allocator.sv'
+% analyze -sv design/src/axi_node/src/axi_address_decoder_AR.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_address_decoder_AR.sv'
+% analyze -sv design/src/axi_node/src/axi_address_decoder_AW.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_address_decoder_AW.sv'
+% analyze -sv design/src/axi_node/src/axi_address_decoder_DW.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_address_decoder_DW.sv'
+% analyze -sv design/src/axi_node/src/axi_FanInPrimitive_Req.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/axi_FanInPrimitive_Req.sv'
+% 
+% analyze -sv design/src/axi_node/src/apb_regs_top.sv
+[-- (VERI-1482)] Analyzing Verilog file 'design/src/axi_node/src/apb_regs_top.sv'
+% 
+% analyze -sv top_wrapper_dac19.sv
+[-- (VERI-1482)] Analyzing Verilog file 'top_wrapper_dac19.sv'
+% elaborate -top top_wrapper_dac19
+INFO (ISW003): Top module name is "top_wrapper_dac19".
+[WARN (VERI-9027)] design/src/debug/dmi_jtag.sv(117): variable 'pass_chk' is used before it is assigned in an always_comb block; synthesis - simulation differences may occur
+[INFO (VERI-1018)] design/src/frontend/ras.sv(17): compiling module 'ras:(DEPTH=32'b010)'
+[INFO (VERI-1018)] design/src/frontend/btb.sv(21): compiling module 'btb:(NR_ENTRIES=64)'
+[INFO (VERI-1018)] design/src/frontend/bht.sv(16): compiling module 'bht:(NR_ENTRIES=32'b010000000)'
+[WARN (VERI-1209)] design/src/frontend/bht.sv(57): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] design/src/frontend/bht.sv(62): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] design/src/frontend/bht.sv(65): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] design/src/frontend/bht.sv(67): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] design/src/frontend/instr_scan.sv(18): compiling module 'instr_scan'
+[INFO (VERI-1018)] design/src/frontend/frontend.sv(18): compiling module 'frontend'
+[WARN (VERI-1209)] design/src/frontend/frontend.sv(370): expression size 32 truncated to fit in target size 4
+[INFO (VERI-1018)] design/src/common_cells/src/fifo_v2.sv(13): compiling module 'fifo_v2:(dtype=frontend_fetch_t_ariane_pkg)'
+[INFO (VERI-1018)] design/src/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DATA_WIDTH=32'b0100000,DEPTH=32'b01000,dtype=frontend_fetch_t_ariane_pkg)'
+[WARN (VERI-1209)] design/src/common_cells/src/fifo_v3.sv(79): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1209)] design/src/common_cells/src/fifo_v3.sv(81): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] design/src/common_cells/src/fifo_v3.sv(90): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1209)] design/src/common_cells/src/fifo_v3.sv(92): expression size 32 truncated to fit in target size 4
+[INFO (VERI-1018)] design/src/instr_realigner.sv(17): compiling module 'instr_realigner'
+[INFO (VERI-1018)] design/src/compressed_decoder.sv(22): compiling module 'compressed_decoder'
+[WARN (VERI-1209)] design/src/compressed_decoder.sv(178): expression size 48 truncated to fit in target size 32
+[INFO (VERI-1018)] design/src/decoder.sv(23): compiling module 'decoder'
+[INFO (VERI-1018)] design/src/id_stage.sv(18): compiling module 'id_stage'
+[INFO (VERI-1018)] design/src/re_name.sv(23): compiling module 're_name'
+[WARN (VERI-9005)] design/src/re_name.sv(63): 6-bit index expression 'issue_instr_i.rd' is larger than the required 5 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] design/src/re_name.sv(63): 6-bit index expression 'issue_instr_i.rd' is larger than the required 5 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] design/src/re_name.sv(68): 6-bit index expression 'issue_instr_i.rs1' is larger than the required 5 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] design/src/re_name.sv(70): 6-bit index expression 'issue_instr_i.rs2' is larger than the required 5 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] design/src/re_name.sv(76): 6-bit index expression 'issue_instr_i.rd' is larger than the required 5 bits. This might lead to an out-of-bound access
+[INFO (VERI-1018)] design/src/scoreboard.sv(17): compiling module 'scoreboard:(NR_ENTRIES=32'b01000,NR_WB_PORTS=32'b0100)'
+[WARN (VERI-1209)] design/src/scoreboard.sv(229): expression size 64 truncated to fit in target size 2
+[WARN (VERI-1209)] design/src/scoreboard.sv(255): expression size 64 truncated to fit in target size 2
+[INFO (VERI-1018)] design/src/ariane_regfile_ff.sv(25): compiling module 'ariane_regfile:(DATA_WIDTH=32'b01000000,NR_WRITE_PORTS=32'b010,ZERO_REG_ZERO=1'b1)'
+[INFO (VERI-1018)] design/src/issue_read_operands.sv(18): compiling module 'issue_read_operands'
+[INFO (VERI-1018)] design/src/issue_stage.sv(18): compiling module 'issue_stage:(NR_ENTRIES=32'b01000,NR_WB_PORTS=32'b0100)'
+[INFO (VERI-1018)] design/src/alu.sv(22): compiling module 'alu'
+[INFO (VERI-1018)] design/src/branch_unit.sv(17): compiling module 'branch_unit'
+[INFO (VERI-1018)] design/src/csr_buffer.sv(18): compiling module 'csr_buffer'
+[INFO (VERI-1018)] design/src/multiplier.sv(19): compiling module 'multiplier'
+[INFO (VERI-1018)] design/src/common_cells/src/lzc.sv(19): compiling module 'lzc:(WIDTH=32'b01000000,MODE=32'b01)'
+[INFO (VERI-1018)] design/src/serdiv.sv(19): compiling module 'serdiv'
+[WARN (VERI-1209)] design/src/serdiv.sv(86): expression size 65 truncated to fit in target size 64
+[WARN (VERI-1209)] design/src/serdiv.sv(107): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] design/src/serdiv.sv(108): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] design/src/serdiv.sv(147): expression size 32 truncated to fit in target size 7
+[INFO (VERI-1018)] design/src/mult.sv(4): compiling module 'mult'
+[WARN (VERI-1330)] design/src/mult.sv(127): actual bit length 64 differs from formal bit length 32 for port 'operand'
+[INFO (VERI-1018)] design/src/tlb.sv(19): compiling module 'tlb:(TLB_ENTRIES=32'b010000,ASID_WIDTH=32'b01)'
+[WARN (VERI-1899)] design/src/tlb.sv(202): 'plru_replacement.idx_base_2' inside always_comb block does not represent combinational logic
+[INFO (VERI-1018)] design/src/ptw.sv(19): compiling module 'ptw'
+[WARN (VERI-1209)] design/src/ptw.sv(97): expression size 64 truncated to fit in target size 39
+[INFO (VERI-1018)] design/src/mmu.sv(19): compiling module 'mmu:(INSTR_TLB_ENTRIES=32'b010000,DATA_TLB_ENTRIES=32'b010000,ASID_WIDTH=32'b01)'
+[INFO (VERI-1018)] design/src/store_buffer.sv(18): compiling module 'store_buffer'
+[WARN (VERI-1209)] design/src/store_buffer.sv(106): expression size 5 truncated to fit in target size 3
+[WARN (VERI-1209)] design/src/store_buffer.sv(177): expression size 9 truncated to fit in target size 4
+[INFO (VERI-1018)] design/src/amo_buffer.sv(17): compiling module 'amo_buffer'
+[INFO (VERI-1018)] design/src/common_cells/src/fifo_v2.sv(13): compiling module 'fifo_v2:(DEPTH=32'b01,ALM_EMPTY_TH=32'b0,ALM_FULL_TH=32'b0,dtype=amo_op_t_amo_buffer)'
+[INFO (VERI-1018)] design/src/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DATA_WIDTH=32'b0100000,DEPTH=32'b01,dtype=amo_op_t_amo_buffer)'
+[INFO (VERI-1018)] design/src/store_unit.sv(17): compiling module 'store_unit'
+[INFO (VERI-1018)] design/src/load_unit.sv(18): compiling module 'load_unit'
+[WARN (VERI-1209)] design/src/load_unit.sv(307): expression size 32 truncated to fit in target size 3
+[INFO (VERI-1018)] design/src/load_store_unit.sv(383): compiling module 'lsu_bypass'
+[INFO (VERI-1018)] design/src/load_store_unit.sv(17): compiling module 'load_store_unit'
+[INFO (VERI-1018)] design/src/common_cells/src/pipe_reg_simple.sv(16): compiling module 'pipe_reg_simple:(dtype=logic[196:0],Depth=32'b01)'
+[INFO (VERI-1018)] design/src/common_cells/src/pipe_reg_simple.sv(16): compiling module 'pipe_reg_simple:(dtype=logic[196:0],Depth=32'b0)'
+[INFO (VERI-1018)] design/src/ex_stage.sv(18): compiling module 'ex_stage'
+[INFO (VERI-1018)] design/src/commit_stage.sv(17): compiling module 'commit_stage'
+[INFO (VERI-1018)] design/src/csr_regfile.sv(17): compiling module 'csr_regfile'
+[WARN (VERI-1899)] design/src/csr_regfile.sv(732): 'mask' inside always_comb block does not represent combinational logic
+[INFO (VERI-1018)] design/src/perf_counters.sv(17): compiling module 'perf_counters'
+[INFO (VERI-1018)] design/src/controller.sv(17): compiling module 'controller'
+[INFO (VERI-1018)] design/src/common_cells/src/lzc.sv(19): compiling module 'lzc:(WIDTH=32'b0100)'
+[INFO (VERI-1018)] design/src/common_cells/src/lfsr_8bit.sv(22): compiling module 'lfsr_8bit:(WIDTH=32'b0100)'
+[WARN (VERI-1209)] design/src/common_cells/src/lfsr_8bit.sv(51): expression size 8 truncated to fit in target size 2
+[INFO (VERI-1018)] design/src/fpga-support/rtl/SyncSpRamBeNx64.sv(28): compiling module 'SyncSpRamBeNx64:(ADDR_WIDTH=8,DATA_DEPTH=32'b0100000000,SIM_INIT=2)'
+[INFO (VERI-2571)] design/src/fpga-support/rtl/SyncSpRamBeNx64.sv(62): extracting RAM for identifier 'Mem_DP'
+[WARN (VERI-9033)] design/src/fpga-support/rtl/SyncSpRamBeNx64.sv(62): array Mem_DP (size 16384) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[INFO (VERI-1018)] design/src/util/sram.sv(21): compiling module 'sram:(DATA_WIDTH=32'b0101101,NUM_WORDS=32'b0100000000)'
+[INFO (VERI-1018)] design/src/util/sram.sv(21): compiling module 'sram:(DATA_WIDTH=32'b010000000,NUM_WORDS=32'b0100000000)'
+[INFO (VERI-1018)] design/src/cache_subsystem/std_icache.sv(19): compiling module 'std_icache'
+[WARN (VERI-1209)] design/src/cache_subsystem/std_icache.sv(345): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] design/src/cache_subsystem/std_icache.sv(367): expression size 32 truncated to fit in target size 8
+[INFO (VERI-1018)] design/src/cache_subsystem/miss_handler.sv(665): compiling module 'arbiter:(NR_PORTS=32'b011)'
+[INFO (VERI-1018)] design/src/axi_adapter.sv(19): compiling module 'axi_adapter:(DATA_WIDTH=32'b01000000,AXI_ID_WIDTH=32'b0100,CACHELINE_BYTE_OFFSET=32'b0100)'
+[WARN (VERI-1209)] design/src/axi_adapter.sv(150): expression size 32 truncated to fit in target size 1
+[WARN (VERI-9005)] design/src/axi_adapter.sv(197): 32-bit index expression '(BURST_SIZE - cnt_q)' is larger than the required 1 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] design/src/axi_adapter.sv(198): 32-bit index expression '(BURST_SIZE - cnt_q)' is larger than the required 1 bits. This might lead to an out-of-bound access
+[WARN (VERI-1209)] design/src/axi_adapter.sv(211): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] design/src/axi_adapter.sv(222): expression size 32 truncated to fit in target size 1
+[WARN (VERI-9005)] design/src/axi_adapter.sv(246): 32-bit index expression '(BURST_SIZE - cnt_q)' is larger than the required 1 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] design/src/axi_adapter.sv(247): 32-bit index expression '(BURST_SIZE - cnt_q)' is larger than the required 1 bits. This might lead to an out-of-bound access
+[WARN (VERI-1209)] design/src/axi_adapter.sv(258): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] design/src/axi_adapter.sv(279): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] design/src/axi_adapter.sv(313): expression size 32 truncated to fit in target size 1
+[INFO (VERI-1018)] design/src/axi_adapter.sv(19): compiling module 'axi_adapter:(DATA_WIDTH=32'b010000000,AXI_ID_WIDTH=32'b0100,CACHELINE_BYTE_OFFSET=32'b0100)'
+[INFO (VERI-1018)] design/src/common_cells/src/lfsr_8bit.sv(22): compiling module 'lfsr_8bit:(WIDTH=32'b01000)'
+[INFO (VERI-1018)] design/src/cache_subsystem/amo_alu.sv(14): compiling module 'amo_alu'
+[INFO (VERI-1018)] design/src/cache_subsystem/miss_handler.sv(21): compiling module 'miss_handler'
+[WARN (VERI-1899)] design/src/cache_subsystem/miss_handler.sv(467): 'active_serving_o' inside always_comb block does not represent combinational logic
+[INFO (VERI-1018)] design/src/fpga-support/rtl/SyncSpRamBeNx64.sv(28): compiling module 'SyncSpRamBeNx64:(ADDR_WIDTH=8,DATA_DEPTH=32'sb0100000000,SIM_INIT=2)'
+[INFO (VERI-2571)] design/src/fpga-support/rtl/SyncSpRamBeNx64.sv(62): extracting RAM for identifier 'Mem_DP'
+[INFO (VERI-1018)] design/src/util/sram.sv(21): compiling module 'sram:(DATA_WIDTH=32'b01000000,NUM_WORDS=32'sb0100000000)'
+[INFO (VERI-1018)] design/src/cache_subsystem/cache_ctrl.sv(23): compiling module 'cache_ctrl:(CACHE_START_ADDR=64'b010000000000000000000000000000000)'
+[INFO (VERI-1018)] design/src/util/sram.sv(21): compiling module 'sram:(DATA_WIDTH=32'b010000000,NUM_WORDS=32'sb0100000000)'
+[INFO (VERI-1018)] design/src/util/sram.sv(21): compiling module 'sram:(DATA_WIDTH=32'b0101100,NUM_WORDS=32'sb0100000000)'
+[INFO (VERI-1018)] design/src/cache_subsystem/std_nbdcache.sv(18): compiling module 'std_nbdcache'
+[INFO (VERI-1018)] design/src/cache_subsystem/tag_cmp.sv(18): compiling module 'tag_cmp:(NR_PORTS=32'b0100,ADDR_WIDTH=32'b01100,DCACHE_SET_ASSOC=32'b01000)'
+[WARN (VDB-1002)] design/src/cache_subsystem/std_nbdcache.sv(204): net 'dirty_wdata[63]' does not have a driver
+[INFO (VERI-1018)] design/src/common_cells/src/lzc.sv(19): compiling module 'lzc:(WIDTH=32'b011)'
+[INFO (VERI-1018)] design/src/common_cells/src/rrarbiter.sv(36): compiling module 'rrarbiter:(NUM_REQ=32'b011,LOCK_IN=32'b01)'
+[WARN (VERI-1209)] design/src/common_cells/src/rrarbiter.sv(118): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] design/src/common_cells/src/stream_demux.sv(17): compiling module 'stream_demux:(N_OUP=3)'
+[INFO (VERI-1018)] design/src/cache_subsystem/std_cache_subsystem.sv(20): compiling module 'std_cache_subsystem:(CACHE_START_ADDR=64'b010000000000000000000000000000000)'
+[INFO (VERI-1018)] design/src/common_cells/src/stream_arbiter.sv(16): compiling module 'stream_arbiter:(DATA_T=ar_chan_t_ariane_axi)'
+[INFO (VERI-1018)] design/src/common_cells/src/stream_arbiter.sv(16): compiling module 'stream_arbiter:(DATA_T=aw_chan_t_ariane_axi)'
+[INFO (VERI-1018)] design/src/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DATA_WIDTH=32'b010,DEPTH=32'b0100)'
+[WARN (VERI-1209)] design/src/cache_subsystem/std_cache_subsystem.sv(174): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] design/src/common_cells/src/stream_mux.sv(14): compiling module 'stream_mux:(DATA_T=w_chan_t_ariane_axi)'
+[INFO (VERI-1018)] design/src/ariane.sv(30): compiling module 'ariane'
+[INFO (VERI-1018)] design/src/tech_cells_generic/src/cluster_clock_inverter.sv(11): compiling module 'cluster_clock_inverter'
+[INFO (VERI-1018)] design/src/tech_cells_generic/src/pulp_clock_mux2.sv(11): compiling module 'pulp_clock_mux2'
+[INFO (VERI-1018)] design/src/debug/dmi_jtag_tap.sv(19): compiling module 'dmi_jtag_tap'
+[INFO (VERI-1018)] design/src/debug/dmi_cdc.sv(19): compiling module 'dmi_cdc'
+[INFO (VERI-1018)] design/src/common_cells/src/cdc_2phase.sv(19): compiling module 'cdc_2phase:(T=dmi_req_t_dm)'
+[INFO (VERI-1018)] design/src/common_cells/src/cdc_2phase.sv(68): compiling module 'cdc_2phase_src:(T=dmi_req_t_dm)'
+[INFO (VERI-1018)] design/src/common_cells/src/cdc_2phase.sv(118): compiling module 'cdc_2phase_dst:(T=dmi_req_t_dm)'
+[INFO (VERI-1018)] design/src/common_cells/src/cdc_2phase.sv(19): compiling module 'cdc_2phase:(T=dmi_resp_t_dm)'
+[INFO (VERI-1018)] design/src/common_cells/src/cdc_2phase.sv(68): compiling module 'cdc_2phase_src:(T=dmi_resp_t_dm)'
+[INFO (VERI-1018)] design/src/common_cells/src/cdc_2phase.sv(118): compiling module 'cdc_2phase_dst:(T=dmi_resp_t_dm)'
+[INFO (VERI-1018)] design/src/debug/dmi_jtag.sv(20): compiling module 'dmi_jtag'
+[WARN (VERI-1899)] design/src/debug/dmi_jtag.sv(184): 'pass_chk' inside always_comb block does not represent combinational logic
+[INFO (VERI-1018)] design/src/axi_node/src/axi_RR_Flag_Req.sv(43): compiling module 'axi_RR_Flag_Req:(WIDTH=3)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_FanInPrimitive_Req.sv(42): compiling module 'axi_FanInPrimitive_Req:(AUX_WIDTH=71,ID_WIDTH=11)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_ArbitrationTree.sv(44): compiling module 'axi_ArbitrationTree:(AUX_WIDTH=71,ID_WIDTH=11,N_MASTER=8)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_AR_allocator.sv(42): compiling module 'axi_AR_allocator:(AXI_USER_W=0,N_TARG_PORT=8,AXI_ID_IN=10)'
+[WARN (VERI-1209)] design/src/axi_node/src/axi_AR_allocator.sv(109): expression size 73 truncated to fit in target size 71
+[INFO (VERI-1018)] design/src/axi_node/src/axi_AW_allocator.sv(42): compiling module 'axi_AW_allocator:(AXI_USER_W=0,N_TARG_PORT=8,AXI_ID_IN=10)'
+[WARN (VERI-1209)] design/src/axi_node/src/axi_AW_allocator.sv(123): expression size 73 truncated to fit in target size 71
+[INFO (VERI-1018)] design/src/axi_node/src/axi_multiplexer.sv(42): compiling module 'axi_multiplexer:(DATA_WIDTH=37,N_IN=8)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_DW_allocator.sv(44): compiling module 'axi_DW_allocator:(AXI_USER_W=0,N_TARG_PORT=8,AXI_DATA_W=32)'
+[WARN (VERI-1209)] design/src/axi_node/src/axi_DW_allocator.sv(109): expression size 39 truncated to fit in target size 37
+[INFO (VERI-1018)] design/src/common_cells/src/fifo_v2.sv(13): compiling module 'fifo_v2:(DATA_WIDTH=32'b01011,DEPTH=32'b01000)'
+[INFO (VERI-1018)] design/src/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DATA_WIDTH=32'b01011,DEPTH=32'b01000,dtype=logic[10:0])'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_address_decoder_BW.sv(43): compiling module 'axi_address_decoder_BW:(N_TARG_PORT=8,AXI_ID_IN=10)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_address_decoder_BR.sv(45): compiling module 'axi_address_decoder_BR:(N_TARG_PORT=32'b01000,AXI_ID_IN=32'b01010)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_request_block.sv(37): compiling module 'axi_request_block:(AXI_DATA_W=32,AXI_USER_W=0,N_INIT_PORT=8,AXI_ID_IN=10)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_FanInPrimitive_Req.sv(42): compiling module 'axi_FanInPrimitive_Req:(AUX_WIDTH=2,ID_WIDTH=10)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_ArbitrationTree.sv(44): compiling module 'axi_ArbitrationTree:(AUX_WIDTH=2,ID_WIDTH=10,N_MASTER=8)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_BW_allocator.sv(42): compiling module 'axi_BW_allocator:(AXI_USER_W=0,N_INIT_PORT=8,N_TARG_PORT=8,AXI_DATA_W=32,AXI_ID_IN=10)'
+[WARN (VERI-1209)] design/src/axi_node/src/axi_BW_allocator.sv(253): expression size 4 truncated to fit in target size 2
+[INFO (VERI-1018)] design/src/axi_node/src/axi_FanInPrimitive_Req.sv(42): compiling module 'axi_FanInPrimitive_Req:(AUX_WIDTH=35,ID_WIDTH=10)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_ArbitrationTree.sv(44): compiling module 'axi_ArbitrationTree:(AUX_WIDTH=35,ID_WIDTH=10,N_MASTER=8)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_BR_allocator.sv(42): compiling module 'axi_BR_allocator:(AXI_USER_W=0,N_INIT_PORT=8,N_TARG_PORT=8,AXI_DATA_W=32,AXI_ID_IN=10)'
+[WARN (VERI-1209)] design/src/axi_node/src/axi_BR_allocator.sv(343): expression size 37 truncated to fit in target size 35
+[INFO (VERI-1018)] design/src/axi_node/src/axi_address_decoder_AR.sv(42): compiling module 'axi_address_decoder_AR:(N_REGION=1)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_address_decoder_AW.sv(42): compiling module 'axi_address_decoder_AW:(N_REGION=1)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_address_decoder_DW.sv(45): compiling module 'axi_address_decoder_DW:(N_INIT_PORT=8)'
+[INFO (VERI-1018)] design/src/common_cells/src/fifo_v2.sv(13): compiling module 'fifo_v2:(DATA_WIDTH=32'b01000,DEPTH=32'b01000)'
+[INFO (VERI-1018)] design/src/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DATA_WIDTH=32'b01000,DEPTH=32'b01000,dtype=logic[7:0])'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_response_block.sv(42): compiling module 'axi_response_block:(AXI_DATA_W=32,AXI_USER_W=0,N_INIT_PORT=8,AXI_ID_IN=10,N_REGION=1)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_node.sv(41): compiling module 'axi_node:(AXI_DATA_W=32,AXI_USER_W=0,N_SLAVE_PORT=8,AXI_ID_IN=10,N_REGION=1)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_node_intf_wrap.sv(409): compiling module 'connectivity_mapping:(NB_MANAGER=8,NB_SUBORDINATE=8,NB_PRIV_LVL=8,PRIV_LVL_WIDTH=8)'
+[WARN (VERI-9005)] design/src/axi_node/src/axi_node_intf_wrap.sv(432): 8-bit index expression 'priv_lvl_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VDB-1000)] design/src/axi_node/src/axi_node_intf_wrap.sv(431): net 'runtime_j[0]' is constantly driven from multiple places
+[WARN (VDB-1001)] design/src/axi_node/src/axi_node_intf_wrap.sv(431): found another driver here
+[WARN (VERI-9005)] design/src/axi_node/src/axi_node_intf_wrap.sv(432): 8-bit index expression 'priv_lvl_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VDB-1000)] design/src/axi_node/src/axi_node_intf_wrap.sv(428): net 'runtime_i[0]' is constantly driven from multiple places
+[WARN (VDB-1001)] design/src/axi_node/src/axi_node_intf_wrap.sv(428): found another driver here
+[INFO (VERI-1018)] top_wrapper_dac19.sv(1): compiling module 'top_wrapper_dac19:(subordinate=AXI_BUS_Slave,primary=AXI_BUS_Master)'
+[INFO (VERI-1018)] design/src/axi_node/src/axi_node_intf_wrap.sv(11): compiling module 'axi_node_intf_wrap:(NB_MANAGER=8,NB_SUBORDINATE=8,NB_PRIV_LVL=8,PRIV_LVL_WIDTH=8,slave=AXI_BUS_Slave,master=AXI_BUS_Master)'
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(59): net 's_master_aw_ready[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(73): net 's_master_ar_ready[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(80): net 's_master_w_ready[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(82): net 's_master_b_id[7][12]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(83): net 's_master_b_resp[7][1]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(84): net 's_master_b_valid[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(85): net 's_master_b_user[7][-1]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(88): net 's_master_r_id[7][12]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(89): net 's_master_r_data[7][31]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(90): net 's_master_r_resp[7][1]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(91): net 's_master_r_last[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(92): net 's_master_r_user[7][-1]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(93): net 's_master_r_valid[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(97): net 's_slave_aw_id[7][9]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(98): net 's_slave_aw_addr[7][31]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(99): net 's_slave_aw_len[7][7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(100): net 's_slave_aw_size[7][2]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(101): net 's_slave_aw_burst[7][1]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(102): net 's_slave_aw_lock[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(103): net 's_slave_aw_cache[7][3]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(104): net 's_slave_aw_prot[7][2]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(105): net 's_slave_aw_region[7][3]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(106): net 's_slave_aw_user[7][-1]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(107): net 's_slave_aw_qos[7][3]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(108): net 's_slave_aw_valid[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(111): net 's_slave_ar_id[7][9]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(112): net 's_slave_ar_addr[7][31]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(113): net 's_slave_ar_len[7][7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(114): net 's_slave_ar_size[7][2]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(115): net 's_slave_ar_burst[7][1]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(116): net 's_slave_ar_lock[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(117): net 's_slave_ar_cache[7][3]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(118): net 's_slave_ar_prot[7][2]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(119): net 's_slave_ar_region[7][3]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(120): net 's_slave_ar_user[7][-1]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(121): net 's_slave_ar_qos[7][3]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(122): net 's_slave_ar_valid[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(125): net 's_slave_w_data[7][31]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(126): net 's_slave_w_strb[7][3]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(127): net 's_slave_w_last[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(128): net 's_slave_w_user[7][-1]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(129): net 's_slave_w_valid[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(136): net 's_slave_b_ready[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(144): net 's_slave_r_ready[7]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(147): net 's_start_addr[0][7][31]' does not have a driver
+[WARN (VDB-1002)] design/src/axi_node/src/axi_node_intf_wrap.sv(148): net 's_end_addr[0][7][31]' does not have a driver
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          116 (8 packages)
+  Single run mode                         On
+  Pipeline                                On (108 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      147 (91 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+WARNING (WNL018): design/src/multiplier.sv(50): multiplication operator mult_65s_65s (size 130) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): design/src/multiplier.sv(73): multiplication operator mult_65s_65s (size 130) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IMDS005): Number of multiple-driven bits in design: 16. Use "get_design_info -list multiple_driven" for more information.
+top_wrapper_dac19:(subordinate=AXI_BUS_Slave,primary=AXI_BUS_Master)
+[<embedded>] % 
+[<embedded>] % clock clk_i -factor 1 -phase 1
+[<embedded>] % reset -expression ~rst_ni
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst_ni".
+[<embedded>] % assert -name HACK@DAC19_p1 {~( (axi_node_intf_wrap_i.i_connectivity_map.runtime_j==6) && axi_node_intf_wrap_i.i_connectivity_map.access_ctrl_i[axi_node_intf_wrap_i.i_connectivity_map.runtime_i][7][axi_node_intf_wrap_i.i_connectivity_map.priv_lvl_i])}
+WARNING (WNL023): Expression sizes mismatch.
+[WARN (VERI-9005)] 8-bit index expression 'axi_node_intf_wrap_i.i_connectivity_map.priv_lvl_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] 8-bit index expression 'axi_node_intf_wrap_i.i_connectivity_map.runtime_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] 8-bit index expression 'axi_node_intf_wrap_i.i_connectivity_map.runtime_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] 8-bit index expression 'axi_node_intf_wrap_i.i_connectivity_map.runtime_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] 8-bit index expression 'axi_node_intf_wrap_i.i_connectivity_map.runtime_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] 8-bit index expression 'axi_node_intf_wrap_i.i_connectivity_map.runtime_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] 8-bit index expression 'axi_node_intf_wrap_i.i_connectivity_map.runtime_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] 8-bit index expression 'axi_node_intf_wrap_i.i_connectivity_map.runtime_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] 8-bit index expression 'axi_node_intf_wrap_i.i_connectivity_map.runtime_i' is larger than the required 3 bits. This might lead to an out-of-bound access
+HACK@DAC19_p1
+[<embedded>] % assert -name HACK@DAC19_p5 {~(ariane_i.csr_regfile_i.debug_mode_q && ariane_i.csr_regfile_i.umode_i) || (riscv::PRIV_LVL_M)}
+HACK@DAC19_p5
+[<embedded>] % assert -name HACK@DAC19_p9 {((ariane_i.csr_regfile_i.csr_we || ariane_i.csr_regfile_i.csr_read) && (ariane_i.csr_regfile_i.csr_addr.address==riscv::CSR_MEPC) |-> ariane_i.csr_regfile_i.csr_exception_o.valid == 1'b1)}
+HACK@DAC19_p9
+[<embedded>] % assert -name HACK@DAC19_p21 {(ariane_i.commit_stage_i.amo_valid_commit_o |-> (ariane_i.commit_stage_i.exception_o != ariane_i.commit_stage_i.csr_exception_i))}
+HACK@DAC19_p21
+[<embedded>] % assert -name HACK@DAC19_p22 {(ariane_i.commit_stage_i.amo_valid_commit_o |-> ~ariane_i.commit_stage_i.commit_ack_o[1])}
+HACK@DAC19_p22
+[<embedded>] % assert -name HACK@DAC19_p23 {(ariane_i.amo_valid_commit |-> (ariane_i.flush_ctrl_if && ariane_i.flush_ctrl_id && ariane_i.flush_ctrl_ex))}
+HACK@DAC19_p23
+[<embedded>] % assert -name HACK@DAC19_p24 {(ariane_i.csr_regfile_i.tvm_o |-> (ariane_i.csr_regfile_i.csr_rdata_o != ariane_i.csr_regfile_i.satp_q))}
+HACK@DAC19_p24
+[<embedded>] % assert -name HACK@DAC19_p25 {(ariane_i.csr_regfile_i.tvm_o |-> (ariane_i.csr_regfile_i.satp_d != ariane_i.csr_regfile_i.csr_wdata_i))}
+HACK@DAC19_p25
+[<embedded>] % assert -name HACK@DAC19_p26 {(ariane_i.priv_lvl != $past(ariane_i.priv_lvl)) |-> (ariane_i.flush_ctrl_if && ariane_i.flush_ctrl_id && ariane_i.flush_ctrl_ex)}
+HACK@DAC19_p26
+[<embedded>] % assert -name HACK@DAC19_p29 {((ariane_i.csr_regfile_i.instret_q != $past(ariane_i.csr_regfile_i.instret_q)) |-> ariane_i.csr_regfile_i.debug_mode_q)}
+HACK@DAC19_p29
+[<embedded>] % assert -name HACK@DAC19_p32 {(ariane_i.controller_i.halt_o |-> ariane_i.controller_i.ex_valid_i)}
+HACK@DAC19_p32
+[<embedded>] % 
+[<embedded>] % prove -all
+Ncustom1: Custom engine code is hT3Ng7hPPfiYQOTDZ3qhYOwGAM51eA+J/FjkM5shLioAsqhgLR4Ft+O1BuKG6ilQ83B9tLXSl+CwjiTMAQA
+Bcustom2: Custom engine code is hT3NZbhPDfiY2AbBQnsjfOxn6c+6e6yL+/e8fYmWaKaTqwEA
+AMcustom3: Custom engine code is hT3Ng7hP/feYQOTDZ3qhYOwGAM51eA+J/FjkM5shLioAsqhgLR4Ft+O1BuKG6ilQ83B9tLXSmmqwm7g9AQA
+INFO (IPF036): Starting proof on task: "<embedded>", 12 properties to prove with 0 already proven/unreachable
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 24328 of 26976 design flops, 1 of 331 design latches, 71 of 71 internal elements.
+WARNING (WRS031): 248 of 26976 design flop(s) with asynchronous reset condition, but not reset. Run "get_reset_info -x_value -with_reset_pin" to get a list of such flops.
+INFO (IRS039): Reset analysis complete.
+INFO (IPF031): Settings used for proof thread 0:
+    orchestration                 = on (auto)
+    time_limit                    = 86400s
+    per_property_time_limit       = 1s * 10 ^ scan
+    engine_mode                   = auto
+    proofgrid_per_engine_max_jobs = 1
+    max engine jobs               = auto
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+AMcustom4: Custom engine code is hT3N1rhP11/52HrFRS21ROp2LOjVTgPvT8L8BGXHgLhaIuqtT4nARFjUqrBL+7pLmaTOzBepZW/Jm8SSrHDybSQtoNiO3y43wk+dEoWlsZizu97Fih6O6lPVG/LpWP5SsUPwlGagLNa1FKEFvwVXyX7//8prySbvSxIHXr5er+z4RAEA
+Ncustom5: Custom engine code is hT3OXrhPByJp3TrFSTLhUmMH4KVtJgmTCnNDF46yMXOKY48m4LS5nE7yBzFjA7kDuwO/GhGUpEPiky3p3wmPn3dJZHxFMsafSoObRzSC+tn7sEY0WbTdZ/FV4hL3MYH/b1CIUvXSWR4wqEoVLsmMOD4xIPT4lI1LO6ZCO7PnnWQuLwetnvKlrXx6wCW/A+x+enqslg1YPobi4wEF/EvbzOvcTYdJvl2s4H2yZg2b2ofAVN5WvhWk1HoBAA
+ADcustom6: Custom engine code is hT3Nv7hPv1752HrFRa2kROx2f/ECJeZB2AZsLdlO8VwmIuqtT4nIDFXclhg+O+o+DMmQCekbheGk0kK28laA9gaOFDXsQp29J3X615HY1IPHJWd6FUFvCHjO+p1k652b5JJvZlShNpGlGSXAiQe/mEAj6tEBAA
+Ncustom7: Custom engine code is hT3NR7hPByFp3TrFSTLhUmMH4KWtJglTyV/c51BHEeZWamnJv767nE6PCak26bd3gf3XGN3rIRheufhDieCJQVISo+gNYUKhiUedBKGtsP/a18svAnlMJZudHxDFwK5ufsyoxsIyiAeSY2oi3tEuoDHr5gw42DFKAG3PqO3CEsl8Azzdt3pl5nGA1Ifv2H02eYsFzWb/nfp8PMb3F0krE/EgBcm8TD9Div8BAA
+Tricustom8: Custom engine code is hT3Nu7hP3fiYQADBZnYcglNHp9bfd7EOeniIqP/ji8sGLQu8yhsFO+wxJ+O+R0bU8g/IewXFomyos+viQnWc2xYNYmMqpo3i40O7DaZR7qfp4YqNx26KRvQ/qx0BAA
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property "HACK@DAC19_p5" was proven in 0.00 s.
+0: Found proofs for 1 properties in preprocessing
+0: Using multistage preprocessing
+0: Starting reduce
+0: Finished reduce in 0.18s
+0.0.PRE: Performing Proof Simplification...
+0.0.N: clocks: 4, declared: 1, looping: 0, posedge: 4, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Proof Simplification Iteration 1	[0.00 s]
+0.0.N: Proof Simplification Iteration 2	[0.10 s]
+0.0.PRE: A trace with 1 cycles was found. [0.35 s]
+INFO (IPF055): 0.0.PRE: A counterexample (cex) with 1 cycles was found for the property "HACK@DAC19_p1" in 0.00 s.
+0.0.N: Proof Simplification Iteration 3	[0.19 s]
+0.0.N: Proof Simplification Iteration 4	[0.24 s]
+0.0.N: Proof Simplification Iteration 5	[0.29 s]
+0.0.N: Proof Simplification Iteration 6	[0.34 s]
+0.0.N: Proof Simplification Iteration 7	[0.39 s]
+0.0.N: Proof Simplification Iteration 8	[0.44 s]
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property ":noDeadEnd" was proven in 0.00 s.
+    Use check_assumptions -show -dead_end to show this property in the property table.
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property ":noConflict" was proven in 0.00 s.
+    Use check_assumptions -show to show this property in the property table.
+INFO (IPF047): 0.0.PRE: The cover property ":live" was covered in 1 cycles in 0.00 s.
+    Use check_assumptions -show -live to show this property in the property table.
+0.0.PRE: Proof Simplification completed in 0.78 s
+0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0: =============================== ProofGrid start ===============================
+0: ProofGrid usable level: 10
+0: ProofGrid is starting event handling
+0.0.N: Proofgrid shell started at 26447@icpc(local) jg_26252_icpc_1
+0.0.Hp: Proofgrid shell started at 26448@icpc(local) jg_26252_icpc_1
+0.0.Ht: Proofgrid shell started at 26481@icpc(local) jg_26252_icpc_1
+0.0.B: Proofgrid shell started at 26498@icpc(local) jg_26252_icpc_1
+0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.0.N: Starting proof for property "top_wrapper_dac19.ariane_i.i_cache_subsystem.i_nbdcache.i_tag_cmp._assert_1"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.02 s]
+0.0.N: A trace with 1 cycles was found. [0.02 s]
+INFO (IPF055): 0.0.N: A counterexample (cex) with 1 cycles was found for the property "top_wrapper_dac19.ariane_i.i_cache_subsystem.i_nbdcache.i_tag_cmp._assert_1" in 0.15 s.
+0.0.N: Stopped processing property "top_wrapper_dac19.ariane_i.i_cache_subsystem.i_nbdcache.i_tag_cmp._assert_1"	[0.17 s].
+0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Starting proof for property "HACK@DAC19_p9"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.02 s]
+0.0.N: Trace Attempt  2	[0.03 s]
+0.0.N: Trace Attempt  3	[0.03 s]
+0.0.Ht: Trace Attempt  1	[0.17 s]
+0.0.Ht: Trace Attempt  2	[0.18 s]
+0.0.Ht: Trace Attempt  3	[0.19 s]
+0.0.B: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.0.B: Starting proof for property "HACK@DAC19_p9"	[0.00 s].
+0.0.Ht: Trace Attempt  4	[0.22 s]
+0.0.B: Trace Attempt  1	[0.03 s]
+0.0.B: Trace Attempt  2	[0.04 s]
+0.0.Ht: Trace Attempt  5	[0.25 s]
+0.0.B: Trace Attempt  3	[0.05 s]
+0.0.B: Trace Attempt  4	[0.06 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.N: Trace Attempt  3	[0.23 s]
+0.0.N: Trace Attempt  4	[0.36 s]
+0.0.N: Trace Attempt  5	[0.36 s]
+0.0.N: Trace Attempt  5	[0.70 s]
+0: ProofGrid usable level: 9
+0.0.N: Trace Attempt  7	[0.90 s]
+0.0.N: Per property time limit expired (1.00 s) [1.11 s]
+0.0.N: Stopped processing property "HACK@DAC19_p9"	[0.97 s].
+0.0.N: Starting proof for property "HACK@DAC19_p21"	[0.00 s].
+0.0.B: Stopped processing property "HACK@DAC19_p9"	[0.98 s].
+0.0.B: Starting proof for property "HACK@DAC19_p21"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  3	[0.02 s]
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.05 s]
+0.0.B: Trace Attempt  5	[0.06 s]
+0.0.N: Trace Attempt  3	[0.21 s]
+0.0.N: Trace Attempt  4	[0.35 s]
+0.0.N: Trace Attempt  5	[0.35 s]
+0.0.N: Trace Attempt  5	[0.71 s]
+0.0.B: Trace Attempt 94	[1.01 s]
+0.0.B: Per property time limit expired (1.00 s) [1.02 s]
+0.0.B: Stopped processing property "HACK@DAC19_p21"	[1.02 s].
+0.0.B: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.05 s]
+0.0.B: Trace Attempt  5	[0.06 s]
+0.0.N: Trace Attempt  7	[0.91 s]
+0.0.N: Per property time limit expired (1.00 s) [1.12 s]
+0.0.N: Stopped processing property "HACK@DAC19_p21"	[1.12 s].
+0.0.N: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  3	[0.02 s]
+0.0.N: Trace Attempt  3	[0.20 s]
+0.0.N: Trace Attempt  4	[0.32 s]
+0.0.N: Trace Attempt  5	[0.32 s]
+0.0.N: Trace Attempt  5	[0.68 s]
+0.0.B: Trace Attempt 94	[1.00 s]
+0.0.B: Per property time limit expired (1.00 s) [1.01 s]
+0.0.B: Stopped processing property "HACK@DAC19_p22"	[1.00 s].
+0.0.N: Stopped processing property "HACK@DAC19_p22"	[0.92 s].
+0.0.N: Starting proof for property "HACK@DAC19_p23"	[0.00 s].
+0.0.B: Starting proof for property "HACK@DAC19_p23"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  3	[0.02 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.06 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.N: Trace Attempt  3	[0.23 s]
+0.0.N: Trace Attempt  4	[0.35 s]
+0.0.N: Trace Attempt  5	[0.35 s]
+0.0.N: Trace Attempt  5	[0.73 s]
+0.0.B: Trace Attempt 96	[1.01 s]
+0.0.B: Per property time limit expired (1.00 s) [1.02 s]
+0.0.B: Stopped processing property "HACK@DAC19_p23"	[1.01 s].
+0.0.B: Starting proof for property "HACK@DAC19_p24"	[0.00 s].
+0.0.Ht: Trace Attempt 71	[4.27 s]
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.N: Trace Attempt  7	[0.93 s]
+0.0.N: Per property time limit expired (1.00 s) [1.06 s]
+0.0.N: Stopped processing property "HACK@DAC19_p23"	[1.06 s].
+0.0.N: Starting proof for property "HACK@DAC19_p24"	[0.00 s].
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.04 s]
+0.0.B: Trace Attempt  5	[0.05 s]
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  3	[0.02 s]
+0.0.N: Trace Attempt  3	[0.20 s]
+0.0.N: Trace Attempt  4	[0.32 s]
+0.0.N: Trace Attempt  5	[0.32 s]
+0.0.N: Trace Attempt  5	[0.68 s]
+0.0.B: Trace Attempt 101	[1.00 s]
+0.0.B: Per property time limit expired (1.00 s) [1.01 s]
+0.0.B: Stopped processing property "HACK@DAC19_p24"	[1.00 s].
+0.0.B: Starting proof for property "HACK@DAC19_p25"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.05 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.N: Trace Attempt  7	[0.87 s]
+0.0.N: Per property time limit expired (1.00 s) [1.11 s]
+0.0.N: Stopped processing property "HACK@DAC19_p24"	[1.11 s].
+0.0.N: Starting proof for property "HACK@DAC19_p25"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  3	[0.02 s]
+0.0.N: Trace Attempt  3	[0.18 s]
+0.0.N: Trace Attempt  4	[0.29 s]
+0.0.N: Trace Attempt  5	[0.29 s]
+0.0.N: Trace Attempt  5	[0.66 s]
+0.0.B: Trace Attempt 95	[1.00 s]
+0.0.B: Per property time limit expired (1.00 s) [1.01 s]
+0.0.B: Stopped processing property "HACK@DAC19_p25"	[1.00 s].
+0.0.B: Starting proof for property "HACK@DAC19_p26"	[0.00 s].
+0.0.N: Stopped processing property "HACK@DAC19_p25"	[0.89 s].
+0.0.N: Starting proof for property "HACK@DAC19_p26"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  3	[0.02 s]
+0.0.B: Trace Attempt  2	[0.04 s]
+0.0.B: Trace Attempt  3	[0.05 s]
+0.0.B: Trace Attempt  4	[0.06 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.N: Trace Attempt  3	[0.23 s]
+0.0.N: Trace Attempt  4	[0.35 s]
+0.0.N: Trace Attempt  5	[0.35 s]
+0.0.N: Trace Attempt  5	[0.72 s]
+0.0.B: Trace Attempt 98	[1.00 s]
+0.0.B: Per property time limit expired (1.00 s) [1.01 s]
+0.0.B: Stopped processing property "HACK@DAC19_p26"	[1.00 s].
+0.0.B: Starting proof for property "HACK@DAC19_p29"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.04 s]
+0.0.B: Trace Attempt  5	[0.06 s]
+0.0.N: Trace Attempt  7	[0.92 s]
+0.0.N: Per property time limit expired (1.00 s) [1.09 s]
+0.0.N: Stopped processing property "HACK@DAC19_p26"	[1.09 s].
+0.0.N: Starting proof for property "HACK@DAC19_p29"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  3	[0.02 s]
+0.0.N: Trace Attempt  3	[0.25 s]
+0.0.N: Trace Attempt  4	[0.38 s]
+0.0.N: Trace Attempt  5	[0.38 s]
+0.0.B: Trace Attempt 98	[1.00 s]
+0.0.B: Per property time limit expired (1.00 s) [1.01 s]
+0.0.B: Stopped processing property "HACK@DAC19_p29"	[1.00 s].
+0.0.B: Starting proof for property "HACK@DAC19_p32"	[0.00 s].
+0.0.N: Trace Attempt  5	[0.94 s]
+0.0.B: Trace Attempt  1	[0.05 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.B: Trace Attempt  3	[0.08 s]
+0.0.B: Trace Attempt  4	[0.09 s]
+0.0.B: Trace Attempt  5	[0.10 s]
+0.0.Ht: Trace Attempt 137	[9.06 s]
+0.0.N: Stopped processing property "HACK@DAC19_p29"	[1.86 s].
+0.0.N: Starting proof for property "HACK@DAC19_p32"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  3	[0.02 s]
+0.0.B: Trace Attempt 86	[1.00 s]
+0.0.B: Per property time limit expired (1.00 s) [1.01 s]
+0.0.B: Stopped processing property "HACK@DAC19_p32"	[1.00 s].
+0.0.B: Next scan (1) will use per property time limit: 1s * 10 ^ 1 = 10s
+0.0.B: Starting proof for property "HACK@DAC19_p9"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.06 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.N: Stopped processing property "HACK@DAC19_p32"	[0.15 s].
+0.0.N: Next scan (1) will use per property time limit: 1s * 10 ^ 1 = 10s
+0.0.N: Starting proof for property "HACK@DAC19_p9"	[0.00 s].
+0.0.Ht: Trace Attempt 188	[13.13 s]
+0.0.B: Trace Attempt 261	[4.30 s]
+0.0.N: Trace Attempt 10	[5.35 s]
+0.0.B: Trace Attempt 263	[5.58 s]
+0.0.B: A trace with 263 cycles was found. [6.09 s]
+INFO (IPF055): 0.0.B: A counterexample (cex) with 263 cycles was found for the property "HACK@DAC19_p9" in 6.72 s.
+0.0.B: Stopped processing property "HACK@DAC19_p9"	[6.75 s].
+0.0.B: Starting proof for property "HACK@DAC19_p21"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.03 s]
+0.0.B: Trace Attempt  2	[0.05 s]
+0.0.B: Trace Attempt  3	[0.06 s]
+0.0.B: Trace Attempt  4	[0.06 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0: ProofGrid usable level: 8
+0.0.N: Trace Attempt 12	[10.29 s]
+0.0.N: Stopped processing property "HACK@DAC19_p9"	[10.31 s].
+0.0.N: Starting proof for property "HACK@DAC19_p21"	[0.00 s].
+0.0.B: Trace Attempt 264	[4.40 s]
+0.0.Ht: Trace Attempt 224	[20.14 s]
+0.0.B: A trace with 264 cycles was found. [5.06 s]
+INFO (IPF055): 0.0.B: A counterexample (cex) with 264 cycles was found for the property "HACK@DAC19_p21" in 5.17 s.
+INFO (IPF055): 0.0.B: A counterexample (cex) with 264 cycles was found for the property "HACK@DAC19_p23" in 5.17 s by the incidental trace "HACK@DAC19_p21".
+0.0.B: Stopped processing property "HACK@DAC19_p21"	[5.19 s].
+0.0.B: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.B: Trace Attempt  2	[0.06 s]
+0.0.B: Trace Attempt  3	[0.08 s]
+0.0.B: Trace Attempt  4	[0.09 s]
+0.0.B: Trace Attempt  5	[0.11 s]
+0.0.N: Stopped processing property "HACK@DAC19_p21"	[1.55 s].
+0.0.N: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0: ProofGrid usable level: 6
+0.0.N: Trace Attempt  5	[0.43 s]
+0.0.N: Trace Attempt  1	[1.69 s]
+0.0.N: Trace Attempt  2	[1.70 s]
+0.0.N: Trace Attempt  3	[1.70 s]
+0.0.N: Trace Attempt  4	[1.72 s]
+0.0.N: Trace Attempt  5	[1.73 s]
+0.0.Ht: Trace Attempt 263	[22.72 s]
+0.0.Ht: A trace with 263 cycles was found. [22.74 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 263 cycles was found for the property "HACK@DAC19_p32" in 23.87 s.
+0.0.Ht: Trace Attempt 264	[23.20 s]
+0: ProofGrid usable level: 5
+0.0.Ht: A trace with 264 cycles was found. [23.29 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 264 cycles was found for the property "HACK@DAC19_p26" in 24.43 s.
+0.0.Ht: A trace with 264 cycles was found. [23.61 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 264 cycles was found for the property "HACK@DAC19_p29" in 24.95 s.
+0: ProofGrid usable level: 3
+0.0.Ht: Trace Attempt 265	[24.04 s]
+0.0.Ht: A trace with 265 cycles was found. [24.18 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 265 cycles was found for the property "HACK@DAC19_p24" in 25.45 s.
+0.0.Ht: A trace with 265 cycles was found. [24.66 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 265 cycles was found for the property "HACK@DAC19_p25" in 25.94 s.
+0.0.Ht: Trace Attempt 266	[25.08 s]
+0.0.B: Trace Attempt 263	[4.33 s]
+0: ProofGrid usable level: 1
+0.0.Ht: Trace Attempt 271	[30.00 s]
+0.0.B: Trace Attempt 266	[9.94 s]
+0.0.B: Per property time limit expired (10.00 s) [10.39 s]
+0.0.B: Stopped processing property "HACK@DAC19_p22"	[10.07 s].
+0.0.B: Last scan. Per property time limit: 0s
+0.0.B: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.04 s]
+0.0.B: Trace Attempt  5	[0.06 s]
+0.0.N: Trace Attempt 60	[4.34 s]
+0.0.N: Per property time limit expired (10.00 s) [10.62 s]
+0.0.N: Stopped processing property "HACK@DAC19_p22"	[10.45 s].
+0.0.N: Last scan. Per property time limit: 0s
+0.0.N: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.B: Trace Attempt 265	[4.25 s]
+0.0.B: Trace Attempt 267	[8.67 s]
+0.0.Ht: Trace Attempt 274	[43.16 s]
+INFO (IPL017): The host machine is running out of memory.
+    This message was triggered because the system reached 10% memory.
+    System memory use information:
+    [Process]
+        Memory In Use: 4408556 kB (55%)
+        Peak Memory Usage: 4408556 kB (55%)
+    [Host]
+        Available Memory: 837764 kB (10%)
+        Total Memory: 7990068 kB
+        Free Swap: 8256508 kB (99%)
+        Total Swap: 8257532 kB
+0.0.B: Trace Attempt 270	[14.01 s]
+0.0.Ht: Trace Attempt 275	[47.85 s]
+0.0.B: Trace Attempt 273	[19.20 s]
+INFO (IPL017): The host machine is running out of memory.
+    This message was triggered because the system reached 1% memory.
+    System memory use information:
+    [Process]
+        Memory In Use: 5399520 kB (67%)
+        Peak Memory Usage: 5442328 kB (68%)
+    [Host]
+        Available Memory: 137248 kB (1%)
+        Total Memory: 7990068 kB
+        Free Swap: 8156156 kB (98%)
+        Total Swap: 8257532 kB
+0.0.B: Trace Attempt 274	[27.54 s]
+0.0.N: Trace Attempt 60	[33.45 s]
+0.0.B: Trace Attempt 277	[40.13 s]
+0.0.B: Trace Attempt 278	[44.50 s]
+0.0.N: Trace Attempt 61	[48.27 s]
+0.0.N: Trace Attempt  1	[48.46 s]
+0.0.N: Trace Attempt  2	[48.55 s]
+0.0.N: Trace Attempt  3	[48.57 s]
+0.0.N: Trace Attempt  4	[48.76 s]
+0.0.N: Trace Attempt 21	[53.90 s]
+0.0.N: Trace Attempt 39	[59.05 s]
+0.0.N: Trace Attempt 47	[63.56 s]
+0.0.N: Trace Attempt 59	[69.58 s]
+0.0.N: Trace Attempt 78	[74.47 s]
+0.0.Ht: Trace Attempt 277	[106.62 s]
+0.0.N: Trace Attempt 99	[79.22 s]
+0.0.Ht: Trace Attempt 280	[111.10 s]
+0.0.N: Trace Attempt 116	[83.38 s]
+0.0.N: Trace Attempt 134	[87.39 s]
+0.0.N: Trace Attempt 154	[91.81 s]
+0.0.B: Trace Attempt 283	[94.01 s]
+0.0.N: Trace Attempt 180	[96.08 s]
+0.0.N: Trace Attempt 202	[100.17 s]
+0.0.N: Trace Attempt 218	[106.62 s]
+0.0.N: Trace Attempt 222	[112.48 s]
+0.0.N: Trace Attempt 227	[119.84 s]
+0.0.N: Trace Attempt 228	[125.57 s]
+0.0.N: Trace Attempt 230	[131.16 s]
+0.0.N: Trace Attempt 232	[135.54 s]
+0.0.N: Trace Attempt 235	[139.78 s]
+0.0.N: Trace Attempt 236	[155.39 s]
+0.0.Hp: Interrupted (multi)
+0.0.Hp: Morphing to Mp
+0.0.Hp: All properties determined. [0.00 s]
+0.0.Hp: Exited with Success (@ 0.00 s)
+0.0.Mp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Mp: Trace Attempt  1	[0.52 s]
+0.0.Mp: Trace Attempt  2	[0.60 s]
+0.0.Mp: Trace Attempt  3	[2.66 s]
+0.0.Mp: Trace Attempt  3	[2.91 s]
+0.0.Mp: Trace Attempt  3	[3.09 s]
+0.0.Mp: Trace Attempt  3	[3.48 s]
+0.0.Mp: Trace Attempt  3	[4.26 s]
+0.0.Mp: Trace Attempt  4	[5.08 s]
+0.0.Mp: Trace Attempt  4	[6.62 s]
+0.0.Mp: Trace Attempt  4	[10.87 s]
+0.0.Mp: Trace Attempt  4	[14.57 s]
+0.0.Mp: Trace Attempt  5	[15.00 s]
+0.0.Mp: Trace Attempt  6	[20.20 s]
+0.0.Mp: Trace Attempt  6	[32.28 s]
+0.0.Mp: Trace Attempt  6	[45.80 s]
+0.0.N: Stopped processing property "HACK@DAC19_p22"	[218.72 s].
+0.0.N: Morphing to AM
+0.0.N: All properties determined. [0.00 s]
+0.0.N: Exited with Success (@ 0.00 s)
+0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AM: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.AM: Trace Attempt  1	[0.02 s]
+0.0.AM: Trace Attempt  2	[0.02 s]
+0.0.AM: Trace Attempt  3	[0.02 s]
+0.0.AM: Trace Attempt  4	[0.02 s]
+0.0.AM: Trace Attempt  5	[0.04 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.AM: Trace Attempt  2	[0.08 s]
+0.0.AM: Trace Attempt  3	[0.08 s]
+0.0.AM: Trace Attempt  4	[0.08 s]
+0.0.AM: Trace Attempt  5	[0.08 s]
+0.0.AM: Trace Attempt  1	[0.28 s]
+0.0.AM: Trace Attempt  2	[0.29 s]
+0.0.AM: Trace Attempt  3	[0.29 s]
+0.0.AM: Trace Attempt  4	[0.29 s]
+0.0.AM: Trace Attempt  5	[0.29 s]
+0.0.AM: Trace Attempt  1	[0.51 s]
+0.0.AM: Trace Attempt  2	[0.52 s]
+0.0.AM: Trace Attempt  3	[0.52 s]
+0.0.AM: Trace Attempt  4	[0.53 s]
+0.0.B: Stopped processing property "HACK@DAC19_p22"	[221.23 s].
+0.0.B: Morphing to Bcustom2
+0.0.B: All properties determined. [0.00 s]
+0.0.B: Exited with Success (@ 0.00 s)
+0.0.Bcustom2: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Bcustom2: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.Bcustom2: Trace Attempt  1	[0.03 s]
+0.0.Bcustom2: Trace Attempt  2	[0.04 s]
+0.0.Bcustom2: Trace Attempt  3	[0.05 s]
+0.0.Bcustom2: Trace Attempt  4	[0.06 s]
+0.0.Bcustom2: Trace Attempt  5	[0.07 s]
+0.0.AM: Stopped processing property "HACK@DAC19_p22"	[2.61 s].
+0.0.AM: Morphing to Tri
+0.0.AM: Trace Attempt 46	[2.38 s]
+0.0.AM: All properties determined. [0.00 s]
+0.0.AM: Exited with Success (@ 0.00 s)
+0.0.Bcustom2: Stopped processing property "HACK@DAC19_p22"	[0.56 s].
+0.0.Bcustom2: Morphing to K
+0.0.Bcustom2: Trace Attempt 44	[0.54 s]
+0.0.Bcustom2: All properties determined. [0.00 s]
+0.0.Bcustom2: Exited with Success (@ 0.00 s)
+0.0.Tri: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.Tri: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.Tri:    0.06" ---- Launching main thread ----
+0.0.Tri:    0.25" ---- Launching abstraction thread ----
+0.0.Tri:    0.27" ---- Launching multi-phase simplification thread ----
+0.0.Tri: Trace Attempt  2	[1.50 s]
+0.0.Tri: Trace Attempt  3	[2.28 s]
+0.0.Tri: Trace Attempt  4	[2.32 s]
+0.0.Mp: Trace Attempt  6	[62.71 s]
+0.0.Tri: Trace Attempt  5	[3.71 s]
+0.0.Tri: Trace Attempt  9	[9.31 s]
+0.0.K: Trace Attempt 60	[12.99 s]
+0.0.Tri: Trace Attempt 13	[17.50 s]
+0.0.Tri: Trace Attempt 38	[22.59 s]
+0.0.K: Trace Attempt  1	[27.66 s]
+0.0.K: Stopped processing property "HACK@DAC19_p22"	[27.70 s].
+0.0.K: Morphing to I
+0.0.K: All properties determined. [0.00 s]
+0.0.K: Exited with Success (@ 0.00 s)
+0.0.I: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.I: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.I: Trace Attempt  8	[0.69 s]
+0.0.I: Trace Attempt  1	[1.32 s]
+0.0.I: Trace Attempt  2	[1.33 s]
+0.0.I: Trace Attempt  5	[1.37 s]
+0.0.Mp: Trace Attempt  6	[94.67 s]
+0.0.Mp: Trace Attempt  6	[111.18 s]
+0.0.Tri: Stopped processing property "HACK@DAC19_p22"	[54.40 s].
+0.0.I: Stopped processing property "HACK@DAC19_p22"	[26.71 s].
+0.0.I: Morphing to Bcustom2
+0.0.I: Trace Attempt 31	[4.34 s]
+0.0.I: All properties determined. [0.00 s]
+0.0.I: Exited with Success (@ 0.00 s)
+0.0.Bcustom2: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Bcustom2: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.Bcustom2: Trace Attempt  1	[0.03 s]
+0.0.Bcustom2: Trace Attempt  2	[0.04 s]
+0.0.Bcustom2: Trace Attempt  3	[0.04 s]
+0.0.Bcustom2: Trace Attempt  4	[0.06 s]
+0.0.Bcustom2: Trace Attempt  5	[0.07 s]
+0.0.Tri: Morphing to D
+0.0.Tri: Trace Attempt 261	[23.07 s]
+0.0.Tri: All properties determined. [0.00 s]
+0.0.Tri: Exited with Success (@ 0.00 s)
+0.0.D: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.D: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.D: Trace Attempt  1	[0.34 s]
+0.0.D: Trace Attempt  2	[0.72 s]
+0.0.D: Trace Attempt  3	[3.35 s]
+0.0.Bcustom2: Trace Attempt 267	[4.38 s]
+0.0.Ht: Trace Attempt 283	[314.20 s]
+0.0.D: Trace Attempt  5	[7.86 s]
+0.0.Bcustom2: Trace Attempt 272	[8.42 s]
+0.0.Bcustom2: Trace Attempt 274	[14.09 s]
+0.0.D: Trace Attempt 12	[24.38 s]
+0.0.Mp: Trace Attempt  6	[147.25 s]
+0.0.D: Stopped processing property "HACK@DAC19_p22"	[39.95 s].
+0.0.D: Morphing to AM
+0.0.D: All properties determined. [0.00 s]
+0.0.D: Exited with Success (@ 0.00 s)
+0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AM: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.AM: Trace Attempt  1	[0.02 s]
+0.0.AM: Trace Attempt  2	[0.02 s]
+0.0.AM: Trace Attempt  3	[0.03 s]
+0.0.AM: Trace Attempt  4	[0.03 s]
+0.0.AM: Trace Attempt  5	[0.05 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.AM: Trace Attempt  2	[0.08 s]
+0.0.AM: Trace Attempt  3	[0.08 s]
+0.0.AM: Trace Attempt  4	[0.09 s]
+0.0.AM: Trace Attempt  5	[0.09 s]
+0.0.AM: Trace Attempt  1	[0.29 s]
+0.0.AM: Trace Attempt  2	[0.30 s]
+0.0.AM: Trace Attempt  3	[0.30 s]
+0.0.AM: Trace Attempt  4	[0.30 s]
+0.0.AM: Trace Attempt  5	[0.30 s]
+0.0.AM: Trace Attempt  1	[0.52 s]
+0.0.AM: Trace Attempt  2	[0.53 s]
+0.0.AM: Trace Attempt  3	[0.53 s]
+0.0.AM: Trace Attempt  4	[0.53 s]
+0.0.AM: Trace Attempt 92	[4.67 s]
+0.0.AM: Trace Attempt 204	[9.03 s]
+0.0.Bcustom2: Trace Attempt 275	[52.56 s]
+0.0.AM: Trace Attempt 227	[13.38 s]
+0.0.Bcustom2: Trace Attempt 277	[57.04 s]
+0.0.AM: Trace Attempt 125	[17.39 s]
+0.0.Mp: Trace Attempt  6	[174.89 s]
+0.0.Bcustom2: Trace Attempt 279	[78.75 s]
+0.0.Bcustom2: Trace Attempt 280	[83.31 s]
+0.0.Bcustom2: Trace Attempt 282	[89.01 s]
+0.0.Mp: Trace Attempt  7	[210.74 s]
+0.0.Bcustom2: Stopped processing property "HACK@DAC19_p22"	[96.99 s].
+0.0.Bcustom2: Morphing to AD
+0.0.Bcustom2: All properties determined. [0.00 s]
+0.0.Bcustom2: Exited with Success (@ 0.00 s)
+0.0.AD: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AD: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.AD: Trace Attempt  1	[0.02 s]
+0.0.AD: Trace Attempt  2	[0.02 s]
+0.0.AD: Trace Attempt  3	[0.02 s]
+0.0.AD: Trace Attempt  4	[0.03 s]
+0.0.AD: Trace Attempt  5	[0.04 s]
+0.0.AD: Trace Attempt  1	[0.07 s]
+0.0.AD: Trace Attempt  2	[0.07 s]
+0.0.AD: Trace Attempt  5	[0.09 s]
+0.0.AD: Trace Attempt  1	[0.27 s]
+0.0.AD: Trace Attempt  2	[0.27 s]
+0.0.AD: Trace Attempt  5	[0.28 s]
+0.0.AD: Trace Attempt  1	[0.64 s]
+0.0.AD: Trace Attempt  2	[0.64 s]
+0.0.AD: Trace Attempt  5	[0.66 s]
+0.0.AM: Stopped processing property "HACK@DAC19_p22"	[58.40 s].
+0.0.AM: Morphing to M
+0.0.AM: Trace Attempt 260	[19.38 s]
+0.0.AM: All properties determined. [0.00 s]
+0.0.AM: Exited with Success (@ 0.00 s)
+0.0.M: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.M: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.M: Trace Attempt  1	[0.02 s]
+0.0.M: Trace Attempt  2	[1.05 s]
+0.0.M: Trace Attempt  3	[2.66 s]
+0.0.M: Trace Attempt  4	[5.68 s]
+0.0.M: Trace Attempt  7	[21.92 s]
+0.0.Mp: Morphing to Oh
+0.0.Mp: All properties determined. [0.00 s]
+0.0.Mp: Exited with Success (@ 0.00 s)
+0.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Oh: bwd trail(1): 1 0.900472s
+0.0.Oh: All properties either determined or skipped. [2.77 s]
+0.0.Oh: Exited with Success (@ 440.40 s)
+0.0.M: Trace Attempt 13	[34.71 s]
+0.0.L: Proofgrid shell started at 30736@icpc(local) jg_26252_icpc_1
+0.0.L: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.L: Using trace diversification with seed 1 (0.05)
+0.0.L: Using LRU state removal heuristic
+0.0.L: Using states from traces to { (reset) }
+0.0.L: Trace Attempt  3	[0.42 s]
+0.0.L: Trace Attempt  4	[0.57 s]
+0.0.L: Trace Attempt  5	[0.64 s]
+0.0.L: Trace Attempt 40	[4.66 s]
+0.0.L: Trace Attempt 63	[8.82 s]
+0.0.L: Trace Attempt 83	[12.99 s]
+0.0.L: Trace Attempt 100	[17.15 s]
+0.0.L: Trace Attempt 113	[21.16 s]
+0.0.L: Trace Attempt 126	[25.47 s]
+0.0.L: Trace Attempt 137	[29.74 s]
+0.0.L: Trace Attempt 147	[33.98 s]
+0.0.M: Trace Attempt 16	[72.40 s]
+0.0.L: Trace Attempt 157	[38.22 s]
+0.0.L: Trace Attempt 169	[42.57 s]
+0.0.L: Trace Attempt 180	[46.86 s]
+0.0.L: Trace Attempt 189	[51.09 s]
+0.0.AD: Trace Attempt 260	[88.69 s]
+0.0.L: Trace Attempt 199	[55.22 s]
+0.0.AD: Stopped processing property "HACK@DAC19_p22"	[95.73 s].
+0.0.AD: Morphing to K
+0.0.AD: All properties determined. [0.00 s]
+0.0.AD: Exited with Success (@ 0.00 s)
+0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: Starting proof for property "HACK@DAC19_p22"	[0.00 s].
+0.0.L: Trace Attempt 208	[59.38 s]
+0.0.L: Trace Attempt 216	[63.48 s]
+0.0.L: Trace Attempt 222	[70.59 s]
+0.0.L: Trace Attempt 224	[75.50 s]
+0.0.L: Trace Attempt 227	[82.52 s]
+0.0.L: Trace Attempt 235	[86.52 s]
+0.0.L: Trace Attempt 244	[90.64 s]
+0.0.K: Trace Attempt  1	[34.12 s]
+0.0.K: Trace Attempt  2	[34.12 s]
+0.0.K: Trace Attempt  3	[34.14 s]
+0.0.K: Trace Attempt  4	[34.16 s]
+0.0.K: Trace Attempt  5	[34.17 s]
+0.0.L: Trace Attempt 253	[95.11 s]
+0.0.K: Trace Attempt 142	[38.20 s]
+0.0.L: Trace Attempt 261	[99.27 s]
+0.0.K: Trace Attempt 231	[42.25 s]
+0.0.L: Using states from traces to { HACK@DAC19_p9 <262> }
+0.0.L: Trace Attempt  3	[102.55 s]
+0.0.L: Using states from traces to { HACK@DAC19_p29 <263> }
+0.0.L: Trace Attempt  3	[102.86 s]
+0.0.L: Trace Attempt  4	[102.92 s]
+0.0.L: Trace Attempt  5	[103.01 s]
+0.0.L: Using states from traces to { HACK@DAC19_p32 <272> }
+0.0.L: Trace Attempt  3	[106.55 s]
+0.0.L: Trace Attempt  4	[106.60 s]
+0.0.L: Trace Attempt  5	[106.67 s]
+0.0.L: Trace Attempt 17	[110.86 s]
+0.0.M: Trace Attempt 20	[149.95 s]
+0.0.L: Trace Attempt 23	[114.96 s]
+0.0.L: Trace Attempt 28	[119.56 s]
+0.0.L: Trace Attempt 29	[123.75 s]
+0.0.L: Trace Attempt 30	[130.15 s]
+WARNING (WPF031): 0.0.L: Major page faults detected. Host "icpc" might be low on memory.
+    Total memory = 7990068 kiB
+    Free memory  = 182676 kiB (2.29 %), Free swap = 4305468 kiB
+0.0.L: Trace Attempt 32	[135.96 s]
+0.0.L: Trace Attempt 33	[147.02 s]
+0.0.M: Trace Attempt 25	[183.38 s]
+0.0.L: Trace Attempt 35	[151.32 s]
+0.0.L: Trace Attempt 37	[155.45 s]
+0.0.L: Trace Attempt 40	[159.65 s]
+0.0.L: Trace Attempt 43	[164.02 s]
+0.0.L: Trace Attempt 47	[168.64 s]
+0.0.L: Trace Attempt 50	[172.81 s]
+0.0.L: Trace Attempt 53	[176.87 s]
+0.0.L: Trace Attempt 57	[181.13 s]
+0.0.M: Trace Attempt 30	[217.17 s]
+0.0.L: Trace Attempt 59	[185.17 s]
+0.0.L: Trace Attempt 63	[189.35 s]
+0.0.M: Trace Attempt 36	[229.01 s]
+0.0.L: Trace Attempt 65	[194.03 s]
+0.0.L: Trace Attempt 69	[198.31 s]
+0.0.L: Trace Attempt 73	[203.11 s]
+0.0.L: Using states from traces to { HACK@DAC19_p29 <263> }
+0.0.L: Trace Attempt  3	[210.06 s]
+0.0.L: Trace Attempt  4	[210.16 s]
+0.0.L: Trace Attempt  5	[210.26 s]
+0.0.M: Trace Attempt 42	[245.90 s]
+0.0.L: Trace Attempt 12	[214.55 s]
+0.0.L: Using states from traces to { HACK@DAC19_p21 <273> }
+0.0.L: Trace Attempt  3	[216.34 s]
+0.0.L: Trace Attempt  4	[216.43 s]
+0.0.L: Trace Attempt  5	[216.54 s]
+0.0.K: Requesting engine job to stop
+0.0.M: Requesting engine job to stop
+0.0.Ht: Requesting engine job to terminate
+0.0.L: Requesting engine job to terminate
+INFO (IPF144): 0: Initiating shutdown of proof [662.61 s]
+0.0.Ht: A trace with 283 cycles was found. [592.97 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 283 cycles was found for the property "HACK@DAC19_p22" in 664.62 s.
+0: ProofGrid usable level: 0
+0.0.Ht: All properties determined. [662.00 s]
+0.0.Ht: Exited with Success (@ 662.99 s)
+0.0.L: Trace Attempt 12	[219.53 s]
+0.0.L: All properties determined. [220.50 s]
+0.0.L: Exited with Success (@ 663.60 s)
+0.0.M: Sending SIGKILL
+0.0.K: Sending SIGKILL
+0.0.M: Stopped processing property "HACK@DAC19_p22"	[257.81 s].
+0.0.M: Terminated by signal SIGKILL (@ 664.98 s)
+0.0.K: Stopped processing property "HACK@DAC19_p22"	[164.16 s].
+0.0.K: Trace Attempt 267	[44.52 s]
+0.0.K: Terminated by signal SIGKILL (@ 665.42 s)
+0: --------------------------------------------------------------
+ProofGrid Summary (utilization 99.99 %)
+--------------------------------------------------------------
+     engines started                               :    15
+     engine jobs started                           :     5
+     jobs where 1 minute load exceeded core count  :     4
+     jobs where 5 minute load exceeded core count  :     4
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+     Ht        0.03      662.50        0.00       99.99 %
+      K        0.05      654.47        0.00       99.99 %
+      M        0.05      657.57        0.00       99.99 %
+     Oh        0.03      436.98        0.00       99.99 %
+      L        0.18      220.03        0.00       99.92 %
+    all        0.07      526.31        0.00       99.99 %
+
+    Total time in state (seconds)
+    -----------------------------------------
+            Pending     Running        Dead  
+    -----------------------------------------
+               0.34     2631.55        0.00
+
+    Data read    : 49.07 MiB
+    Data written : 56.14 kiB
+
+0: All pending notifications were processed.
+INFO (IPF059): Completed proof on task: "<embedded>" for proof thread 0
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 12
+                 assertions                   : 12
+                  - proven                    : 1 (8.33333%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 11 (91.6667%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+determined
+[<embedded>] % report -summary -force -result -file fpv_result.rpt
+[<embedded>] % exit
+INFO (IPL005): Received request to exit from the console.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.
+INFO (IPL018): The peak resident set memory use for this session was 7.934 GB.
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO (IPL015): The Tcl-thread exited with status 0.
+INFO (IPL016): Exiting the analysis session with status 0.

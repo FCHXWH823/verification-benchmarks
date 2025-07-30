@@ -1,6 +1,5 @@
 clear -all
 
-%% # Read in HDL files
 
 analyze -verilog or1200/or1200_alu.v
 
@@ -198,4 +197,9 @@ analyze -v2k or1200/or1200_xcv_ram32x8d.v
 
 analyze -v2k or1200/timescale.v
 
-elaborate
+analyze -v2k or1200/or1200_top.v
+
+elaborate -top or1200_top
+
+clock clk_i -factor 1 -phase 1
+reset -expression ~rst_i

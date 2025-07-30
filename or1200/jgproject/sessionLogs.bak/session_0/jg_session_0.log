@@ -1,0 +1,565 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2022.09
+# platform  : Linux 3.10.0-1160.el7.x86_64
+# version   : 2022.09p001 64 bits
+# build date: 2022.10.25 11:32:28 UTC
+# ----------------------------------------
+# started   : 2025-04-29 11:38:53 CST
+# hostname  : icpc.(none)
+# pid       : 13151
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:36164' '-nowindow' '-style' 'windows' '-data' 'AAABCHicbY7NCgIxDIS/Kl7FF/HnAfYm3hRRQb1JcVdZWLbFrSBe9FF9kzpWBAUDycwkaToGyG4xRlK0ryo9psxYMlGdsxbCliEFFzyOE0FqJXYQ22DVKdQZi+ViNfukK8rEapo/eqBdq/cpzOONZIbvMIv7D0Lns6hsKbv0ddCx48hZH8AonQ9SXl2raS70MulUi2S/FDayEGSoep17AmkTJ18=' '-proj' '/home/master/verification-benchmarks/or1200/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/master/verification-benchmarks/or1200/jgproject/.tmp/.initCmds.tcl' 'setup_and_properties.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2022 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc.
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+Jasper Apps Analysis Session - /home/master/verification-benchmarks/or1200/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fpv".
+INFO: reading configuration file "/home/master/.config/cadence/jasper.conf".
+% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+% 
+% 
+% analyze -verilog or1200/or1200_alu.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_alu.v'
+[INFO (VERI-1328)] or1200/or1200_alu.v(52): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_amultp2_32x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_amultp2_32x32.v'
+[INFO (VERI-1328)] or1200/or1200_amultp2_32x32.v(51): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_cfgr.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_cfgr.v'
+[INFO (VERI-1328)] or1200/or1200_cfgr.v(52): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_alu.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_alu.v'
+[INFO (VERI-1328)] or1200/or1200_alu.v(52): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_alu.v(520): overwriting previous definition of module 'or1200_alu'
+[INFO (VERI-2142)] or1200/or1200_alu.v(520): previous definition of design element 'or1200_alu' is here
+% 
+% analyze -verilog or1200/or1200_amultp2_32x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_amultp2_32x32.v'
+[INFO (VERI-1328)] or1200/or1200_amultp2_32x32.v(51): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_cfgr.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_cfgr.v'
+[INFO (VERI-1328)] or1200/or1200_cfgr.v(52): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_cfgr.v(211): overwriting previous definition of module 'or1200_cfgr'
+[INFO (VERI-2142)] or1200/or1200_cfgr.v(211): previous definition of design element 'or1200_cfgr' is here
+% 
+% analyze -verilog or1200/or1200_cpu.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_cpu.v'
+[INFO (VERI-1328)] or1200/or1200_cpu.v(53): analyzing included file 'or1200/or1200_defines.v'
+[INFO (VERI-2561)] or1200/or1200_cpu.v(659): undeclared symbol 'gpr_written_data', assumed default net type 'wire'
+% 
+% analyze -verilog or1200/or1200_ctrl.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_ctrl.v'
+[INFO (VERI-1328)] or1200/or1200_ctrl.v(53): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_dc_fsm.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dc_fsm.v'
+[INFO (VERI-1328)] or1200/or1200_dc_fsm.v(54): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_dc_ram.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dc_ram.v'
+[INFO (VERI-1328)] or1200/or1200_dc_ram.v(54): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_dc_tag.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dc_tag.v'
+[INFO (VERI-1328)] or1200/or1200_dc_tag.v(53): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_dc_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dc_top.v'
+[INFO (VERI-1328)] or1200/or1200_dc_top.v(55): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_defines.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_dmmu_tlb.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dmmu_tlb.v'
+[INFO (VERI-1328)] or1200/or1200_dmmu_tlb.v(54): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_dmmu_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dmmu_top.v'
+[INFO (VERI-1328)] or1200/or1200_dmmu_top.v(53): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_dpram_256x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dpram_256x32.v'
+[INFO (VERI-1328)] or1200/or1200_dpram_256x32.v(68): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_dpram_32x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dpram_32x32.v'
+[INFO (VERI-1328)] or1200/or1200_dpram_32x32.v(132): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_dpram.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dpram.v'
+[INFO (VERI-1328)] or1200/or1200_dpram.v(58): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_du.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_du.v'
+[INFO (VERI-1328)] or1200/or1200_du.v(53): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_except.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_except.v'
+[INFO (VERI-1328)] or1200/or1200_except.v(53): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -verilog or1200/or1200_fpu_addsub.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_addsub.v'
+% 
+% analyze -v2k or1200/or1200_alu.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_alu.v'
+[INFO (VERI-1328)] or1200/or1200_alu.v(52): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_alu.v(520): overwriting previous definition of module 'or1200_alu'
+[INFO (VERI-2142)] or1200/or1200_alu.v(520): previous definition of design element 'or1200_alu' is here
+% 
+% analyze -v2k or1200/or1200_amultp2_32x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_amultp2_32x32.v'
+[INFO (VERI-1328)] or1200/or1200_amultp2_32x32.v(51): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_cfgr.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_cfgr.v'
+[INFO (VERI-1328)] or1200/or1200_cfgr.v(52): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_cfgr.v(211): overwriting previous definition of module 'or1200_cfgr'
+[INFO (VERI-2142)] or1200/or1200_cfgr.v(211): previous definition of design element 'or1200_cfgr' is here
+% 
+% analyze -v2k or1200/or1200_cpu.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_cpu.v'
+[INFO (VERI-1328)] or1200/or1200_cpu.v(53): analyzing included file 'or1200/or1200_defines.v'
+[INFO (VERI-2561)] or1200/or1200_cpu.v(659): undeclared symbol 'gpr_written_data', assumed default net type 'wire'
+[WARN (VERI-1206)] or1200/or1200_cpu.v(1024): overwriting previous definition of module 'or1200_cpu'
+[INFO (VERI-2142)] or1200/or1200_cpu.v(1024): previous definition of design element 'or1200_cpu' is here
+% 
+% analyze -v2k or1200/or1200_ctrl.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_ctrl.v'
+[INFO (VERI-1328)] or1200/or1200_ctrl.v(53): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_ctrl.v(1242): overwriting previous definition of module 'or1200_ctrl'
+[INFO (VERI-2142)] or1200/or1200_ctrl.v(1242): previous definition of design element 'or1200_ctrl' is here
+% 
+% analyze -v2k or1200/or1200_dc_fsm.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dc_fsm.v'
+[INFO (VERI-1328)] or1200/or1200_dc_fsm.v(54): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_dc_fsm.v(563): overwriting previous definition of module 'or1200_dc_fsm'
+[INFO (VERI-2142)] or1200/or1200_dc_fsm.v(563): previous definition of design element 'or1200_dc_fsm' is here
+% 
+% analyze -v2k or1200/or1200_dc_ram.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dc_ram.v'
+[INFO (VERI-1328)] or1200/or1200_dc_ram.v(54): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_dc_ram.v(129): overwriting previous definition of module 'or1200_dc_ram'
+[INFO (VERI-2142)] or1200/or1200_dc_ram.v(129): previous definition of design element 'or1200_dc_ram' is here
+% 
+% analyze -v2k or1200/or1200_dc_tag.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dc_tag.v'
+[INFO (VERI-1328)] or1200/or1200_dc_tag.v(53): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_dc_tag.v(133): overwriting previous definition of module 'or1200_dc_tag'
+[INFO (VERI-2142)] or1200/or1200_dc_tag.v(133): previous definition of design element 'or1200_dc_tag' is here
+% 
+% analyze -v2k or1200/or1200_dc_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dc_top.v'
+[INFO (VERI-1328)] or1200/or1200_dc_top.v(55): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_dc_top.v(381): overwriting previous definition of module 'or1200_dc_top'
+[INFO (VERI-2142)] or1200/or1200_dc_top.v(381): previous definition of design element 'or1200_dc_top' is here
+% 
+% analyze -v2k or1200/or1200_defines.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_dmmu_tlb.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dmmu_tlb.v'
+[INFO (VERI-1328)] or1200/or1200_dmmu_tlb.v(54): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_dmmu_tlb.v(273): overwriting previous definition of module 'or1200_dmmu_tlb'
+[INFO (VERI-2142)] or1200/or1200_dmmu_tlb.v(273): previous definition of design element 'or1200_dmmu_tlb' is here
+% 
+% analyze -v2k or1200/or1200_dmmu_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dmmu_top.v'
+[INFO (VERI-1328)] or1200/or1200_dmmu_top.v(53): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_dmmu_top.v(307): overwriting previous definition of module 'or1200_dmmu_top'
+[INFO (VERI-2142)] or1200/or1200_dmmu_top.v(307): previous definition of design element 'or1200_dmmu_top' is here
+% 
+% analyze -v2k or1200/or1200_dpram_256x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dpram_256x32.v'
+[INFO (VERI-1328)] or1200/or1200_dpram_256x32.v(68): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_dpram_256x32.v(218): overwriting previous definition of module 'or1200_dpram_256x32'
+[INFO (VERI-2142)] or1200/or1200_dpram_256x32.v(218): previous definition of design element 'or1200_dpram_256x32' is here
+% 
+% analyze -v2k or1200/or1200_dpram_32x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dpram_32x32.v'
+[INFO (VERI-1328)] or1200/or1200_dpram_32x32.v(132): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_dpram_32x32.v(558): overwriting previous definition of module 'or1200_dpram_32x32'
+[INFO (VERI-2142)] or1200/or1200_dpram_32x32.v(558): previous definition of design element 'or1200_dpram_32x32' is here
+% 
+% analyze -v2k or1200/or1200_dpram.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_dpram.v'
+[INFO (VERI-1328)] or1200/or1200_dpram.v(58): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_dpram.v(150): overwriting previous definition of module 'or1200_dpram'
+[INFO (VERI-2142)] or1200/or1200_dpram.v(150): previous definition of design element 'or1200_dpram' is here
+% 
+% analyze -v2k or1200/or1200_du.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_du.v'
+[INFO (VERI-1328)] or1200/or1200_du.v(53): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_du.v(1767): overwriting previous definition of module 'or1200_du'
+[INFO (VERI-2142)] or1200/or1200_du.v(1767): previous definition of design element 'or1200_du' is here
+% 
+% analyze -v2k or1200/or1200_except.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_except.v'
+[INFO (VERI-1328)] or1200/or1200_except.v(53): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-1206)] or1200/or1200_except.v(704): overwriting previous definition of module 'or1200_except'
+[INFO (VERI-2142)] or1200/or1200_except.v(704): previous definition of design element 'or1200_except' is here
+% 
+% analyze -v2k or1200/or1200_fpu_addsub.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_addsub.v'
+[WARN (VERI-1206)] or1200/or1200_fpu_addsub.v(114): overwriting previous definition of module 'or1200_fpu_addsub'
+[INFO (VERI-2142)] or1200/or1200_fpu_addsub.v(114): previous definition of design element 'or1200_fpu_addsub' is here
+% 
+% analyze -v2k or1200/or1200_fpu_arith.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_arith.v'
+% 
+% analyze -v2k or1200/or1200_fpu_div.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_div.v'
+% 
+% analyze -v2k or1200/or1200_fpu_fcmp.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_fcmp.v'
+% 
+% analyze -v2k or1200/or1200_fpu_intfloat_conv_except.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_intfloat_conv_except.v'
+% 
+% analyze -v2k or1200/or1200_fpu_intfloat_conv.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_intfloat_conv.v'
+% 
+% analyze -v2k or1200/or1200_fpu_mul.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_mul.v'
+% 
+% analyze -v2k or1200/or1200_fpu_post_norm_addsub.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_post_norm_addsub.v'
+% 
+% analyze -v2k or1200/or1200_fpu_post_norm_div.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_post_norm_div.v'
+% 
+% analyze -v2k or1200/or1200_fpu_post_norm_intfloat_conv.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_post_norm_intfloat_conv.v'
+% 
+% analyze -v2k or1200/or1200_fpu_post_norm_mul.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_post_norm_mul.v'
+% 
+% analyze -v2k or1200/or1200_fpu_pre_norm_addsub.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_pre_norm_addsub.v'
+% 
+% analyze -v2k or1200/or1200_fpu_pre_norm_div.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_pre_norm_div.v'
+% 
+% analyze -v2k or1200/or1200_fpu_pre_norm_mul.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu_pre_norm_mul.v'
+% 
+% analyze -v2k or1200/or1200_fpu.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_fpu.v'
+[INFO (VERI-1328)] or1200/or1200_fpu.v(49): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_freeze.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_freeze.v'
+[INFO (VERI-1328)] or1200/or1200_freeze.v(53): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_genpc.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_genpc.v'
+[INFO (VERI-1328)] or1200/or1200_genpc.v(52): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_gmultp2_32x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_gmultp2_32x32.v'
+[INFO (VERI-1328)] or1200/or1200_gmultp2_32x32.v(54): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_ic_fsm.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_ic_fsm.v'
+[INFO (VERI-1328)] or1200/or1200_ic_fsm.v(53): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_ic_ram.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_ic_ram.v'
+[INFO (VERI-1328)] or1200/or1200_ic_ram.v(55): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_ic_tag.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_ic_tag.v'
+[INFO (VERI-1328)] or1200/or1200_ic_tag.v(55): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_ic_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_ic_top.v'
+[INFO (VERI-1328)] or1200/or1200_ic_top.v(51): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_if.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_if.v'
+[INFO (VERI-1328)] or1200/or1200_if.v(52): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_immu_tlb.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_immu_tlb.v'
+[INFO (VERI-1328)] or1200/or1200_immu_tlb.v(92): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_immu_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_immu_top.v'
+[INFO (VERI-1328)] or1200/or1200_immu_top.v(47): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_iwb_biu.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_iwb_biu.v'
+[INFO (VERI-1328)] or1200/or1200_iwb_biu.v(58): analyzing included file 'or1200/or1200_defines.v'
+[WARN (VERI-8026)] or1200/or1200_iwb_biu.v(60): Empty Port in Module Declaration
+% 
+% analyze -v2k or1200/or1200_lsu.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_lsu.v'
+[INFO (VERI-1328)] or1200/or1200_lsu.v(54): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_mem2reg.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_mem2reg.v'
+[INFO (VERI-1328)] or1200/or1200_mem2reg.v(88): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_mult_mac.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_mult_mac.v'
+[INFO (VERI-1328)] or1200/or1200_mult_mac.v(58): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_operandmuxes.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_operandmuxes.v'
+[INFO (VERI-1328)] or1200/or1200_operandmuxes.v(52): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_pic.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_pic.v'
+[INFO (VERI-1328)] or1200/or1200_pic.v(51): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_pm.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_pm.v'
+[INFO (VERI-1328)] or1200/or1200_pm.v(73): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_qmem_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_qmem_top.v'
+[INFO (VERI-1328)] or1200/or1200_qmem_top.v(77): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_reg2mem.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_reg2mem.v'
+[INFO (VERI-1328)] or1200/or1200_reg2mem.v(79): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_rfram_generic.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_rfram_generic.v'
+[INFO (VERI-1328)] or1200/or1200_rfram_generic.v(65): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_rf.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_rf.v'
+[INFO (VERI-1328)] or1200/or1200_rf.v(53): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_sb_fifo.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_sb_fifo.v'
+[INFO (VERI-1328)] or1200/or1200_sb_fifo.v(64): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_sb.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_sb.v'
+[INFO (VERI-1328)] or1200/or1200_sb.v(53): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_1024x32_bw.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_1024x32_bw.v'
+[INFO (VERI-1328)] or1200/or1200_spram_1024x32_bw.v(87): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_1024x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_1024x32.v'
+[INFO (VERI-1328)] or1200/or1200_spram_1024x32.v(118): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_1024x8.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_1024x8.v'
+[INFO (VERI-1328)] or1200/or1200_spram_1024x8.v(115): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_128x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_128x32.v'
+[INFO (VERI-1328)] or1200/or1200_spram_128x32.v(82): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_2048x32_bw.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_2048x32_bw.v'
+[INFO (VERI-1328)] or1200/or1200_spram_2048x32_bw.v(90): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_2048x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_2048x32.v'
+[INFO (VERI-1328)] or1200/or1200_spram_2048x32.v(118): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_2048x8.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_2048x8.v'
+[INFO (VERI-1328)] or1200/or1200_spram_2048x8.v(115): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_256x21.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_256x21.v'
+[INFO (VERI-1328)] or1200/or1200_spram_256x21.v(124): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_32_bw.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_32_bw.v'
+[INFO (VERI-1328)] or1200/or1200_spram_32_bw.v(59): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_32x24.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_32x24.v'
+[INFO (VERI-1328)] or1200/or1200_spram_32x24.v(86): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_512x20.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_512x20.v'
+[INFO (VERI-1328)] or1200/or1200_spram_512x20.v(121): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_64x14.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_64x14.v'
+[INFO (VERI-1328)] or1200/or1200_spram_64x14.v(115): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_64x22.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_64x22.v'
+[INFO (VERI-1328)] or1200/or1200_spram_64x22.v(115): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram_64x24.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram_64x24.v'
+[INFO (VERI-1328)] or1200/or1200_spram_64x24.v(118): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_spram.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_spram.v'
+[INFO (VERI-1328)] or1200/or1200_spram.v(58): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_sprs.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_sprs.v'
+[INFO (VERI-1328)] or1200/or1200_sprs.v(52): analyzing included file 'or1200/or1200_defines.v'
+[INFO (VERI-2561)] or1200/or1200_sprs.v(418): undeclared symbol 'sp_eear_ghost_sel', assumed default net type 'wire'
+% 
+% analyze -v2k or1200/or1200_tpram_32x32.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_tpram_32x32.v'
+[INFO (VERI-1328)] or1200/or1200_tpram_32x32.v(108): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_tt.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_tt.v'
+[INFO (VERI-1328)] or1200/or1200_tt.v(48): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_wb_biu.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_wb_biu.v'
+[INFO (VERI-1328)] or1200/or1200_wb_biu.v(59): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_wbmux.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_wbmux.v'
+[INFO (VERI-1328)] or1200/or1200_wbmux.v(52): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/or1200_xcv_ram32x8d.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_xcv_ram32x8d.v'
+[INFO (VERI-1328)] or1200/or1200_xcv_ram32x8d.v(73): analyzing included file 'or1200/or1200_defines.v'
+% 
+% analyze -v2k or1200/timescale.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/timescale.v'
+% 
+% analyze -v2k or1200/or1200_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'or1200/or1200_top.v'
+[INFO (VERI-1328)] or1200/or1200_top.v(55): analyzing included file 'or1200/or1200_defines.v'
+% 
+% elaborate -top or1200_top
+INFO (ISW003): Top module name is "or1200_top".
+[INFO (HIER-8002)] or1200/or1200_top.v(1034): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] or1200/or1200_wb_biu.v(61): compiling module 'or1200_wb_biu:(bl=8)'
+[WARN (VERI-1209)] or1200/or1200_wb_biu.v(210): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(223): 'wb_fsm_idle' should be on the sensitivity list
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(228): 'wb_fsm_trans' should be on the sensitivity list
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(230): 'wb_fsm_idle' should be on the sensitivity list
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(233): 'wb_fsm_trans' should be on the sensitivity list
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(245): 'wb_fsm_last' should be on the sensitivity list
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(248): 'wb_fsm_idle' should be on the sensitivity list
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(250): 'wb_fsm_trans' should be on the sensitivity list
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(253): 'wb_fsm_last' should be on the sensitivity list
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(262): 'wb_fsm_idle' should be on the sensitivity list
+[WARN (VERI-1221)] or1200/or1200_wb_biu.v(264): 'wb_fsm_last' should be on the sensitivity list
+[WARN (VERI-1209)] or1200/or1200_wb_biu.v(323): expression size 32 truncated to fit in target size 3
+[INFO (VERI-1018)] or1200/or1200_spram.v(60): compiling module 'or1200_spram:(aw=6,dw=14)'
+[WARN (VERI-1060)] or1200/or1200_spram.v(127): 'initial' construct is ignored
+[INFO (VERI-1018)] or1200/or1200_spram.v(60): compiling module 'or1200_spram:(aw=6,dw=22)'
+[INFO (VERI-1018)] or1200/or1200_immu_tlb.v(98): compiling module 'or1200_immu_tlb'
+[INFO (VERI-1018)] or1200/or1200_immu_top.v(53): compiling module 'or1200_immu_top'
+[INFO (VERI-1018)] or1200/or1200_ic_fsm.v(64): compiling module 'or1200_ic_fsm'
+[WARN (VERI-1209)] or1200/or1200_ic_fsm.v(200): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1209)] or1200/or1200_ic_fsm.v(239): expression size 32 truncated to fit in target size 3
+[INFO (VERI-1018)] or1200/or1200_ic_ram.v(57): compiling module 'or1200_ic_ram'
+[INFO (VERI-1018)] or1200/or1200_ic_tag.v(57): compiling module 'or1200_ic_tag'
+[INFO (VERI-1018)] or1200/or1200_ic_top.v(56): compiling module 'or1200_ic_top'
+[INFO (VERI-1018)] or1200/or1200_genpc.v(54): compiling module 'or1200_genpc'
+[WARN (VERI-1221)] or1200/or1200_genpc.v(247): 'sp_attack_enable' should be on the sensitivity list
+[INFO (VERI-1018)] or1200/or1200_if.v(54): compiling module 'or1200_if'
+[INFO (VERI-1018)] or1200/or1200_ctrl.v(55): compiling module 'or1200_ctrl'
+[INFO (VERI-1018)] or1200/or1200_dpram.v(60): compiling module 'or1200_dpram'
+[WARN (VERI-1060)] or1200/or1200_dpram.v(106): 'initial' construct is ignored
+[INFO (VERI-1018)] or1200/or1200_rf.v(55): compiling module 'or1200_rf'
+[WARN (VERI-1209)] or1200/or1200_rf.v(196): expression size 32 truncated to fit in target size 5
+[INFO (VERI-1018)] or1200/or1200_operandmuxes.v(54): compiling module 'or1200_operandmuxes'
+[INFO (VERI-1018)] or1200/or1200_alu.v(54): compiling module 'or1200_alu'
+[INFO (VERI-1018)] or1200/or1200_fpu.v(51): compiling module 'or1200_fpu'
+[INFO (VERI-1018)] or1200/or1200_gmultp2_32x32.v(65): compiling module 'or1200_gmultp2_32x32'
+[INFO (VERI-1018)] or1200/or1200_mult_mac.v(60): compiling module 'or1200_mult_mac'
+[INFO (VERI-1018)] or1200/or1200_sprs.v(54): compiling module 'or1200_sprs'
+[INFO (VERI-1018)] or1200/or1200_mem2reg.v(90): compiling module 'or1200_mem2reg'
+[INFO (VERI-1018)] or1200/or1200_reg2mem.v(81): compiling module 'or1200_reg2mem'
+[INFO (VERI-1018)] or1200/or1200_lsu.v(56): compiling module 'or1200_lsu'
+[INFO (VERI-1018)] or1200/or1200_wbmux.v(54): compiling module 'or1200_wbmux'
+[INFO (VERI-1018)] or1200/or1200_freeze.v(64): compiling module 'or1200_freeze'
+[INFO (VERI-1018)] or1200/or1200_except.v(67): compiling module 'or1200_except'
+[WARN (VERI-1209)] or1200/or1200_except.v(664): expression size 32 truncated to fit in target size 17
+[WARN (VDB-1000)] or1200/or1200_except.v(460): net 'wb_pc[31]' is constantly driven from multiple places
+[WARN (VDB-1001)] or1200/or1200_except.v(701): found another driver here
+[INFO (VERI-1018)] or1200/or1200_cfgr.v(54): compiling module 'or1200_cfgr'
+[INFO (VERI-1018)] or1200/or1200_cpu.v(55): compiling module 'or1200_cpu'
+[WARN (VERI-1330)] or1200/or1200_cpu.v(659): actual bit length 1 differs from formal bit length 32 for port 'gpr_written_data'
+[WARN (VDB-1002)] or1200/or1200_cpu.v(1018): net 'sp_assertions_violated_b[31]' does not have a driver
+[INFO (VERI-1018)] or1200/or1200_spram.v(60): compiling module 'or1200_spram:(aw=6,dw=24)'
+[INFO (VERI-1018)] or1200/or1200_dmmu_tlb.v(60): compiling module 'or1200_dmmu_tlb'
+[INFO (VERI-1018)] or1200/or1200_dmmu_top.v(59): compiling module 'or1200_dmmu_top'
+[INFO (VERI-1018)] or1200/or1200_dc_top.v(60): compiling module 'or1200_dc_top'
+[INFO (VERI-1018)] or1200/or1200_qmem_top.v(87): compiling module 'or1200_qmem_top'
+[INFO (VERI-1018)] or1200/or1200_sb.v(55): compiling module 'or1200_sb'
+[INFO (VERI-1018)] or1200/or1200_du.v(59): compiling module 'or1200_du'
+[WARN (VERI-1209)] or1200/or1200_du.v(647): expression size 32 truncated to fit in target size 14
+[INFO (VERI-1018)] or1200/or1200_pic.v(53): compiling module 'or1200_pic'
+[INFO (VERI-1018)] or1200/or1200_tt.v(50): compiling module 'or1200_tt'
+[INFO (VERI-1018)] or1200/or1200_pm.v(75): compiling module 'or1200_pm'
+[INFO (VERI-1018)] or1200/or1200_top.v(57): compiling module 'or1200_top'
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          39 (0 packages)
+  Single run mode                         On
+  Pipeline                                On (39 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      74 (37 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+WARNING (WNL018): or1200/or1200_gmultp2_32x32.v(97): multiplication operator mult_32s_32s (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IMDS005): Number of multiple-driven bits in design: 32. Use "get_design_info -list multiple_driven" for more information.
+or1200_top
+[<embedded>] % 
+[<embedded>] % clock clk_i -factor 1 -phase 1
+[<embedded>] % reset -expression ~rst_i
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst_i".
+[<embedded>] % assert -name or1200_p1 {(or1200_except.wb_pc == or1200_sprs.spr_dat_ppc) || (rst == 1)}
+ERROR (ENL002): Unable to find signal "or1200_except.wb_pc".
+
+ERROR: problem encountered at line 206 in file setup_and_properties.tcl
+
+[<embedded>] % exit
+INFO (IPL005): Received request to exit from the console.
+INFO (IPL018): The peak resident set memory use for this session was 0.383 GB.
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO (IPL015): The Tcl-thread exited with status 0.
+INFO (IPL016): Exiting the analysis session with status 0.

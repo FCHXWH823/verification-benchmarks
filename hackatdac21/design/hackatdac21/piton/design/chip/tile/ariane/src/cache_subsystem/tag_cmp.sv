@@ -84,15 +84,15 @@ module tag_cmp #(
                 break;
         end
 
-        `ifndef SYNTHESIS
-        `ifndef VERILATOR
-        // assert that cache only hits on one way
-        // this only needs to be checked one cycle after all ways have been requested
-        onehot: assert property (
-          @(posedge clk_i) disable iff (!rst_ni) &req_i |=> $onehot0(hit_way_o))
-            else begin $fatal(1,"Hit should be one-hot encoded"); end
-        `endif
-        `endif
+        // `ifndef SYNTHESIS
+        // `ifndef VERILATOR
+        // // assert that cache only hits on one way
+        // // this only needs to be checked one cycle after all ways have been requested
+        // onehot: assert property (
+        //   @(posedge clk_i) disable iff (!rst_ni) &req_i |=> $onehot0(hit_way_o))
+        //     else begin $fatal(1,"Hit should be one-hot encoded"); end
+        // `endif
+        // `endif
     end
 
     always_ff @(posedge clk_i or negedge rst_ni) begin

@@ -1,0 +1,67 @@
+2025-04-29 10:20:55.415495 (129545) main____ INFO    ----------------------------------------
+2025-04-29 10:20:55.415593 (129545) main____ INFO    Jasper version info
+2025-04-29 10:20:55.415599 (129545) main____ INFO      tool      : Jasper 2022.09
+2025-04-29 10:20:55.415605 (129545) main____ INFO      version   : 2022.09p001 64 bits
+2025-04-29 10:20:55.415608 (129545) main____ INFO      build date: 2022.10.25 11:32:28 UTC
+2025-04-29 10:20:55.415611 (129545) main____ INFO    ----------------------------------------
+2025-04-29 10:20:55.415613 (129545) main____ INFO    Runtime info:
+2025-04-29 10:20:55.415616 (129545) main____ INFO      platform  : Linux 3.10.0-1160.el7.x86_64 x86_64
+2025-04-29 10:20:55.415621 (129545) main____ INFO      hostname  : icpc
+2025-04-29 10:20:55.415624 (129545) main____ INFO      pid       : 129545
+2025-04-29 10:20:55.415627 (129545) main____ INFO      arguments : '-style' 'windows' '-no_gui' 'setup_and_properties.tcl'
+2025-04-29 10:20:55.415634 (129545) main____ INFO      locale    : UTF-8
+2025-04-29 10:20:55.415637 (129545) main____ INFO    ----------------------------------------
+2025-04-29 10:20:55.415639 (129545) main____ INFO    System resource limits info:
+2025-04-29 10:20:55.415642 (129545) main____ INFO      virtual memory: unlimited
+2025-04-29 10:20:55.415644 (129545) main____ INFO      cpu time      : unlimited
+2025-04-29 10:20:55.415653 (129545) main____ INFO      processes     : 4096
+2025-04-29 10:20:55.415666 (129545) main____ INFO      stack size    : 8388608 B
+2025-04-29 10:20:55.415669 (129545) main____ INFO      core file size: 0 B
+2025-04-29 10:20:55.415672 (129545) main____ INFO      open files    : 4096
+2025-04-29 10:20:55.415675 (129545) main____ INFO      file size     : unlimited
+2025-04-29 10:20:55.415677 (129545) main____ INFO    ----------------------------------------
+2025-04-29 10:20:55.415679 (129545) main____ INFO    Memory statistics:
+2025-04-29 10:20:55.415682 (129545) main____ INFO      total physical memory  : 7990068 kB
+2025-04-29 10:20:55.415685 (129545) main____ INFO      free physical memory   : 5938048 kB
+2025-04-29 10:20:55.415687 (129545) main____ INFO      committed address space: 5436592 kB
+2025-04-29 10:20:55.415689 (129545) main____ INFO    ----------------------------------------
+2025-04-29 10:20:55.416110 (129545) main____ INFO    Important environment variables:
+2025-04-29 10:20:55.416125 (129545) main____ INFO      CDS_LIC_FILE          : '/export/SoftWare/Cadence/license/license.dat'
+2025-04-29 10:20:55.416130 (129545) main____ INFO      CDS_LIC_ONLY          : '1'
+2025-04-29 10:20:55.416134 (129545) main____ INFO      JASPERGOLD_HOME       : '/export/SoftWare/Cadence/JASPERGOLD22.09.001'
+2025-04-29 10:20:55.416137 (129545) main____ INFO      JASPER_INSTALL_DIR    : '/export/SoftWare/Cadence/JASPERGOLD22.09.001'
+2025-04-29 10:20:55.416140 (129545) main____ INFO      JASPER_KERNEL_CHECK   : '1'
+2025-04-29 10:20:55.416143 (129545) main____ INFO      JASPER_MACRO_LINEFILES: '1'
+2025-04-29 10:20:55.416146 (129545) main____ INFO      JASPER_OS_CHECK       : '1'
+2025-04-29 10:20:55.416149 (129545) main____ INFO      JG_MACRO_LINEFILES    : '1'
+2025-04-29 10:20:55.416152 (129545) main____ INFO      LANG                  : 'en_US.UTF-8'
+2025-04-29 10:20:55.416155 (129545) main____ INFO      LM_LICENSE_FILE       : '27000@icpc'
+2025-04-29 10:20:55.416157 (129545) main____ INFO    ----------------------------------------
+2025-04-29 10:20:55.416679 (129545) lic_core INFO    Initializing license system ...
+2025-04-29 10:20:55.423662 (129545) lic_core INFO    ... license system initialized.
+2025-04-29 10:20:55.435923 (129545) lic__man INFO    Claim 'main' for <ui>.
+2025-04-29 10:20:55.436004 (129545) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2025-04-29 10:20:55.510105 (129545) lic_core INFO    ... (1) checkout succeeded
+2025-04-29 10:20:55.510238 (129545) lic__man INFO    Claim 'fpv' for <ui>.
+2025-04-29 10:20:55.510272 (129545) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2025-04-29 10:20:55.582446 (129545) lic_core INFO    ... (2) checkout succeeded
+2025-04-29 10:20:55.583082 (129545) main____ INFO    Tool inactivity delay is 480000 ms.
+2025-04-29 10:20:55.583275 (129566) stdio___ INFO    Starting STDIN reader (tty: yes, tty name: '/dev/pts/1')
+2025-04-29 10:20:55.595873 (129545) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2025-04-29 10:20:55.598561 (129545) session_ INFO    Analysis session with session id 'session_0' started (pid: 129567)
+2025-04-29 10:20:56.737832 (129545) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:58380)
+2025-04-29 10:20:57.255349 (129545) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2025-04-29 10:20:57.255721 (129545) lic__man INFO    Unclaim everything for 'session_0'.
+2025-04-29 10:21:15.824520 (129545) lic__man INFO    Unclaim everything for 'session_0'.
+2025-04-29 10:21:16.369704 (129545) lic__man INFO    Claim 'fpv' for 'session_0'.
+2025-04-29 10:21:16.369769 (129545) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2025-04-29 10:21:21.397986 (129545) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2025-04-29 10:21:21.440665 (129545) main____ INFO    About to exit: request to exit with status 0 received from analysis session 'session_0'
+2025-04-29 10:21:21.557108 (129545) session_ INFO    Analysis session 'session_0' disconnected.
+2025-04-29 10:21:21.557270 (129545) lic__man INFO    Unclaim everything for 'session_0'.
+2025-04-29 10:21:21.557444 (129545) session_ INFO    Process for analysis session 'session_0' has exited with exit status '0'.
+2025-04-29 10:21:23.550030 (129566) stdio___ INFO    STDIN reader requested to stop.
+2025-04-29 10:21:23.550106 (129566) stdio___ INFO    STDIN reader stopped.
+2025-04-29 10:21:23.550380 (129545) lic_core INFO    (1) checkin jasper_interactive
+2025-04-29 10:21:23.564598 (129545) lic_core INFO    (2) checkin jasper_fpv
+2025-04-29 10:21:23.578476 (129545) main____ INFO    Exiting with status 0.

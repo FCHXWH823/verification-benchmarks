@@ -150,118 +150,118 @@ module axi_node_intf_wrap #(
   logic [NB_SUBORDINATE-1:0][NB_MANAGER-1:0]                      s_connectivity_map;
 
 
-  generate
-    genvar i;
-    for(i = 0; i < NB_MANAGER; i++)
-    begin
-      assign                        master[i].aw_id[AXI_ID_WIDTH_INIT-1:0] = s_master_aw_id[i];
-      assign                        master[i].aw_addr                      = s_master_aw_addr[i];
-      assign                        master[i].aw_len                       = s_master_aw_len[i];
-      assign                        master[i].aw_size                      = s_master_aw_size[i];
-      assign                        master[i].aw_burst                     = s_master_aw_burst[i];
-      assign                        master[i].aw_lock                      = s_master_aw_lock[i];
-      assign                        master[i].aw_cache                     = s_master_aw_cache[i];
-      assign                        master[i].aw_prot                      = s_master_aw_prot[i];
-      assign                        master[i].aw_region                    = s_master_aw_region[i];
-      assign                        master[i].aw_user                      = s_master_aw_user[i];
-      assign                        master[i].aw_qos                       = s_master_aw_qos[i];
-      assign                        master[i].aw_valid                     = s_master_aw_valid[i];
-      assign s_master_aw_ready[i] = master[i].aw_ready;
+  // generate
+  //   genvar i;
+  //   for(i = 0; i < NB_MANAGER; i++)
+  //   begin
+  //     assign                        master[i].aw_id[AXI_ID_WIDTH_INIT-1:0] = s_master_aw_id[i];
+  //     assign                        master[i].aw_addr                      = s_master_aw_addr[i];
+  //     assign                        master[i].aw_len                       = s_master_aw_len[i];
+  //     assign                        master[i].aw_size                      = s_master_aw_size[i];
+  //     assign                        master[i].aw_burst                     = s_master_aw_burst[i];
+  //     assign                        master[i].aw_lock                      = s_master_aw_lock[i];
+  //     assign                        master[i].aw_cache                     = s_master_aw_cache[i];
+  //     assign                        master[i].aw_prot                      = s_master_aw_prot[i];
+  //     assign                        master[i].aw_region                    = s_master_aw_region[i];
+  //     assign                        master[i].aw_user                      = s_master_aw_user[i];
+  //     assign                        master[i].aw_qos                       = s_master_aw_qos[i];
+  //     assign                        master[i].aw_valid                     = s_master_aw_valid[i];
+  //     assign s_master_aw_ready[i] = master[i].aw_ready;
 
-      assign                        master[i].ar_id[AXI_ID_WIDTH_INIT-1:0] = s_master_ar_id[i];
-      assign                        master[i].ar_addr                      = s_master_ar_addr[i];
-      assign                        master[i].ar_len                       = s_master_ar_len[i];
-      assign                        master[i].ar_size                      = s_master_ar_size[i];
-      assign                        master[i].ar_burst                     = s_master_ar_burst[i];
-      assign                        master[i].ar_lock                      = s_master_ar_lock[i];
-      assign                        master[i].ar_cache                     = s_master_ar_cache[i];
-      assign                        master[i].ar_prot                      = s_master_ar_prot[i];
-      assign                        master[i].ar_region                    = s_master_ar_region[i];
-      assign                        master[i].ar_user                      = s_master_ar_user[i];
-      assign                        master[i].ar_qos                       = s_master_ar_qos[i];
-      assign                        master[i].ar_valid                     = s_master_ar_valid[i];
-      assign s_master_ar_ready[i] = master[i].ar_ready;
+  //     assign                        master[i].ar_id[AXI_ID_WIDTH_INIT-1:0] = s_master_ar_id[i];
+  //     assign                        master[i].ar_addr                      = s_master_ar_addr[i];
+  //     assign                        master[i].ar_len                       = s_master_ar_len[i];
+  //     assign                        master[i].ar_size                      = s_master_ar_size[i];
+  //     assign                        master[i].ar_burst                     = s_master_ar_burst[i];
+  //     assign                        master[i].ar_lock                      = s_master_ar_lock[i];
+  //     assign                        master[i].ar_cache                     = s_master_ar_cache[i];
+  //     assign                        master[i].ar_prot                      = s_master_ar_prot[i];
+  //     assign                        master[i].ar_region                    = s_master_ar_region[i];
+  //     assign                        master[i].ar_user                      = s_master_ar_user[i];
+  //     assign                        master[i].ar_qos                       = s_master_ar_qos[i];
+  //     assign                        master[i].ar_valid                     = s_master_ar_valid[i];
+  //     assign s_master_ar_ready[i] = master[i].ar_ready;
 
-      assign                        master[i].w_data  = s_master_w_data[i];
-      assign                        master[i].w_strb  = s_master_w_strb[i];
-      assign                        master[i].w_last  = s_master_w_last[i];
-      assign                        master[i].w_user  = s_master_w_user[i];
-      assign                        master[i].w_valid = s_master_w_valid[i];
-      assign s_master_w_ready[i]  = master[i].w_ready;
+  //     assign                        master[i].w_data  = s_master_w_data[i];
+  //     assign                        master[i].w_strb  = s_master_w_strb[i];
+  //     assign                        master[i].w_last  = s_master_w_last[i];
+  //     assign                        master[i].w_user  = s_master_w_user[i];
+  //     assign                        master[i].w_valid = s_master_w_valid[i];
+  //     assign s_master_w_ready[i]  = master[i].w_ready;
 
-      assign s_master_b_id[i]     = master[i].b_id[AXI_ID_WIDTH_INIT-1:0];
-      assign s_master_b_resp[i]   = master[i].b_resp;
-      assign s_master_b_valid[i]  = master[i].b_valid;
-      assign s_master_b_user[i]   = master[i].b_user;
-      assign                        master[i].b_ready = s_master_b_ready[i];
+  //     assign s_master_b_id[i]     = master[i].b_id[AXI_ID_WIDTH_INIT-1:0];
+  //     assign s_master_b_resp[i]   = master[i].b_resp;
+  //     assign s_master_b_valid[i]  = master[i].b_valid;
+  //     assign s_master_b_user[i]   = master[i].b_user;
+  //     assign                        master[i].b_ready = s_master_b_ready[i];
 
-      assign s_master_r_id[i]     = master[i].r_id[AXI_ID_WIDTH_INIT-1:0];
-      assign s_master_r_data[i]   = master[i].r_data;
-      assign s_master_r_resp[i]   = master[i].r_resp;
-      assign s_master_r_last[i]   = master[i].r_last;
-      assign s_master_r_user[i]   = master[i].r_user;
-      assign s_master_r_valid[i]  = master[i].r_valid;
-      assign                        master[i].r_ready = s_master_r_ready[i];
+  //     assign s_master_r_id[i]     = master[i].r_id[AXI_ID_WIDTH_INIT-1:0];
+  //     assign s_master_r_data[i]   = master[i].r_data;
+  //     assign s_master_r_resp[i]   = master[i].r_resp;
+  //     assign s_master_r_last[i]   = master[i].r_last;
+  //     assign s_master_r_user[i]   = master[i].r_user;
+  //     assign s_master_r_valid[i]  = master[i].r_valid;
+  //     assign                        master[i].r_ready = s_master_r_ready[i];
 
-      assign s_start_addr[0][i] = start_addr_i[i];
-      assign s_end_addr[0][i]   = end_addr_i[i];
-    end
-  endgenerate
+  //     assign s_start_addr[0][i] = start_addr_i[i];
+  //     assign s_end_addr[0][i]   = end_addr_i[i];
+  //   end
+  // endgenerate
 
-  generate
-    genvar j;
-    for(j = 0; j < NB_SUBORDINATE; j++)
-    begin
-      assign s_slave_aw_id[j]     = slave[j].aw_id[AXI_ID_WIDTH_TARG-1:0];
-      assign s_slave_aw_addr[j]   = slave[j].aw_addr;
-      assign s_slave_aw_len[j]    = slave[j].aw_len;
-      assign s_slave_aw_size[j]   = slave[j].aw_size;
-      assign s_slave_aw_burst[j]  = slave[j].aw_burst;
-      assign s_slave_aw_lock[j]   = slave[j].aw_lock;
-      assign s_slave_aw_cache[j]  = slave[j].aw_cache;
-      assign s_slave_aw_prot[j]   = slave[j].aw_prot;
-      assign s_slave_aw_region[j] = slave[j].aw_region;
-      assign s_slave_aw_user[j]   = slave[j].aw_user;
-      assign s_slave_aw_qos[j]    = slave[j].aw_qos;
-      assign s_slave_aw_valid[j]  = slave[j].aw_valid;
-      assign                        slave[j].aw_ready = s_slave_aw_ready[j];
+  // generate
+  //   genvar j;
+  //   for(j = 0; j < NB_SUBORDINATE; j++)
+  //   begin
+  //     assign s_slave_aw_id[j]     = slave[j].aw_id[AXI_ID_WIDTH_TARG-1:0];
+  //     assign s_slave_aw_addr[j]   = slave[j].aw_addr;
+  //     assign s_slave_aw_len[j]    = slave[j].aw_len;
+  //     assign s_slave_aw_size[j]   = slave[j].aw_size;
+  //     assign s_slave_aw_burst[j]  = slave[j].aw_burst;
+  //     assign s_slave_aw_lock[j]   = slave[j].aw_lock;
+  //     assign s_slave_aw_cache[j]  = slave[j].aw_cache;
+  //     assign s_slave_aw_prot[j]   = slave[j].aw_prot;
+  //     assign s_slave_aw_region[j] = slave[j].aw_region;
+  //     assign s_slave_aw_user[j]   = slave[j].aw_user;
+  //     assign s_slave_aw_qos[j]    = slave[j].aw_qos;
+  //     assign s_slave_aw_valid[j]  = slave[j].aw_valid;
+  //     assign                        slave[j].aw_ready = s_slave_aw_ready[j];
 
-      assign s_slave_ar_id[j]     = slave[j].ar_id[AXI_ID_WIDTH_TARG-1:0];
-      assign s_slave_ar_addr[j]   = slave[j].ar_addr;
-      assign s_slave_ar_len[j]    = slave[j].ar_len;
-      assign s_slave_ar_size[j]   = slave[j].ar_size;
-      assign s_slave_ar_burst[j]  = slave[j].ar_burst;
-      assign s_slave_ar_lock[j]   = slave[j].ar_lock;
-      assign s_slave_ar_cache[j]  = slave[j].ar_cache;
-      assign s_slave_ar_prot[j]   = slave[j].ar_prot;
-      assign s_slave_ar_region[j] = slave[j].ar_region;
-      assign s_slave_ar_user[j]   = slave[j].ar_user;
-      assign s_slave_ar_qos[j]    = slave[j].ar_qos;
-      assign s_slave_ar_valid[j]  = slave[j].ar_valid;
-      assign                        slave[j].ar_ready = s_slave_ar_ready[j];
+  //     assign s_slave_ar_id[j]     = slave[j].ar_id[AXI_ID_WIDTH_TARG-1:0];
+  //     assign s_slave_ar_addr[j]   = slave[j].ar_addr;
+  //     assign s_slave_ar_len[j]    = slave[j].ar_len;
+  //     assign s_slave_ar_size[j]   = slave[j].ar_size;
+  //     assign s_slave_ar_burst[j]  = slave[j].ar_burst;
+  //     assign s_slave_ar_lock[j]   = slave[j].ar_lock;
+  //     assign s_slave_ar_cache[j]  = slave[j].ar_cache;
+  //     assign s_slave_ar_prot[j]   = slave[j].ar_prot;
+  //     assign s_slave_ar_region[j] = slave[j].ar_region;
+  //     assign s_slave_ar_user[j]   = slave[j].ar_user;
+  //     assign s_slave_ar_qos[j]    = slave[j].ar_qos;
+  //     assign s_slave_ar_valid[j]  = slave[j].ar_valid;
+  //     assign                        slave[j].ar_ready = s_slave_ar_ready[j];
 
-      assign s_slave_w_data[j]    = slave[j].w_data;
-      assign s_slave_w_strb[j]    = slave[j].w_strb;
-      assign s_slave_w_last[j]    = slave[j].w_last;
-      assign s_slave_w_user[j]    = slave[j].w_user;
-      assign s_slave_w_valid[j]   = slave[j].w_valid;
-      assign                        slave[j].w_ready = s_slave_w_ready[j];
+  //     assign s_slave_w_data[j]    = slave[j].w_data;
+  //     assign s_slave_w_strb[j]    = slave[j].w_strb;
+  //     assign s_slave_w_last[j]    = slave[j].w_last;
+  //     assign s_slave_w_user[j]    = slave[j].w_user;
+  //     assign s_slave_w_valid[j]   = slave[j].w_valid;
+  //     assign                        slave[j].w_ready = s_slave_w_ready[j];
 
-      assign                        slave[j].b_id[AXI_ID_WIDTH_TARG-1:0] = s_slave_b_id[j];
-      assign                        slave[j].b_resp                      = s_slave_b_resp[j];
-      assign                        slave[j].b_valid                     = s_slave_b_valid[j];
-      assign                        slave[j].b_user                      = s_slave_b_user[j];
-      assign s_slave_b_ready[j]   = slave[j].b_ready;
+  //     assign                        slave[j].b_id[AXI_ID_WIDTH_TARG-1:0] = s_slave_b_id[j];
+  //     assign                        slave[j].b_resp                      = s_slave_b_resp[j];
+  //     assign                        slave[j].b_valid                     = s_slave_b_valid[j];
+  //     assign                        slave[j].b_user                      = s_slave_b_user[j];
+  //     assign s_slave_b_ready[j]   = slave[j].b_ready;
 
-      assign                        slave[j].r_id[AXI_ID_WIDTH_TARG-1:0] = s_slave_r_id[j];
-      assign                        slave[j].r_data                      = s_slave_r_data[j];
-      assign                        slave[j].r_resp                      = s_slave_r_resp[j];
-      assign                        slave[j].r_last                      = s_slave_r_last[j];
-      assign                        slave[j].r_user                      = s_slave_r_user[j];
-      assign                        slave[j].r_valid                     = s_slave_r_valid[j];
-      assign s_slave_r_ready[j]   = slave[j].r_ready;
-    end
-  endgenerate
+  //     assign                        slave[j].r_id[AXI_ID_WIDTH_TARG-1:0] = s_slave_r_id[j];
+  //     assign                        slave[j].r_data                      = s_slave_r_data[j];
+  //     assign                        slave[j].r_resp                      = s_slave_r_resp[j];
+  //     assign                        slave[j].r_last                      = s_slave_r_last[j];
+  //     assign                        slave[j].r_user                      = s_slave_r_user[j];
+  //     assign                        slave[j].r_valid                     = s_slave_r_valid[j];
+  //     assign s_slave_r_ready[j]   = slave[j].r_ready;
+  //   end
+  // endgenerate
 
   axi_node
   #(
@@ -408,29 +408,30 @@ endmodule
 
 module connectivity_mapping #(
     parameter NB_MANAGER      = 4,
-    parameter NB_SUBORDINATE       = 4,
-    parameter NB_PRIV_LVL    = 4,   
-    parameter PRIV_LVL_WIDTH = 4   
+    parameter NB_SUBORDINATE  = 4,
+    parameter NB_PRIV_LVL     = 4,
+    parameter PRIV_LVL_WIDTH  = 4
   )(
-    input logic [PRIV_LVL_WIDTH-1:0] 	       priv_lvl_i,   
-    input logic [NB_SUBORDINATE-1:0][NB_MANAGER-1:0][NB_PRIV_LVL-1:0] access_ctrl_i,  
-    
-    output logic [NB_SUBORDINATE-1:0][NB_MANAGER-1:0]  connectivity_map_o
-  ); 
+    input  logic [PRIV_LVL_WIDTH-1:0]                priv_lvl_i,
+    input  logic [NB_SUBORDINATE-1:0][NB_MANAGER-1:0][NB_PRIV_LVL-1:0] access_ctrl_i,
 
-    
-  genvar i,j ; 
+    output logic [NB_SUBORDINATE-1:0][NB_MANAGER-1:0] connectivity_map_o
+  );
+
+  genvar i,j ;
+  wire [NB_SUBORDINATE-1:0] runtime_i;
+  wire [NB_MANAGER-1:0] runtime_j;
 
   generate
-    
     for (i=0; i<NB_SUBORDINATE; i++)
     begin
-      	for (j=0; j<NB_MANAGER; j++)
-      	begin
-	  assign connectivity_map_o[i][j] = access_ctrl_i[i][j][priv_lvl_i] || ((j==6) && access_ctrl_i[i][7][priv_lvl_i]) ; 
-      	end  		    		      		
+          assign runtime_i = i;
+        for (j=0; j<NB_MANAGER; j++)
+        begin
+          assign runtime_j = j;
+          assign connectivity_map_o[i][j] = access_ctrl_i[i][j][priv_lvl_i] || ((j==6) && access_ctrl_i[i][7][priv_lvl_i]) ;
+        end
     end
 
-  endgenerate 
-
+  endgenerate
 endmodule

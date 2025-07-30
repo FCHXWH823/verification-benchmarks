@@ -1,0 +1,56 @@
+
+==============================================================
+    Jasper Verification Results
+==============================================================
+    2022.09p001 64 bits for Linux64 3.10.0-1062.1.2.el7.x86_64
+    Host Name: icpc
+    User Name: master
+    Printed on: Tuesday, Apr29, 2025 06:37:37 AM CST
+    Working Directory: /home/master/verification-benchmarks/hackatdac19
+
+
+==============================================================
+SUMMARY
+==============================================================
+    Total Tasks           : 1
+    Total Properties      : 12
+          assumptions     : 0                   
+           - approved     : 0                   
+           - temporary    : 0                   
+          assertions      : 12                  
+           - proven       : 1                   ( 8.3% )
+           - marked_proven: 0                   ( 0.0% )
+           - cex          : 11                  ( 91.7% )
+           - ar_cex       : 0                   ( 0.0% )
+           - undetermined : 0                   ( 0.0% )
+           - unprocessed  : 0                   ( 0.0% )
+           - error        : 0                   ( 0.0% )
+          covers          : 0                   
+           - unreachable  : 0                   
+           - covered      : 0                   
+           - ar_covered   : 0                   
+           - undetermined : 0                   
+           - unprocessed  : 0                   
+           - error        : 0                   
+
+==============================================================
+RESULTS
+==============================================================
+
+----------------------------------------------------------------------------------------------------------------------------------------
+       Name                                                                            |    Result    |  Engine  |  Bound  |  Time    
+----------------------------------------------------------------------------------------------------------------------------------------
+
+---[ <embedded> ]-----------------------------------------------------------------------------------------------------------------------
+[1]   top_wrapper_dac19.ariane_i.i_cache_subsystem.i_nbdcache.i_tag_cmp._assert_1           cex             N             1    0.151 s      
+[2]   HACK@DAC19_p1                                                                         cex             PRE           1    0.000 s      
+[3]   HACK@DAC19_p5                                                                         proven          PRE    Infinite    0.000 s      
+[4]   HACK@DAC19_p9                                                                         cex             B           263    6.720 s      
+[5]   HACK@DAC19_p21                                                                        cex             B           264    5.172 s      
+[6]   HACK@DAC19_p22                                                                        cex             Ht          283    664.618 s    
+[7]   HACK@DAC19_p23                                                                        cex             B      263 - 264   5.172 s      
+[8]   HACK@DAC19_p24                                                                        cex             Ht          265    25.445 s     
+[9]   HACK@DAC19_p25                                                                        cex             Ht          265    25.943 s     
+[10]  HACK@DAC19_p26                                                                        cex             Ht          264    24.433 s     
+[11]  HACK@DAC19_p29                                                                        cex             Ht          264    24.947 s     
+[12]  HACK@DAC19_p32                                                                        cex             Ht          263    23.868 s     

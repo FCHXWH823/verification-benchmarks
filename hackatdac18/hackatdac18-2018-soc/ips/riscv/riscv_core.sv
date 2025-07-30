@@ -1086,69 +1086,69 @@ module riscv_core
     .jump_req_o        ( dbg_jump_req       )  // set PC to new value
   );
 
-`ifndef VERILATOR
-`ifdef TRACE_EXECUTION
-  riscv_tracer riscv_tracer_i
-  (
-    .clk            ( clk_i                                ), // always-running clock for tracing
-    .rst_n          ( rst_ni                               ),
+// `ifndef VERILATOR
+// `ifdef TRACE_EXECUTION
+//   riscv_tracer riscv_tracer_i
+//   (
+//     .clk            ( clk_i                                ), // always-running clock for tracing
+//     .rst_n          ( rst_ni                               ),
 
-    .fetch_enable   ( fetch_enable_i                       ),
-    .core_id        ( core_id_i                            ),
-    .cluster_id     ( cluster_id_i                         ),
+//     .fetch_enable   ( fetch_enable_i                       ),
+//     .core_id        ( core_id_i                            ),
+//     .cluster_id     ( cluster_id_i                         ),
 
-    .pc             ( id_stage_i.pc_id_i                   ),
-    .instr          ( id_stage_i.instr                     ),
-    .compressed     ( id_stage_i.is_compressed_i           ),
-    .id_valid       ( id_stage_i.id_valid_o                ),
-    .is_decoding    ( id_stage_i.is_decoding_o             ),
-    .pipe_flush     ( id_stage_i.controller_i.pipe_flush_i ),
-    .mret           ( id_stage_i.controller_i.mret_insn_i  ),
-    .uret           ( id_stage_i.controller_i.uret_insn_i  ),
-    .ecall          ( id_stage_i.controller_i.ecall_insn_i ),
-    .ebreak         ( id_stage_i.controller_i.ebrk_insn_i  ),
-    .rs1_value      ( id_stage_i.operand_a_fw_id           ),
-    .rs2_value      ( id_stage_i.operand_b_fw_id           ),
-    .rs3_value      ( id_stage_i.alu_operand_c             ),
-    .rs2_value_vec  ( id_stage_i.alu_operand_b             ),
+//     .pc             ( id_stage_i.pc_id_i                   ),
+//     .instr          ( id_stage_i.instr                     ),
+//     .compressed     ( id_stage_i.is_compressed_i           ),
+//     .id_valid       ( id_stage_i.id_valid_o                ),
+//     .is_decoding    ( id_stage_i.is_decoding_o             ),
+//     .pipe_flush     ( id_stage_i.controller_i.pipe_flush_i ),
+//     .mret           ( id_stage_i.controller_i.mret_insn_i  ),
+//     .uret           ( id_stage_i.controller_i.uret_insn_i  ),
+//     .ecall          ( id_stage_i.controller_i.ecall_insn_i ),
+//     .ebreak         ( id_stage_i.controller_i.ebrk_insn_i  ),
+//     .rs1_value      ( id_stage_i.operand_a_fw_id           ),
+//     .rs2_value      ( id_stage_i.operand_b_fw_id           ),
+//     .rs3_value      ( id_stage_i.alu_operand_c             ),
+//     .rs2_value_vec  ( id_stage_i.alu_operand_b             ),
 
-    .rs1_is_fp      ( id_stage_i.regfile_fp_a              ),
-    .rs2_is_fp      ( id_stage_i.regfile_fp_b              ),
-    .rs3_is_fp      ( id_stage_i.regfile_fp_c              ),
-    .rd_is_fp       ( id_stage_i.regfile_fp_d              ),
+//     .rs1_is_fp      ( id_stage_i.regfile_fp_a              ),
+//     .rs2_is_fp      ( id_stage_i.regfile_fp_b              ),
+//     .rs3_is_fp      ( id_stage_i.regfile_fp_c              ),
+//     .rd_is_fp       ( id_stage_i.regfile_fp_d              ),
 
-    .ex_valid       ( ex_valid                             ),
-    .ex_reg_addr    ( regfile_alu_waddr_fw                 ),
-    .ex_reg_we      ( regfile_alu_we_fw                    ),
-    .ex_reg_wdata   ( regfile_alu_wdata_fw                 ),
+//     .ex_valid       ( ex_valid                             ),
+//     .ex_reg_addr    ( regfile_alu_waddr_fw                 ),
+//     .ex_reg_we      ( regfile_alu_we_fw                    ),
+//     .ex_reg_wdata   ( regfile_alu_wdata_fw                 ),
 
-    .ex_data_addr   ( data_addr_o                          ),
-    .ex_data_req    ( data_req_o                           ),
-    .ex_data_gnt    ( data_gnt_i                           ),
-    .ex_data_we     ( data_we_o                            ),
-    .ex_data_wdata  ( data_wdata_o                         ),
+//     .ex_data_addr   ( data_addr_o                          ),
+//     .ex_data_req    ( data_req_o                           ),
+//     .ex_data_gnt    ( data_gnt_i                           ),
+//     .ex_data_we     ( data_we_o                            ),
+//     .ex_data_wdata  ( data_wdata_o                         ),
 
-    .wb_bypass      ( ex_stage_i.branch_in_ex_i            ),
+//     .wb_bypass      ( ex_stage_i.branch_in_ex_i            ),
 
-    .wb_valid       ( wb_valid                             ),
-    .wb_reg_addr    ( regfile_waddr_fw_wb_o                ),
-    .wb_reg_we      ( regfile_we_wb                        ),
-    .wb_reg_wdata   ( regfile_wdata                        ),
+//     .wb_valid       ( wb_valid                             ),
+//     .wb_reg_addr    ( regfile_waddr_fw_wb_o                ),
+//     .wb_reg_we      ( regfile_we_wb                        ),
+//     .wb_reg_wdata   ( regfile_wdata                        ),
 
-    .imm_u_type     ( id_stage_i.imm_u_type                ),
-    .imm_uj_type    ( id_stage_i.imm_uj_type               ),
-    .imm_i_type     ( id_stage_i.imm_i_type                ),
-    .imm_iz_type    ( id_stage_i.imm_iz_type[11:0]         ),
-    .imm_z_type     ( id_stage_i.imm_z_type                ),
-    .imm_s_type     ( id_stage_i.imm_s_type                ),
-    .imm_sb_type    ( id_stage_i.imm_sb_type               ),
-    .imm_s2_type    ( id_stage_i.imm_s2_type               ),
-    .imm_s3_type    ( id_stage_i.imm_s3_type               ),
-    .imm_vs_type    ( id_stage_i.imm_vs_type               ),
-    .imm_vu_type    ( id_stage_i.imm_vu_type               ),
-    .imm_shuffle_type ( id_stage_i.imm_shuffle_type        ),
-    .imm_clip_type  ( id_stage_i.instr_rdata_i[11:7]       )
-  );
-`endif
-`endif
+//     .imm_u_type     ( id_stage_i.imm_u_type                ),
+//     .imm_uj_type    ( id_stage_i.imm_uj_type               ),
+//     .imm_i_type     ( id_stage_i.imm_i_type                ),
+//     .imm_iz_type    ( id_stage_i.imm_iz_type[11:0]         ),
+//     .imm_z_type     ( id_stage_i.imm_z_type                ),
+//     .imm_s_type     ( id_stage_i.imm_s_type                ),
+//     .imm_sb_type    ( id_stage_i.imm_sb_type               ),
+//     .imm_s2_type    ( id_stage_i.imm_s2_type               ),
+//     .imm_s3_type    ( id_stage_i.imm_s3_type               ),
+//     .imm_vs_type    ( id_stage_i.imm_vs_type               ),
+//     .imm_vu_type    ( id_stage_i.imm_vu_type               ),
+//     .imm_shuffle_type ( id_stage_i.imm_shuffle_type        ),
+//     .imm_clip_type  ( id_stage_i.instr_rdata_i[11:7]       )
+//   );
+// `endif
+// `endif
 endmodule

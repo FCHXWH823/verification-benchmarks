@@ -1,0 +1,61 @@
+
+==============================================================
+    Jasper Verification Results
+==============================================================
+    2022.09p001 64 bits for Linux64 3.10.0-1062.1.2.el7.x86_64
+    Host Name: icpc
+    User Name: master
+    Printed on: Tuesday, Apr29, 2025 10:21:21 AM CST
+    Working Directory: /home/master/verification-benchmarks/hackatdac21
+
+
+==============================================================
+SUMMARY
+==============================================================
+    Total Tasks           : 1
+    Total Properties      : 17
+          assumptions     : 0                   
+           - approved     : 0                   
+           - temporary    : 0                   
+          assertions      : 17                  
+           - proven       : 2                   ( 11.8% )
+           - marked_proven: 0                   ( 0.0% )
+           - cex          : 15                  ( 88.2% )
+           - ar_cex       : 0                   ( 0.0% )
+           - undetermined : 0                   ( 0.0% )
+           - unprocessed  : 0                   ( 0.0% )
+           - error        : 0                   ( 0.0% )
+          covers          : 0                   
+           - unreachable  : 0                   
+           - covered      : 0                   
+           - ar_covered   : 0                   
+           - undetermined : 0                   
+           - unprocessed  : 0                   
+           - error        : 0                   
+
+==============================================================
+RESULTS
+==============================================================
+
+------------------------------------------------------------------------------------
+       Name                        |    Result    |  Engine  |  Bound  |  Time    
+------------------------------------------------------------------------------------
+
+---[ <embedded> ]-------------------------------------------------------------------
+[1]   HACK@DAC21_p1                     proven          N      Infinite    0.011 s      
+[2]   HACK@DAC21_p2                     cex             N             1    0.277 s      
+[3]   HACK@DAC21_p7                     proven          PRE    Infinite    0.000 s      
+[4]   HACK@DAC21_p14                    cex             N             1    0.277 s      
+[5]   HACK@DAC21_p18                    cex             Ht            4    0.586 s      
+[6]   HACK@DAC21_p30                    cex             Ht            1    0.042 s      
+[7]   HACK@DAC21_p35                    cex             Ht            3    0.299 s      
+[8]   HACK@DAC21_p36                    cex             Ht            6    0.677 s      
+[9]   HACK@DAC21_p39                    cex             Ht            3    0.393 s      
+[10]  HACK@DAC21_p42                    cex             Ht            1    0.118 s      
+[11]  HACK@DAC21_p46                    cex             PRE           1    0.000 s      
+[12]  HACK@DAC21_p47                    cex             PRE           1    0.000 s      
+[13]  HACK@DAC21_p48                    cex             PRE           1    0.000 s      
+[14]  HACK@DAC21_p57                    cex             Ht            3    0.489 s      
+[15]  HACK@DAC21_p84                    cex             Ht            2    0.203 s      
+[16]  HACK@DAC21_p95                    cex             PRE           1    0.000 s      
+[17]  HACK@DAC21_p96_modified           cex             PRE           1    0.000 s      

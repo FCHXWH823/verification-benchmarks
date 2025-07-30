@@ -1,0 +1,91 @@
+
+==============================================================
+    Jasper Verification Results
+==============================================================
+    2022.09p001 64 bits for Linux64 3.10.0-1062.1.2.el7.x86_64
+    Host Name: icpc
+    User Name: master
+    Printed on: Tuesday, Apr29, 2025 04:59:52 AM CST
+    Working Directory: /home/master/verification-benchmarks/hackatdac18
+
+
+==============================================================
+SUMMARY
+==============================================================
+    Total Tasks           : 1
+    Total Properties      : 47
+          assumptions     : 0                   
+           - approved     : 0                   
+           - temporary    : 0                   
+          assertions      : 33                  
+           - proven       : 6                   ( 18.2% )
+           - marked_proven: 0                   ( 0.0% )
+           - cex          : 27                  ( 81.8% )
+           - ar_cex       : 0                   ( 0.0% )
+           - undetermined : 0                   ( 0.0% )
+           - unprocessed  : 0                   ( 0.0% )
+           - error        : 0                   ( 0.0% )
+          covers          : 14                  
+           - unreachable  : 1                   ( 7.1% )
+           - covered      : 13                  ( 92.9% )
+           - ar_covered   : 0                   ( 0.0% )
+           - undetermined : 0                   ( 0.0% )
+           - unprocessed  : 0                   ( 0.0% )
+           - error        : 0                   ( 0.0% )
+
+==============================================================
+RESULTS
+==============================================================
+
+------------------------------------------------------------------------------------------------------------------------------------
+       Name                                                                        |    Result    |  Engine  |  Bound  |  Time    
+------------------------------------------------------------------------------------------------------------------------------------
+
+---[ <embedded> ]-------------------------------------------------------------------------------------------------------------------
+[1]   top_wrapper.riscv_core.if_stage_i._assert_1                                       cex             B             2    0.064 s      
+[2]   top_wrapper.riscv_core.if_stage_i._assert_1:precondition1                         covered         B         1 - 2    0.064 s      
+[3]   top_wrapper.riscv_core.id_stage_i._assert_1                                       proven          PRE    Infinite    0.000 s      
+[4]   top_wrapper.riscv_core.id_stage_i._assert_1:precondition1                         covered         B            10    0.492 s      
+[5]   top_wrapper.riscv_core.id_stage_i._assert_2                                       proven          PRE    Infinite    0.000 s      
+[6]   top_wrapper.riscv_core.id_stage_i._assert_2:precondition1                         covered         B         2 - 8    0.492 s      
+[7]   top_wrapper.riscv_core.id_stage_i.controller_i._assert_1                          proven          N      Infinite    3.374 s      
+[8]   top_wrapper.riscv_core.id_stage_i.controller_i._assert_1:precondition1            covered         B        2 - 10    0.492 s      
+[9]   top_wrapper.riscv_core.id_stage_i.controller_i._assert_2                          cex             Ht           12    1.859 s      
+[10]  top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1                         proven          N      Infinite    0.553 s      
+[11]  top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1:precondition1           covered         Ht           14    2.272 s      
+[12]  top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1                                cex             Ht           18    3.039 s      
+[13]  top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1:precondition1                  covered         Ht           18    3.106 s      
+[14]  top_wrapper.riscv_core.ex_stage_i.mult_i._assert_2                                cex             Ht           18    3.175 s      
+[15]  top_wrapper.riscv_core.ex_stage_i.mult_i._assert_2:precondition1                  covered         Ht           18    3.175 s      
+[16]  top_wrapper.riscv_core.ex_stage_i.mult_i._assert_3                                cex             Ht           18    3.247 s      
+[17]  top_wrapper.riscv_core.ex_stage_i.mult_i._assert_3:precondition1                  covered         Ht           18    3.247 s      
+[18]  top_wrapper.riscv_core.load_store_unit_i._assert_1                                cex             Ht           12    1.914 s      
+[19]  top_wrapper.riscv_core.load_store_unit_i._assert_1:precondition1                  covered         Ht           12    1.914 s      
+[20]  top_wrapper.riscv_core.load_store_unit_i._assert_2                                cex             B         1 - 2    0.064 s      
+[21]  top_wrapper.riscv_core.load_store_unit_i._assert_2:precondition1                  covered         B         1 - 2    0.064 s      
+[22]  top_wrapper.riscv_core.load_store_unit_i._assert_3                                proven          PRE    Infinite    0.000 s      
+[23]  top_wrapper.riscv_core.load_store_unit_i._assert_3:precondition1                  covered         Ht           10    1.672 s      
+[24]  top_wrapper.riscv_core.debug_unit_i._assert_1                                     cex             B         1 - 2    0.492 s      
+[25]  top_wrapper.riscv_core.debug_unit_i._assert_1:precondition1                       covered         B         1 - 2    0.492 s      
+[26]  top_wrapper.riscv_core.debug_unit_i._assert_2                                     cex             Ht            2    1.328 s      
+[27]  top_wrapper.riscv_core.debug_unit_i._assert_2:precondition1                       covered         B         1 - 2    0.492 s      
+[28]  HACKDAC_p1                                                                        cex             N             1    0.000 s      
+[29]  HACKDAC_p2                                                                        cex             Hp            1    1.133 s      
+[30]  HACKDAC_p3                                                                        cex             Ht            7    1.483 s      
+[31]  HACKDAC_p4                                                                        cex             Ht            3    1.397 s      
+[32]  HACKDAC_p5                                                                        unreachable     PRE    Infinite    0.000 s      
+[33]  HACKDAC_p6                                                                        cex             N             1    0.000 s      
+[34]  HACKDAC_p7                                                                        cex             N             1    0.000 s      
+[35]  HACKDAC_p8                                                                        cex             N             1    0.000 s      
+[36]  HACKDAC_p9                                                                        cex             B             1    0.064 s      
+[37]  HACKDAC_p10                                                                       cex             B             1    0.064 s      
+[38]  HACKDAC_p11                                                                       cex             Hp            1    1.194 s      
+[39]  HACKDAC_p12                                                                       cex             B             1    0.064 s      
+[40]  HACKDAC_p13                                                                       cex             B         2 - 6    0.492 s      
+[41]  HACKDAC_p14                                                                       cex             Ht            9    1.569 s      
+[42]  HACKDAC_p15                                                                       cex             Ht            3    1.397 s      
+[43]  HACKDAC_p16                                                                       cex             Hp            1    1.133 s      
+[44]  HACKDAC_p21                                                                       cex             Hp            1    1.133 s      
+[45]  HACKDAC_p27                                                                       cex             Ht            7    1.483 s      
+[46]  HACKDAC_p28                                                                       proven          PRE    Infinite    0.000 s      
+[47]  HACKDAC_p29                                                                       cex             N             1    0.000 s      

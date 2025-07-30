@@ -394,22 +394,22 @@ module riscv_peripherals #(
       .AXI_USER_WIDTH ( AxiUserWidth     )
   ) dm_master();
 
-  axi2mem #(
-      .AXI_ID_WIDTH   ( AxiIdWidth   ),
-      .AXI_ADDR_WIDTH ( AxiAddrWidth ),
-      .AXI_DATA_WIDTH ( AxiDataWidth ),
-      .AXI_USER_WIDTH ( AxiUserWidth )
-  ) i_dm_axi2mem (
-      .clk_i      ( clk_i                     ),
-      .rst_ni     ( rst_ni                    ),
-      .slave      ( dm_master                 ),
-      .req_o      ( dm_slave_req              ),
-      .we_o       ( dm_slave_we               ),
-      .addr_o     ( dm_slave_addr             ),
-      .be_o       ( dm_slave_be               ),
-      .data_o     ( dm_slave_wdata            ),
-      .data_i     ( dm_slave_rdata            )
-  );
+  // axi2mem #(
+  //     .AXI_ID_WIDTH   ( AxiIdWidth   ),
+  //     .AXI_ADDR_WIDTH ( AxiAddrWidth ),
+  //     .AXI_DATA_WIDTH ( AxiDataWidth ),
+  //     .AXI_USER_WIDTH ( AxiUserWidth )
+  // ) i_dm_axi2mem (
+  //     .clk_i      ( clk_i                     ),
+  //     .rst_ni     ( rst_ni                    ),
+  //     .slave      ( dm_master                 ),
+  //     .req_o      ( dm_slave_req              ),
+  //     .we_o       ( dm_slave_we               ),
+  //     .addr_o     ( dm_slave_addr             ),
+  //     .be_o       ( dm_slave_be               ),
+  //     .data_o     ( dm_slave_wdata            ),
+  //     .data_i     ( dm_slave_rdata            )
+  // );
 
   noc_axilite_bridge #(
     .SLAVE_RESP_BYTEWIDTH   ( 8             ),
@@ -489,29 +489,29 @@ module riscv_peripherals #(
   logic [AxiAddrWidth-1:0] rom_addr;
   logic [AxiDataWidth-1:0] rom_rdata, rom_rdata_bm, rom_rdata_linux;
 
-  AXI_BUS #(
-    .AXI_ID_WIDTH   ( AxiIdWidth   ),
-    .AXI_ADDR_WIDTH ( AxiAddrWidth ),
-    .AXI_DATA_WIDTH ( AxiDataWidth ),
-    .AXI_USER_WIDTH ( AxiUserWidth )
-  ) br_master();
+  // AXI_BUS #(
+  //   .AXI_ID_WIDTH   ( AxiIdWidth   ),
+  //   .AXI_ADDR_WIDTH ( AxiAddrWidth ),
+  //   .AXI_DATA_WIDTH ( AxiDataWidth ),
+  //   .AXI_USER_WIDTH ( AxiUserWidth )
+  // ) br_master();
 
-  axi2mem #(
-    .AXI_ID_WIDTH   ( AxiIdWidth    ),
-    .AXI_ADDR_WIDTH ( AxiAddrWidth  ),
-    .AXI_DATA_WIDTH ( AxiDataWidth  ),
-    .AXI_USER_WIDTH ( AxiUserWidth  )
-  ) i_axi2rom (
-    .clk_i                ,
-    .rst_ni               ,
-    .slave  ( br_master  ),
-    .req_o  ( rom_req_acct  ),
-    .we_o   (            ),
-    .addr_o ( rom_addr   ),
-    .be_o   (            ),
-    .data_o (            ),
-    .data_i ( rom_rdata  )
-  );
+  // axi2mem #(
+  //   .AXI_ID_WIDTH   ( AxiIdWidth    ),
+  //   .AXI_ADDR_WIDTH ( AxiAddrWidth  ),
+  //   .AXI_DATA_WIDTH ( AxiDataWidth  ),
+  //   .AXI_USER_WIDTH ( AxiUserWidth  )
+  // ) i_axi2rom (
+  //   .clk_i                ,
+  //   .rst_ni               ,
+  //   .slave  ( br_master  ),
+  //   .req_o  ( rom_req_acct  ),
+  //   .we_o   (            ),
+  //   .addr_o ( rom_addr   ),
+  //   .be_o   (            ),
+  //   .data_o (            ),
+  //   .data_i ( rom_rdata  )
+  // );
 
   //assign rom_req = rom_req_acct ; //&& acc_ctrl_c[priv_lvl_i][0]; 
   assign rom_req = rom_req_acct && acc_ctrl_c[priv_lvl_i][0]; 
@@ -1716,23 +1716,23 @@ module riscv_peripherals #(
   ariane_axi::req_t    acct_axi_req;
   ariane_axi::resp_t   acct_axi_resp;
 
-  acct_wrapper #(
-    .AXI_ADDR_WIDTH ( AxiAddrWidth ),
-    .AXI_DATA_WIDTH ( AxiDataWidth ),
-    .AXI_ID_WIDTH   ( AxiIdWidth   ),
-    .NB_SLAVE       ( NB_SLAVE     ),
-    .NB_PERIPHERALS ( NB_PERIPHERALS )
-  ) i_acct_wrapper (
-    .clk_i                         ,
-    .rst_ni                        ,
-    .reglk_ctrl_i  ( reglk_ctrl[6*8+7:6*8]),
-    .acct_ctrl_i   ( acc_ctrl_c[priv_lvl_i][6]),
-    .acc_ctrl_o    ( acc_ctrl  ),
-    .we_flag       ( we_flag_0 ),
-    .axi_req_i     ( acct_axi_req  ),
-    .axi_resp_o    ( acct_axi_resp ),
-    .rst_6
-  );
+  // acct_wrapper #(
+  //   .AXI_ADDR_WIDTH ( AxiAddrWidth ),
+  //   .AXI_DATA_WIDTH ( AxiDataWidth ),
+  //   .AXI_ID_WIDTH   ( AxiIdWidth   ),
+  //   .NB_SLAVE       ( NB_SLAVE     ),
+  //   .NB_PERIPHERALS ( NB_PERIPHERALS )
+  // ) i_acct_wrapper (
+  //   .clk_i                         ,
+  //   .rst_ni                        ,
+  //   .reglk_ctrl_i  ( reglk_ctrl[6*8+7:6*8]),
+  //   .acct_ctrl_i   ( acc_ctrl_c[priv_lvl_i][6]),
+  //   .acc_ctrl_o    ( acc_ctrl  ),
+  //   .we_flag       ( we_flag_0 ),
+  //   .axi_req_i     ( acct_axi_req  ),
+  //   .axi_resp_o    ( acct_axi_resp ),
+  //   .rst_6
+  // );
 
   noc_axilite_bridge #(
     .SLAVE_RESP_BYTEWIDTH   ( 8             ),

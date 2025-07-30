@@ -1,0 +1,1227 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2022.09
+# platform  : Linux 3.10.0-1160.el7.x86_64
+# version   : 2022.09p001 64 bits
+# build date: 2022.10.25 11:32:28 UTC
+# ----------------------------------------
+# started   : 2025-04-29 04:59:30 CST
+# hostname  : icpc.(none)
+# pid       : 12936
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:45375' '-nowindow' '-style' 'windows' '-data' 'AAABCHicbY7NCgIxDIS/Kl7FF/HnAfYm3hRRQb1JcVdZWLbFrSBe9FF9kzpWBAUDycwkaToGyG4xRlK0ryo9psxYMlGdsxbCliEFFzyOE0FqJXYQ22DVKdQZi+ViNfukK8rEapo/eqBdq/cpzOONZIbvMIv7D0Lns6hsKbv0ddCx48hZH8AonQ9SXl2raS70MulUi2S/FDayEGSoep17AmkTJ18=' '-proj' '/home/master/verification-benchmarks/hackatdac18/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/master/verification-benchmarks/hackatdac18/jgproject/.tmp/.initCmds.tcl' 'setup_and_properties.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2022 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc.
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+Jasper Apps Analysis Session - /home/master/verification-benchmarks/hackatdac18/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fpv".
+INFO: reading configuration file "/home/master/.config/cadence/jasper.conf".
+% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+% 
+% analyze -sv hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv
+[-- (VERI-1482)] Analyzing Verilog file '/export/SoftWare/Cadence/JASPERGOLD22.09.001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv'
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(31): parameter 'SHARED_INT_MULT' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(38): parameter 'APU_FLAGS_FP' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(41): parameter 'PIPE_REG_DSP_MULT' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(42): parameter 'APU_FLAGS_DSP_MULT' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(45): parameter 'APU_FLAGS_INT_MULT' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(50): parameter 'PIPE_REG_ADDSUB' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(53): parameter 'PIPE_REG_MULT' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(56): parameter 'PIPE_REG_CAST' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(59): parameter 'PIPE_REG_MAC' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(62): parameter 'PIPE_REG_DIV' declared inside package 'apu_core_package' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv(65): parameter 'PIPE_REG_SQRT' declared inside package 'apu_core_package' shall be treated as localparam
+% analyze -sv hackatdac18-2018-soc/ips/riscv/include/apu_macros.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/include/apu_macros.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/include/riscv_config.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/include/riscv_config.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv'
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(37): parameter 'OPCODE_SYSTEM' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(38): parameter 'OPCODE_FENCE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(39): parameter 'OPCODE_OP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(40): parameter 'OPCODE_OPIMM' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(41): parameter 'OPCODE_STORE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(42): parameter 'OPCODE_LOAD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(43): parameter 'OPCODE_BRANCH' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(44): parameter 'OPCODE_JALR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(45): parameter 'OPCODE_JAL' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(46): parameter 'OPCODE_AUIPC' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(47): parameter 'OPCODE_LUI' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(48): parameter 'OPCODE_OP_FP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(49): parameter 'OPCODE_OP_FMADD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(50): parameter 'OPCODE_OP_FNMADD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(51): parameter 'OPCODE_OP_FMSUB' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(52): parameter 'OPCODE_OP_FNMSUB' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(53): parameter 'OPCODE_STORE_FP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(54): parameter 'OPCODE_LOAD_FP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(61): parameter 'OPCODE_LOAD_POST' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(62): parameter 'OPCODE_STORE_POST' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(63): parameter 'OPCODE_PULP_OP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(64): parameter 'OPCODE_VECOP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(65): parameter 'OPCODE_HWLOOP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(67): parameter 'REGC_S1' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(68): parameter 'REGC_S4' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(69): parameter 'REGC_RD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(70): parameter 'REGC_ZERO' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(82): parameter 'ALU_OP_WIDTH' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(84): parameter 'ALU_ADD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(85): parameter 'ALU_SUB' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(86): parameter 'ALU_ADDU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(87): parameter 'ALU_SUBU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(88): parameter 'ALU_ADDR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(89): parameter 'ALU_SUBR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(90): parameter 'ALU_ADDUR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(91): parameter 'ALU_SUBUR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(93): parameter 'ALU_XOR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(94): parameter 'ALU_OR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(95): parameter 'ALU_AND' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(98): parameter 'ALU_SRA' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(99): parameter 'ALU_SRL' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(100): parameter 'ALU_ROR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(101): parameter 'ALU_SLL' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(104): parameter 'ALU_BEXT' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(105): parameter 'ALU_BEXTU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(106): parameter 'ALU_BINS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(107): parameter 'ALU_BCLR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(108): parameter 'ALU_BSET' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(111): parameter 'ALU_FF1' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(112): parameter 'ALU_FL1' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(113): parameter 'ALU_CNT' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(114): parameter 'ALU_CLB' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(117): parameter 'ALU_EXTS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(118): parameter 'ALU_EXT' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(121): parameter 'ALU_LTS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(122): parameter 'ALU_LTU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(123): parameter 'ALU_LES' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(124): parameter 'ALU_LEU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(125): parameter 'ALU_GTS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(126): parameter 'ALU_GTU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(127): parameter 'ALU_GES' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(128): parameter 'ALU_GEU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(129): parameter 'ALU_EQ' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(130): parameter 'ALU_NE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(133): parameter 'ALU_SLTS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(134): parameter 'ALU_SLTU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(135): parameter 'ALU_SLETS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(136): parameter 'ALU_SLETU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(139): parameter 'ALU_ABS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(140): parameter 'ALU_CLIP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(141): parameter 'ALU_CLIPU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(144): parameter 'ALU_INS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(147): parameter 'ALU_MIN' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(148): parameter 'ALU_MINU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(149): parameter 'ALU_MAX' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(150): parameter 'ALU_MAXU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(153): parameter 'ALU_DIVU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(154): parameter 'ALU_DIV' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(155): parameter 'ALU_REMU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(156): parameter 'ALU_REM' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(158): parameter 'ALU_SHUF' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(159): parameter 'ALU_SHUF2' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(160): parameter 'ALU_PCKLO' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(161): parameter 'ALU_PCKHI' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(164): parameter 'ALU_FKEEP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(165): parameter 'ALU_FSGNJ' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(166): parameter 'ALU_FSGNJN' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(167): parameter 'ALU_FSGNJX' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(168): parameter 'ALU_FEQ' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(169): parameter 'ALU_FLT' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(170): parameter 'ALU_FLE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(171): parameter 'ALU_FMAX' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(172): parameter 'ALU_FMIN' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(173): parameter 'ALU_FCLASS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(175): parameter 'MUL_MAC32' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(176): parameter 'MUL_MSU32' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(177): parameter 'MUL_I' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(178): parameter 'MUL_IR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(179): parameter 'MUL_DOT8' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(180): parameter 'MUL_DOT16' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(181): parameter 'MUL_H' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(184): parameter 'VEC_MODE32' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(185): parameter 'VEC_MODE16' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(186): parameter 'VEC_MODE8' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(198): parameter 'CSR_OP_NONE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(199): parameter 'CSR_OP_WRITE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(200): parameter 'CSR_OP_SET' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(201): parameter 'CSR_OP_CLEAR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(205): parameter 'SP_DVR0' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(206): parameter 'SP_DCR0' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(207): parameter 'SP_DMR1' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(208): parameter 'SP_DMR2' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(210): parameter 'SP_DVR_MSB' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(211): parameter 'SP_DCR_MSB' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(212): parameter 'SP_DMR_MSB' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(213): parameter 'SP_DSR_MSB' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(233): parameter 'SEL_REGFILE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(234): parameter 'SEL_FW_EX' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(235): parameter 'SEL_FW_WB' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(238): parameter 'OP_A_REGA_OR_FWD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(239): parameter 'OP_A_CURRPC' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(240): parameter 'OP_A_IMM' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(241): parameter 'OP_A_REGB_OR_FWD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(242): parameter 'OP_A_REGC_OR_FWD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(245): parameter 'IMMA_Z' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(246): parameter 'IMMA_ZERO' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(249): parameter 'OP_B_REGB_OR_FWD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(250): parameter 'OP_B_REGC_OR_FWD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(251): parameter 'OP_B_IMM' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(252): parameter 'OP_B_REGA_OR_FWD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(253): parameter 'OP_B_BMASK' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(256): parameter 'IMMB_I' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(257): parameter 'IMMB_S' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(258): parameter 'IMMB_U' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(259): parameter 'IMMB_PCINCR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(260): parameter 'IMMB_S2' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(261): parameter 'IMMB_S3' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(262): parameter 'IMMB_VS' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(263): parameter 'IMMB_VU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(264): parameter 'IMMB_SHUF' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(265): parameter 'IMMB_CLIP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(266): parameter 'IMMB_BI' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(269): parameter 'BMASK_A_ZERO' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(270): parameter 'BMASK_A_S3' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(272): parameter 'BMASK_B_S2' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(273): parameter 'BMASK_B_S3' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(274): parameter 'BMASK_B_ZERO' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(275): parameter 'BMASK_B_ONE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(277): parameter 'BMASK_A_REG' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(278): parameter 'BMASK_A_IMM' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(279): parameter 'BMASK_B_REG' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(280): parameter 'BMASK_B_IMM' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(284): parameter 'MIMM_ZERO' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(285): parameter 'MIMM_S3' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(288): parameter 'OP_C_REGC_OR_FWD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(289): parameter 'OP_C_REGB_OR_FWD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(290): parameter 'OP_C_JT' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(293): parameter 'BRANCH_NONE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(294): parameter 'BRANCH_JAL' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(295): parameter 'BRANCH_JALR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(296): parameter 'BRANCH_COND' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(299): parameter 'JT_JAL' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(300): parameter 'JT_JALR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(301): parameter 'JT_COND' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(314): parameter 'PC_BOOT' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(315): parameter 'PC_JUMP' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(316): parameter 'PC_BRANCH' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(317): parameter 'PC_EXCEPTION' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(318): parameter 'PC_ERET' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(319): parameter 'PC_DBG_NPC' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(322): parameter 'EXC_PC_ILLINSN' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(323): parameter 'EXC_PC_ECALL' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(324): parameter 'EXC_PC_LOAD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(325): parameter 'EXC_PC_STORE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(326): parameter 'EXC_PC_IRQ' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(329): parameter 'EXC_CAUSE_ILLEGAL_INSN' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(330): parameter 'EXC_CAUSE_BREAKPOINT' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(331): parameter 'EXC_CAUSE_ECALL_UMODE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(332): parameter 'EXC_CAUSE_ECALL_MMODE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(335): parameter 'TRAP_MACHINE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(336): parameter 'TRAP_USER' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(341): parameter 'EXC_OFF_RST' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(342): parameter 'EXC_OFF_ILLINSN' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(343): parameter 'EXC_OFF_ECALL' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(344): parameter 'EXC_OFF_LSUERR' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(348): parameter 'DBG_SETS_W' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(350): parameter 'DBG_SETS_IRQ' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(351): parameter 'DBG_SETS_ECALL' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(352): parameter 'DBG_SETS_EILL' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(353): parameter 'DBG_SETS_ELSU' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(354): parameter 'DBG_SETS_EBRK' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(355): parameter 'DBG_SETS_SSTE' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(357): parameter 'DBG_CAUSE_HALT' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(360): parameter 'C_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(361): parameter 'C_FPU_ADD_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(362): parameter 'C_FPU_SUB_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(363): parameter 'C_FPU_MUL_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(364): parameter 'C_FPU_DIV_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(365): parameter 'C_FPU_I2F_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(366): parameter 'C_FPU_F2I_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(367): parameter 'C_FPU_SQRT_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(368): parameter 'C_FPU_NOP_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(369): parameter 'C_FPU_FMADD_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(370): parameter 'C_FPU_FMSUB_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(371): parameter 'C_FPU_FNMADD_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(372): parameter 'C_FPU_FNMSUB_CMD' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(374): parameter 'C_FFLAG' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(375): parameter 'C_RM' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(376): parameter 'C_RM_NEAREST' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(377): parameter 'C_RM_TRUNC' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(378): parameter 'C_RM_PLUSINF' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(379): parameter 'C_RM_MINUSINF' declared inside package 'riscv_defines' shall be treated as localparam
+[WARN (VERI-2418)] hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv(380): parameter 'C_PC' declared inside package 'riscv_defines' shall be treated as localparam
+% 
+% analyze -sv hackatdac18-2018-soc/ips/riscv/verilator-model/cluster_clock_gating.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/verilator-model/cluster_clock_gating.sv'
+% 
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_L0_buffer.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_L0_buffer.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_alu.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_alu.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_alu_basic.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_alu_basic.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_alu_div.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_alu_div.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_apu_disp.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_apu_disp.sv'
+[INFO (VERI-1328)] hackatdac18-2018-soc/ips/riscv/riscv_apu_disp.sv(25): analyzing included file 'hackatdac18-2018-soc/ips/riscv/include/apu_macros.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_compressed_decoder.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_compressed_decoder.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_controller.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_controller.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_core.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_core.sv'
+[INFO (VERI-1328)] hackatdac18-2018-soc/ips/riscv/riscv_core.sv(33): analyzing included file 'hackatdac18-2018-soc/ips/riscv/include/riscv_config.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_debug_unit.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_debug_unit.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_decoder.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_decoder.sv'
+[INFO (VERI-1328)] hackatdac18-2018-soc/ips/riscv/riscv_decoder.sv(28): analyzing included file 'hackatdac18-2018-soc/ips/riscv/include/apu_macros.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_ex_stage.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_ex_stage.sv'
+[INFO (VERI-1328)] hackatdac18-2018-soc/ips/riscv/riscv_ex_stage.sv(35): analyzing included file 'hackatdac18-2018-soc/ips/riscv/include/apu_macros.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_fetch_fifo.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_fetch_fifo.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_hwloop_controller.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_hwloop_controller.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_hwloop_regs.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_hwloop_regs.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_id_stage.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_id_stage.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_if_stage.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_if_stage.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_int_controller.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_int_controller.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_load_store_unit.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_load_store_unit.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_mult.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_mult.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_prefetch_L0_buffer.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_prefetch_L0_buffer.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_prefetch_buffer.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_prefetch_buffer.sv'
+% analyze -sv hackatdac18-2018-soc/ips/riscv/riscv_register_file_latch.sv -incdir hackatdac18-2018-soc/ips/riscv/include
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/riscv/riscv_register_file_latch.sv'
+[INFO (VERI-2561)] hackatdac18-2018-soc/ips/riscv/riscv_register_file_latch.sv(103): undeclared symbol 'fregfile_ena', assumed default net type 'wire'
+% 
+% analyze -sv hackatdac18-2018-soc/ips/apb/apb_gpio/apb_gpio.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/apb/apb_gpio/apb_gpio.sv'
+% analyze -sv hackatdac18-2018-soc/ips/tech_cells_generic/pulp_clock_gating.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/tech_cells_generic/pulp_clock_gating.sv'
+% 
+% analyze -sv hackatdac18-2018-soc/rtl/includes/pulp_soc_defines.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/rtl/includes/pulp_soc_defines.sv'
+% analyze -sv hackatdac18-2018-soc/rtl/includes/periph_bus_defines.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/rtl/includes/periph_bus_defines.sv'
+% analyze -sv hackatdac18-2018-soc/rtl/includes/soc_bus_defines.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/rtl/includes/soc_bus_defines.sv'
+[INFO (VERI-1328)] hackatdac18-2018-soc/rtl/includes/soc_bus_defines.sv(18): analyzing included file 'hackatdac18-2018-soc/rtl/includes/pulp_soc_defines.sv'
+[WARN (VERI-1295)] hackatdac18-2018-soc/rtl/includes/soc_bus_defines.sv(21): macro 'NB_MASTER' is redefined
+% 
+% analyze -sv hackatdac18-2018-soc/ips/apb/apb_node/apb_node_wrap.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/apb/apb_node/apb_node_wrap.sv'
+% analyze -sv hackatdac18-2018-soc/ips/pulp_soc/rtl/components/pulp_interfaces.sv -incdir hackatdac18-2018-soc/rtl/includes
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/pulp_soc/rtl/components/pulp_interfaces.sv'
+[INFO (VERI-1328)] hackatdac18-2018-soc/ips/pulp_soc/rtl/components/pulp_interfaces.sv(12): analyzing included file 'hackatdac18-2018-soc/rtl/includes/pulp_soc_defines.sv'
+% analyze -sv hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/periph_bus_wrap.sv 
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/periph_bus_wrap.sv'
+[INFO (VERI-1328)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/periph_bus_wrap.sv(12): analyzing included file 'hackatdac18-2018-soc/rtl/includes/periph_bus_defines.sv'
+[WARN (VERI-1295)] hackatdac18-2018-soc/rtl/includes/periph_bus_defines.sv(18): macro 'NB_MASTER' is redefined
+% 
+% analyze -sv hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/XBAR_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/XBAR_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RR_Flag_Req_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RR_Flag_Req_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseTree_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseTree_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RequestBlock_L2_1CH.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RequestBlock_L2_1CH.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RequestBlock_L2_2CH.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RequestBlock_L2_2CH.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/MUX2_REQ_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/MUX2_REQ_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Req_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Req_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Resp_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Resp_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ArbitrationTree_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ArbitrationTree_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Resp_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Resp_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/XBAR_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/XBAR_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv'
+[WARN (VERI-1206)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv(40): overwriting previous definition of module 'RR_Flag_Req_BRIDGE'
+[INFO (VERI-2142)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv(40): previous definition of design element 'RR_Flag_Req_BRIDGE' is here
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseTree_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseTree_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RequestBlock2CH_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RequestBlock2CH_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RequestBlock1CH_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RequestBlock1CH_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/MUX2_REQ_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/MUX2_REQ_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Resp_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Resp_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Req_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Req_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ArbitrationTree_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ArbitrationTree_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Resp_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Resp_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi64_2_lint32.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi64_2_lint32.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_read_ctrl.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_read_ctrl.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_write_ctrl.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_write_ctrl.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/lint64_to_32.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/lint64_to_32.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/l2_tcdm_demux.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/l2_tcdm_demux.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_apb.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_apb.sv'
+% analyze -sv hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_axi.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_axi.sv'
+% analyze -sv hackatdac18-2018-soc/ips/axi/axi_slice/axi_aw_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/axi/axi_slice/axi_aw_buffer.sv'
+% analyze -sv hackatdac18-2018-soc/ips/axi/axi_slice/axi_ar_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/axi/axi_slice/axi_ar_buffer.sv'
+% analyze -sv hackatdac18-2018-soc/ips/axi/axi_slice/axi_aw_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/axi/axi_slice/axi_aw_buffer.sv'
+[WARN (VERI-1206)] hackatdac18-2018-soc/ips/axi/axi_slice/axi_aw_buffer.sv(83): overwriting previous definition of module 'axi_aw_buffer'
+[INFO (VERI-2142)] hackatdac18-2018-soc/ips/axi/axi_slice/axi_aw_buffer.sv(83): previous definition of design element 'axi_aw_buffer' is here
+% analyze -sv hackatdac18-2018-soc/ips/axi/axi_slice/axi_w_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/axi/axi_slice/axi_w_buffer.sv'
+% analyze -sv hackatdac18-2018-soc/ips/axi/axi_slice/axi_r_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/axi/axi_slice/axi_r_buffer.sv'
+% analyze -sv hackatdac18-2018-soc/ips/axi/axi_slice/axi_b_buffer.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/axi/axi_slice/axi_b_buffer.sv'
+% analyze -sv hackatdac18-2018-soc/ips/common_cells/generic_fifo.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/common_cells/generic_fifo.sv'
+% 
+% analyze -sv hackatdac18-2018-soc/ips/apb/apb_node/apb_node.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/apb/apb_node/apb_node.sv'
+% 
+% analyze -sv hackatdac18-2018-soc/ips/axi/axi_node/axi_address_decoder_AR.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/axi/axi_node/axi_address_decoder_AR.sv'
+% 
+% analyze -sv hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_inverter.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_inverter.sv'
+% analyze -sv hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_mux2.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_mux2.sv'
+% analyze -sv hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_defines.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_defines.v'
+% analyze -sv hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v'
+[INFO (VERI-1328)] hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v(71): analyzing included file 'hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_defines.v'
+% 
+% analyze -sv hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv'
+[INFO (VERI-2561)] hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv(82): undeclared symbol 's_timer_match', assumed default net type 'wire'
+% 
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv'
+[INFO (VERI-2561)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(47): undeclared symbol 'rdy_out', assumed default net type 'wire'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/SubBytes.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/SubBytes.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/SubBytes_sbox.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/SubBytes_sbox.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/aes_1cc.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/aes_1cc.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/keccak.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/keccak.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/md5.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/md5.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/tempsen.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/tempsen.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/KeyExpansion.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/KeyExpansion.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/AddRoundKey.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/AddRoundKey.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/ShiftRows.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/ShiftRows.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/MixColumns.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/MixColumns.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/f_permutation.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/f_permutation.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder1.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder1.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/rconst2in1.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/rconst2in1.v'
+% analyze -sv hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/round2in1.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/round2in1.v'
+% 
+% analyze -sv hackatdac18-2018-soc/rtl/pulpissimo/jtag_tap_top.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/rtl/pulpissimo/jtag_tap_top.sv'
+% analyze -sv hackatdac18-2018-soc/ips/jtag_pulp/src/jtagreg.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/jtag_pulp/src/jtagreg.sv'
+% analyze -sv hackatdac18-2018-soc/ips/jtag_pulp/src/bscell.sv
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/jtag_pulp/src/bscell.sv'
+% analyze -sv hackatdac18-2018-soc/ips/jtag_pulp/src/tap_top.v
+[-- (VERI-1482)] Analyzing Verilog file 'hackatdac18-2018-soc/ips/jtag_pulp/src/tap_top.v'
+[WARN (VERI-1295)] hackatdac18-2018-soc/ips/jtag_pulp/src/tap_top.v(16): macro 'IDCODE_VALUE' is redefined
+% 
+% analyze -sv top_wrapper.sv
+[-- (VERI-1482)] Analyzing Verilog file 'top_wrapper.sv'
+[INFO (VERI-2561)] top_wrapper.sv(910): undeclared symbol 'AXIAXI_Primary_ar_ready_i', assumed default net type 'wire'
+% 
+% elaborate -top top_wrapper
+INFO (ISW003): Top module name is "top_wrapper".
+[INFO (HIER-8002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/components/pulp_interfaces.sv(1242): Disabling old hierarchical reference handler
+[WARN (VERI-1927)] top_wrapper.sv(931): port 'AXI_Master_ar_user_o' remains unconnected for this instance
+[WARN (VERI-2435)] top_wrapper.sv(931): port 'AXI_Master_ar_ready_i' is not connected on this instance
+[WARN (VERI-1927)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(48): port 'is_last' remains unconnected for this instance
+[WARN (VERI-2435)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(48): port 'byte_num' is not connected on this instance
+[WARN (VERI-1927)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(57): port 'newtext_i' remains unconnected for this instance
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/verilator-model/cluster_clock_gating.sv(11): compiling module 'cluster_clock_gating'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_hwloop_controller.sv(25): compiling module 'riscv_hwloop_controller'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_compressed_decoder.sv(30): compiling module 'riscv_compressed_decoder'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_fetch_fifo.sv(25): compiling module 'riscv_fetch_fifo'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_prefetch_buffer.sv(27): compiling module 'riscv_prefetch_buffer'
+[WARN (VERI-1899)] hackatdac18-2018-soc/ips/riscv/riscv_prefetch_buffer.sv(213): 'hwlp_masked' inside always_comb block does not represent combinational logic
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_if_stage.sv(31): compiling module 'riscv_if_stage'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_register_file_latch.sv(29): compiling module 'riscv_register_file:(ADDR_WIDTH=6)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_decoder.sv(32): compiling module 'riscv_decoder'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_controller.sv(31): compiling module 'riscv_controller'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_int_controller.sv(26): compiling module 'riscv_int_controller'
+[WARN (VERI-1995)] hackatdac18-2018-soc/ips/riscv/riscv_int_controller.sv(110): unique/priority if/case is not full
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_hwloop_regs.sv(25): compiling module 'riscv_hwloop_regs'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_id_stage.sv(40): compiling module 'riscv_id_stage'
+[WARN (VERI-1796)] hackatdac18-2018-soc/ips/riscv/riscv_id_stage.sv(1527): system function call isunknown with non-constant argument is not supported for synthesis
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(1118): compiling module 'alu_popcnt'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(1042): compiling module 'alu_ff'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_alu_div.sv(26): compiling module 'riscv_alu_div'
+[WARN (VERI-1060)] hackatdac18-2018-soc/ips/riscv/riscv_alu_div.sv(213): 'initial' construct is ignored
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/riscv/riscv_alu_div.sv(107): expression size 32 truncated to fit in target size 6
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(31): compiling module 'riscv_alu'
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(269): expression size 17 truncated to fit in target size 16
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(270): expression size 17 truncated to fit in target size 16
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(275): expression size 9 truncated to fit in target size 8
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(276): expression size 9 truncated to fit in target size 8
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(277): expression size 9 truncated to fit in target size 8
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(278): expression size 9 truncated to fit in target size 8
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/riscv/riscv_alu.sv(283): expression size 64 truncated to fit in target size 32
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(30): compiling module 'riscv_mult:(SHARED_DSP_MULT=0)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_ex_stage.sv(40): compiling module 'riscv_ex_stage'
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/riscv/riscv_ex_stage.sv(179): net 'apu_result[31]' does not have a driver
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_load_store_unit.sv(27): compiling module 'riscv_load_store_unit'
+[WARN (VERI-1796)] hackatdac18-2018-soc/ips/riscv/riscv_load_store_unit.sv(481): system function call isunknown with non-constant argument is not supported for synthesis
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv(37): compiling module 'riscv_cs_registers'
+[WARN (VERI-9005)] hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv(761): 5-bit index expression 'csr_addr_i[4:0]' is larger than the required 4 bits. This might lead to an out-of-bound access
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv(166): net 'frm_q[2]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv(167): net 'fflags_q[4]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv(168): net 'fprec_q[4]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv(172): net 'uepc_q[31]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv(176): net 'ucause_q[5]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv(179): net 'utvec_q[23]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv(186): net 'PCCR_in[11]' does not have a driver
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_debug_unit.sv(25): compiling module 'riscv_debug_unit'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/riscv/riscv_core.sv(37): compiling module 'riscv_core'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/tech_cells_generic/pulp_clock_gating.sv(11): compiling module 'pulp_clock_gating'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/apb/apb_gpio/apb_gpio.sv(33): compiling module 'apb_gpio'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/apb/apb_node/apb_node.sv(23): compiling module 'apb_node:(NB_MASTER=11)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Resp_L2.sv(11): compiling module 'AddressDecoder_Resp_L2:(N_MASTER=13,ID_WIDTH=13)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RR_Flag_Req_L2.sv(11): compiling module 'RR_Flag_Req_L2:(WIDTH=4,MAX_COUNT=8)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Req_L2.sv(11): compiling module 'FanInPrimitive_Req_L2:(ADDR_WIDTH=12,ID_WIDTH=13,DATA_WIDTH=32,BE_WIDTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ArbitrationTree_L2.sv(11): compiling module 'ArbitrationTree_L2:(DATA_WIDTH=32,BE_WIDTH=4,ID_WIDTH=13,MAX_COUNT=8)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RR_Flag_Req_L2.sv(11): compiling module 'RR_Flag_Req_L2:(WIDTH=2,MAX_COUNT=3)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ArbitrationTree_L2.sv(11): compiling module 'ArbitrationTree_L2:(DATA_WIDTH=32,BE_WIDTH=4,ID_WIDTH=13,N_MASTER=4,MAX_COUNT=3)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/MUX2_REQ_L2.sv(11): compiling module 'MUX2_REQ_L2:(ID_WIDTH=13,ADDR_WIDTH=12,DATA_WIDTH=32,BE_WIDTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RequestBlock_L2_2CH.sv(11): compiling module 'RequestBlock_L2_2CH:(ADDR_WIDTH=12,DATA_WIDTH=32,BE_WIDTH=4,N_CH0=9,ID_WIDTH=13)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Resp_L2.sv(11): compiling module 'FanInPrimitive_Resp_L2:(DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseTree_L2.sv(11): compiling module 'ResponseTree_L2:(DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=2,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=2,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=4,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=4,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=8,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=8,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=16,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=16,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=32,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=32,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=64,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=64,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=128,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=128,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=256,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=256,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=512,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=512,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=1024,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=1024,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=2048,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=2048,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv(11): compiling module 'AddressDecoder_Req_L2:(ID_WIDTH=13,ID=4096,N_SLAVE=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv(11): compiling module 'ResponseBlock_L2:(ID=4096,ID_WIDTH=13,N_SLAVE=4,DATA_WIDTH=32)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/XBAR_L2.sv(11): compiling module 'XBAR_L2:(N_CH0=9,DATA_WIDTH=32,BE_WIDTH=4,ID_WIDTH=13,ADDR_IN_WIDTH=14)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Resp_BRIDGE.sv(11): compiling module 'AddressDecoder_Resp_BRIDGE:(ID_WIDTH=13,N_MASTER=13)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv(11): compiling module 'RR_Flag_Req_BRIDGE:(WIDTH=4,MAX_COUNT=8)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Req_BRIDGE.sv(11): compiling module 'FanInPrimitive_Req_BRIDGE:(ID_WIDTH=13,AUX_WIDTH=8,BE_WIDTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ArbitrationTree_BRIDGE.sv(11): compiling module 'ArbitrationTree_BRIDGE:(ID_WIDTH=13,BE_WIDTH=4,AUX_WIDTH=8,MAX_COUNT=8)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv(11): compiling module 'RR_Flag_Req_BRIDGE:(WIDTH=2,MAX_COUNT=3)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ArbitrationTree_BRIDGE.sv(11): compiling module 'ArbitrationTree_BRIDGE:(ID_WIDTH=13,N_MASTER=4,BE_WIDTH=4,AUX_WIDTH=8,MAX_COUNT=3)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/MUX2_REQ_BRIDGE.sv(11): compiling module 'MUX2_REQ_BRIDGE:(ID_WIDTH=13,AUX_WIDTH=8,BE_WIDTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RequestBlock2CH_BRIDGE.sv(12): compiling module 'RequestBlock2CH_BRIDGE:(N_CH0=9,N_CH1=4,ID_WIDTH=13,AUX_WIDTH=8,BE_WIDTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Resp_BRIDGE.sv(11): compiling module 'FanInPrimitive_Resp_BRIDGE:(AUX_WIDTH=8)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseTree_BRIDGE.sv(11): compiling module 'ResponseTree_BRIDGE:(N_SLAVE=8)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=2,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=2,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=4,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=4,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=8,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=8,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=16,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=16,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=32,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=32,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=64,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=64,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=128,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=128,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=256,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=256,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=512,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=512,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=1024,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=1024,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=2048,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=2048,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv(11): compiling module 'AddressDecoder_Req_BRIDGE:(ID_WIDTH=13,ID=4096,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv(11): compiling module 'ResponseBlock_BRIDGE:(ID=4096,ID_WIDTH=13,N_SLAVE=5)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/XBAR_BRIDGE.sv(11): compiling module 'XBAR_BRIDGE:(N_CH0=9,N_SLAVE=5,ID_WIDTH=13,BE_WIDTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_apb.sv(12): compiling module 'lint_2_apb:(BE_WIDTH=4,ID_WIDTH=13)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_axi.sv(16): compiling module 'lint_2_axi:(BE_WIDTH=4,ID_WIDTH=13,USER_WIDTH=6,AUX_WIDTH=8,AXI_ID_WIDTH=12)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/common_cells/generic_fifo.sv(13): compiling module 'generic_fifo:(DATA_WIDTH=32'b01001010,DATA_DEPTH=32'b0100)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/axi/axi_slice/axi_aw_buffer.sv(13): compiling module 'axi_aw_buffer:(ID_WIDTH=7,BUFFER_DEPTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/axi/axi_slice/axi_ar_buffer.sv(13): compiling module 'axi_ar_buffer:(ID_WIDTH=7,BUFFER_DEPTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/common_cells/generic_fifo.sv(13): compiling module 'generic_fifo:(DATA_WIDTH=32'b01001111,DATA_DEPTH=32'b0100)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/axi/axi_slice/axi_w_buffer.sv(13): compiling module 'axi_w_buffer:(BUFFER_DEPTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/common_cells/generic_fifo.sv(13): compiling module 'generic_fifo:(DATA_WIDTH=32'b01010000,DATA_DEPTH=32'b0100)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/axi/axi_slice/axi_r_buffer.sv(13): compiling module 'axi_r_buffer:(ID_WIDTH=7,BUFFER_DEPTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/common_cells/generic_fifo.sv(13): compiling module 'generic_fifo:(DATA_WIDTH=32'b01111,DATA_DEPTH=32'b0100)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/axi/axi_slice/axi_b_buffer.sv(13): compiling module 'axi_b_buffer:(ID_WIDTH=7,BUFFER_DEPTH=4)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_write_ctrl.sv(18): compiling module 'axi_write_ctrl:(AXI4_ID_WIDTH=7,AXI4_USER_WIDTH=6,AXI_NUMBYTES=8,MEM_ADDR_WIDTH=32)'
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_write_ctrl.sv(230): expression size 32 truncated to fit in target size 9
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_write_ctrl.sv(336): expression size 32 truncated to fit in target size 9
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/lint64_to_32.sv(11): compiling module 'lint64_to_32'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_read_ctrl.sv(18): compiling module 'axi_read_ctrl:(AXI4_ID_WIDTH=7,AXI4_USER_WIDTH=6,AXI_NUMBYTES=8)'
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_read_ctrl.sv(373): expression size 32 truncated to fit in target size 9
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_read_ctrl.sv(401): expression size 32 truncated to fit in target size 9
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi64_2_lint32.sv(11): compiling module 'axi64_2_lint32:(BE_WIDTH=4,AUX_WIDTH=8)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/l2_tcdm_demux.sv(11): compiling module 'l2_tcdm_demux:(BE_WIDTH=4,AUX_WIDTH=8,N_PERIPHS=32'b0101)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(12): compiling module 'soc_interconnect:(N_MASTER_32=9,BE_WIDTH=4,ID_WIDTH=13)'
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(346): expression size 32 truncated to fit in target size 10
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(407): expression size 9 truncated to fit in target size 5
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(408): expression size 72 truncated to fit in target size 40
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(409): expression size 9 truncated to fit in target size 5
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(410): expression size 288 truncated to fit in target size 160
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(411): expression size 9 truncated to fit in target size 5
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(658): expression size 15 truncated to fit in target size 12
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(274): net 'FC_data_gnt_INT_32[8]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(275): net 'FC_data_r_aux_INT_32[8][7]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(276): net 'FC_data_r_valid_INT_32[8]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(277): net 'FC_data_r_rdata_INT_32[8][31]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(278): net 'FC_data_r_opc_INT_32[8]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(292): net 'PER_data_req_DEM_2_L2_XBAR[8]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(293): net 'PER_data_add_DEM_2_L2_XBAR[8][31]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(294): net 'PER_data_wen_DEM_2_L2_XBAR[8]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(295): net 'PER_data_wdata_DEM_2_L2_XBAR[8][31]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(296): net 'PER_data_be_DEM_2_L2_XBAR[8][3]' does not have a driver
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv(297): net 'PER_data_aux_DEM_2_L2_XBAR[8][7]' does not have a driver
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/apb/apb_node/apb_node.sv(23): compiling module 'apb_node'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/axi/axi_node/axi_address_decoder_AR.sv(42): compiling module 'axi_address_decoder_AR'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_inverter.sv(11): compiling module 'cluster_clock_inverter'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_mux2.sv(11): compiling module 'cluster_clock_mux2'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v(74): compiling module 'adbg_tap_top'
+[WARN (VERI-1221)] hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v(251): 'passchk' should be on the sensitivity list
+[WARN (VERI-1221)] hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v(254): 'correct' should be on the sensitivity list
+[WARN (VERI-1221)] hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v(255): 'tdi_o' should be on the sensitivity list
+[WARN (VERI-1221)] hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v(255): 'pass' should be on the sensitivity list
+[WARN (VERI-1221)] hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v(255): 'bitindex' should be on the sensitivity list
+[WARN (VERI-1221)] hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v(256): 'correct' should be on the sensitivity list
+[WARN (VERI-1221)] hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v(257): 'bitindex' should be on the sensitivity list
+[INFO (VERI-1018)] hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv(12): compiling module 'rtc_clock'
+[WARN (VERI-1209)] hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv(91): expression size 23 truncated to fit in target size 22
+[WARN (VERI-1209)] hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv(92): expression size 23 truncated to fit in target size 22
+[WARN (VERI-1209)] hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv(154): expression size 32 truncated to fit in target size 17
+[WARN (VERI-1209)] hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv(168): expression size 32 truncated to fit in target size 15
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/SubBytes_sbox.v(1): compiling module 'SubBytes'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/KeyExpansion.v(1): compiling module 'KeyExpansion'
+[WARN (VDB-1002)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/KeyExpansion.v(18): net 'w[111][31]' does not have a driver
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/AddRoundKey.v(1): compiling module 'AddRoundKey'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/ShiftRows.v(1): compiling module 'ShiftRows'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/MixColumns.v(1): compiling module 'MixColumns'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/aes_1cc.v(5): compiling module 'aes_1cc'
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/aes_1cc.v(40): actual bit length 128 differs from formal bit length 256 for port 'key'
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/aes_1cc.v(40): actual bit length 1408 differs from formal bit length 1920 for port 'expandedKey'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder1.v(17): compiling module 'padder1'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder.v(21): compiling module 'padder'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/rconst2in1.v(18): compiling module 'rconst2in1'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/round2in1.v(25): compiling module 'round2in1'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/f_permutation.v(19): compiling module 'f_permutation'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/keccak.v(27): compiling module 'keccak'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/md5.v(51): compiling module 'md5'
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/md5.v(240): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/md5.v(241): expression size 32 truncated to fit in target size 6
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/md5.v(251): expression size 32 truncated to fit in target size 6
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/tempsen.v(1): compiling module 'tempsen'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(16): compiling module 'mux_func'
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(34): actual bit length 32 differs from formal bit length 1 for port 'clk'
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(35): actual bit length 32 differs from formal bit length 1 for port 'rst'
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(44): actual bit length 128 differs from formal bit length 64 for port 'in'
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(45): actual bit length 32 differs from formal bit length 1 for port 'in_ready'
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(46): actual bit length 128 differs from formal bit length 512 for port 'out'
+[WARN (VERI-8028)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(41): missing/open ports on instance sha of module keccak
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(53): actual bit length 32 differs from formal bit length 128 for port 'data_i'
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(54): actual bit length 32 differs from formal bit length 1 for port 'load_i'
+[WARN (VERI-1330)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(56): actual bit length 32 differs from formal bit length 128 for port 'data_o'
+[WARN (VERI-8028)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(50): missing/open ports on instance md5 of module md5
+[INFO (VERI-8005)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(21): Unintentional Sequential element inferred for c read before write using blocking assignment
+[WARN (VDB-1013)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(48): input port 'is_last' is not connected on this instance
+[WARN (VDB-1013)] hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv(57): input port 'newtext_i' is not connected on this instance
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/jtag_pulp/src/tap_top.v(36): compiling module 'tap_top'
+[WARN (VERI-1209)] hackatdac18-2018-soc/ips/jtag_pulp/src/tap_top.v(443): expression size 32 truncated to fit in target size 1
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/jtag_pulp/src/bscell.sv(11): compiling module 'bscell'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/jtag_pulp/src/jtagreg.sv(11): compiling module 'jtagreg:(JTAGREGSIZE=9,SYNC=0)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/rtl/pulpissimo/jtag_tap_top.sv(12): compiling module 'jtag_tap_top'
+[INFO (VERI-1018)] top_wrapper.sv(17): compiling module 'top_wrapper:(apb_subordinate=APB_BUS_Slave,fll_primary=APB_BUS_Master,gpio_primary=APB_BUS_Master,udma_primary=APB_BUS_Master,soc_ctrl_primary=APB_BUS_Master,adv_timer_primary=APB_BUS_Master,soc_evnt_gen_primary=APB_BUS_Master,eu_primary=APB_BUS_Master,mmap_debug_primary=APB_BUS_Master,timer_primary=APB_BUS_Master,hwpe_primary=APB_BUS_Master,stdout_primary=APB_BUS_Master)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/periph_bus_wrap.sv(14): compiling module 'periph_bus_wrap:(apb_slave=APB_BUS_Slave,fll_master=APB_BUS_Master,gpio_master=APB_BUS_Master,udma_master=APB_BUS_Master,soc_ctrl_master=APB_BUS_Master,adv_timer_master=APB_BUS_Master,soc_evnt_gen_master=APB_BUS_Master,eu_master=APB_BUS_Master,mmap_debug_master=APB_BUS_Master,timer_master=APB_BUS_Master,hwpe_master=APB_BUS_Master,stdout_master=APB_BUS_Master)'
+[INFO (VERI-1018)] hackatdac18-2018-soc/ips/apb/apb_node/apb_node_wrap.sv(23): compiling module 'apb_node_wrap:(NB_MASTER=11,apb_slave=APB_BUS:(APB_ADDR_WIDTH=32,APB_DATA_WIDTH=32)_Slave,apb_masters=APB_BUS:(APB_ADDR_WIDTH=32,APB_DATA_WIDTH=32)_Master)'
+[WARN (VERI-1330)] top_wrapper.sv(910): actual bit length 1 differs from formal bit length 4 for port 'AXI_Master_ar_region_o'
+[WARN (VERI-8028)] top_wrapper.sv(725): missing/open ports on instance soc_interconnect of module soc_interconnect
+[WARN (VDB-1013)] top_wrapper.sv(931): input port 'AXI_Master_ar_ready_i' is not connected on this instance
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          147 (3 packages)
+  Single run mode                         On
+  Pipeline                                On (144 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      126 (91 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(113): multiplication operator mult_17s_17s (size 34) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(230): multiplication operator mult_32s_32s (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(264): multiplication operator mult_9s_9s (size 18) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(265): multiplication operator mult_9s_9s (size 18) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(266): multiplication operator mult_9s_9s (size 18) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(267): multiplication operator mult_9s_9s (size 18) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(280): multiplication operator mult_17s_17s (size 34) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(281): multiplication operator mult_17s_17s (size 34) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(327): multiplication operator mult_64u_64u (size 128) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(333): multiplication operator mult_64u_64u (size 128) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): hackatdac18-2018-soc/ips/riscv/riscv_mult.sv(339): multiplication operator mult_64u_64u (size 128) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+top_wrapper:(apb_subordinate=APB_BUS_Slave,fll_primary=APB_BUS_Master,gpio_primary=APB_BUS_Master,udma_primary=APB_BUS_Master,soc_ctrl_primary=APB_BUS_Master,adv_timer_primary=APB_BUS_Master,soc_evnt_gen_primary=APB_BUS_Master,eu_primary=APB_BUS_Master,mmap_debug_primary=APB_BUS_Master,timer_primary=APB_BUS_Master,hwpe_primary=APB_BUS_Master,stdout_primary=APB_BUS_Master)
+[<embedded>] % clock clk_top -both_edges
+[<embedded>] % reset -expression ~rstn_top
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rstn_top".
+[<embedded>] % assert -name HACKDAC_p1 {((`SOC_CTRL_END_ADDR <= `UDMA_START_ADDR) && (`SOC_CTRL_START_ADDR >= `UDMA_END_ADDR))}
+HACKDAC_p1
+[<embedded>] % assert -name HACKDAC_p2 {(~((soc_interconnect.TCDM_data_gnt_DEM_TO_XBAR) >> 1) && ((soc_interconnect.TCDM_data_add_DEM_TO_XBAR >= 32'h1C00_0000) && (soc_interconnect.TCDM_data_add_DEM_TO_XBAR <= 32'h1C08_0000)))} 
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+HACKDAC_p2
+[<embedded>] % assert -name HACKDAC_p3 {(~((riscv_core.cs_registers_i.priv_lvl_n == riscv_core.cs_registers_i.PRIV_LVL_M) && riscv_core.cs_registers_i.mstatus_n.mpp ==riscv_core.cs_registers_i.PRIV_LVL_U))}
+HACKDAC_p3
+[<embedded>] % assert -name HACKDAC_p4 {~((apb_gpio.PWDATA == 32'h1234_5678) && ((apb_gpio.s_apb_addr ==5'b10010) && (apb_gpio.r_gpio_lock==32'h1234_5678)))} 
+HACKDAC_p4
+[<embedded>] % cover -name HACKDAC_p5 {~((apb_gpio.HRESETn) || (apb_gpio.r_gpio_lock ==0))}
+HACKDAC_p5
+[<embedded>] % assert -name HACKDAC_p6 {(`GPIO_START_ADDR == 32'h1A10_1000) && (`GPIO_END_ADDR == 32'h1A10_1FFF)}
+HACKDAC_p6
+[<embedded>] % assert -name HACKDAC_p7 {((axi_address_decoder_AR.outstanding_trans_i) && (axi_address_decoder_AR.CS == axi_address_decoder_AR.NS))}
+HACKDAC_p7
+[<embedded>] % assert -name HACKDAC_p8 {(((`GPIO_END_ADDR <= `UDMA_START_ADDR) && (`GPIO_START_ADDR >= `UDMA_END_ADDR)) && ((`SOC_CTRL_END_ADDR <= `UDMA_START_ADDR) && (`SOC_CTRL_START_ADDR >= `UDMA_END_ADDR)) && ((`SOC_CTRL_END_ADDR <= `GPIO_START_ADDR) && (`SOC_CTRL_START_ADDR >= `GPIO_END_ADDR)))}
+HACKDAC_p8
+[<embedded>] % assert -name HACKDAC_p9 {~((adbg_tap_top.passchk==1) && ~(adbg_tap_top.bitindex==32))} 
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+HACKDAC_p9
+[<embedded>] % assert -name HACKDAC_p10 {(adbg_tap_top.passchk == 1) |-> (adbg_tap_top .bitindex == 32)}
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+HACKDAC_p10
+[<embedded>] % assert -name HACKDAC_p11 {(~( (riscv_core.debug_unit_i.dbg_halt != 1) && (riscv_core.debug_unit_i.rdata_sel_n == riscv_core.RD_DBGS)))} 
+WARNING (WNL023): Expression sizes mismatch.
+HACKDAC_p11
+[<embedded>] % assert -name HACKDAC_p12 {(~(adbg_tap_top.passchk ==1) && (adbg_tap_top.correct <= 31))}
+WARNING (WNL023): Expression sizes mismatch.
+HACKDAC_p12
+[<embedded>] % assert -name HACKDAC_p13 {(riscv_core.id_stage_i.controller_i.ctrl_fsm_ns == riscv_core.id_stage_i.controller_i.DECODE) |=> (riscv_core.id_stage_i.controller_i.ctrl_fsm_ns != riscv_core.id_stage_i.controller_i.DECODE)}
+HACKDAC_p13
+[<embedded>] % assert -name HACKDAC_p14 {((( (riscv_core.ex_stage_i.alu_i.vector_mode_i == riscv_core.ex_stage_i.alu_i.VEC_MODE16) || (riscv_core.ex_stage_i.alu_i.vector_mode_i == riscv_core.ex_stage_i.alu_i.VEC_MODE8) ) |-> riscv_core.ex_stage_i.alu_i.adder_in_a[18] == 1'b0) )}
+HACKDAC_p14
+[<embedded>] % assert -name HACKDAC_p15 {(rtc_clock.r_seconds < 8'h59)}
+HACKDAC_p15
+[<embedded>] % assert -name HACKDAC_p16 {(adbg_tap_top.trstn_pad_i) || (adbg_tap_top.correct==0)}
+HACKDAC_p16
+[<embedded>] % assert -name HACKDAC_p21 {(~(mux_func.c == mux_func.temperature_out))}
+HACKDAC_p21
+[<embedded>] % assert -name HACKDAC_p27 {riscv_core.cs_registers_i.csr_we_int |-> riscv_core.cs_registers_i.PULP_SECURE}
+HACKDAC_p27
+[<embedded>] % assert -name HACKDAC_p28 {((jtag_tap_top.td_i == 1 || jtag_tap_top.td_i == 0))}
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+HACKDAC_p28
+[<embedded>] % assert -name HACKDAC_p29 {mux_func.rst |-> mux_func.aes_out == 0 && mux_func.c == 0}
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+HACKDAC_p29
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % prove -all
+Ncustom1: Custom engine code is hT3Ng7hPPfiYQOTDZ3qhYOwGAM51eA+J/FjkM5shLioAsqhgLR4Ft+O1BuKG6ilQ83B9tLXSl+CwjiTMAQA
+Bcustom2: Custom engine code is hT3NZbhPDfiY2AbBQnsjfOxn6c+6e6yL+/e8fYmWaKaTqwEA
+AMcustom3: Custom engine code is hT3Ng7hP/feYQOTDZ3qhYOwGAM51eA+J/FjkM5shLioAsqhgLR4Ft+O1BuKG6ilQ83B9tLXSmmqwm7g9AQA
+INFO (IPF036): Starting proof on task: "<embedded>", 47 properties to prove with 0 already proven/unreachable
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 7 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 6 iterations. Assigned values for 5493 of 8068 design flops, 1 of 1205 design latches, 29 of 29 internal elements.
+WARNING (WRS031): 138 of 8068 design flop(s) with asynchronous reset condition, but not reset. Run "get_reset_info -x_value -with_reset_pin" to get a list of such flops.
+INFO (IRS039): Reset analysis complete.
+WARNING (WCB012): Jasper automatically assumed that combinational loops passing through latch enables are stable loops. To disable this feature
+use "set_allow_latch_enable_loops false", and to debug and get more information regarding those loops, use
+"check_loop -viewer".
+    CAUTION: Unstable combinational loops can lead to false positive proof results.
+    Number of latches in loops found: 5
+    First 1 relevant latches: adbg_tap_top.bitindex 
+INFO (IPF031): Settings used for proof thread 0:
+    orchestration                 = on (auto)
+    time_limit                    = 86400s
+    per_property_time_limit       = 1s * 10 ^ scan
+    engine_mode                   = auto
+    proofgrid_per_engine_max_jobs = 1
+    max engine jobs               = auto
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+AMcustom4: Custom engine code is hT3N1rhP11/52HrFRS21ROp2LOjVTgPvT8L8BGXHgLhaIuqtT4nARFjUqrBL+7pLmaTOzBepZW/Jm8SSrHDybSQtoNiO3y43wk+dEoWlsZizu97Fih6O6lPVG/LpWP5SsUPwlGagLNa1FKEFvwVXyX7//8prySbvSxIHXr5er+z4RAEA
+Ncustom5: Custom engine code is hT3OXrhPByJp3TrFSTLhUmMH4KVtJgmTCnNDF46yMXOKY48m4LS5nE7yBzFjA7kDuwO/GhGUpEPiky3p3wmPn3dJZHxFMsafSoObRzSC+tn7sEY0WbTdZ/FV4hL3MYH/b1CIUvXSWR4wqEoVLsmMOD4xIPT4lI1LO6ZCO7PnnWQuLwetnvKlrXx6wCW/A+x+enqslg1YPobi4wEF/EvbzOvcTYdJvl2s4H2yZg2b2ofAVN5WvhWk1HoBAA
+ADcustom6: Custom engine code is hT3Nv7hPv1752HrFRa2kROx2f/ECJeZB2AZsLdlO8VwmIuqtT4nIDFXclhg+O+o+DMmQCekbheGk0kK28laA9gaOFDXsQp29J3X615HY1IPHJWd6FUFvCHjO+p1k652b5JJvZlShNpGlGSXAiQe/mEAj6tEBAA
+Ncustom7: Custom engine code is hT3NR7hPByFp3TrFSTLhUmMH4KWtJglTyV/c51BHEeZWamnJv767nE6PCak26bd3gf3XGN3rIRheufhDieCJQVISo+gNYUKhiUedBKGtsP/a18svAnlMJZudHxDFwK5ufsyoxsIyiAeSY2oi3tEuoDHr5gw42DFKAG3PqO3CEsl8Azzdt3pl5nGA1Ifv2H02eYsFzWb/nfp8PMb3F0krE/EgBcm8TD9Div8BAA
+Tricustom8: Custom engine code is hT3Nu7hP3fiYQADBZnYcglNHp9bfd7EOeniIqP/ji8sGLQu8yhsFO+wxJ+O+R0bU8g/IewXFomyos+viQnWc2xYNYmMqpo3i40O7DaZR7qfp4YqNx26KRvQ/qx0BAA
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property "top_wrapper.riscv_core.id_stage_i._assert_1" was proven in 0.00 s.
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property "top_wrapper.riscv_core.id_stage_i._assert_2" was proven in 0.00 s.
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property "top_wrapper.riscv_core.load_store_unit_i._assert_3" was proven in 0.00 s.
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF051): 0.0.PRE: The cover property "HACKDAC_p5" was proven unreachable in 0.00 s.
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property "HACKDAC_p28" was proven in 0.00 s.
+0: Found proofs for 5 properties in preprocessing
+0: Using multistage preprocessing
+0: Starting reduce
+0: Finished reduce in 0.111s
+0.0.PRE: Performing Proof Simplification...
+0.0.N: clocks: 42, declared: 2, looping: 0, posedge: 42, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Proof Simplification Iteration 1	[0.00 s]
+0.0.N: Proof Simplification Iteration 2	[0.45 s]
+0.0.N: Proof Simplification Iteration 3	[0.82 s]
+0.0.N: Proof Simplification Iteration 4	[1.03 s]
+0.0.N: Proof Simplification Iteration 5	[1.25 s]
+0.0.N: Proof Simplification Iteration 6	[1.44 s]
+0.0.N: Proof Simplification Iteration 7	[1.63 s]
+0.0.N: Proof Simplification Iteration 8	[1.82 s]
+0.0.N: Proof Simplification Iteration 9	[2.01 s]
+0.0.PRE: Proof Simplification completed in 2.70 s
+0.0.N: Identified and disabled 4 duplicated targets.
+0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0: =============================== ProofGrid start ===============================
+0: ProofGrid usable level: 38
+0: ProofGrid is starting event handling
+0.0.Hp: Proofgrid shell started at 13235@icpc(local) jg_12936_icpc_1
+0.0.N: Proofgrid shell started at 13234@icpc(local) jg_12936_icpc_1
+0.0.Ht: Proofgrid shell started at 13268@icpc(local) jg_12936_icpc_1
+0.0.B: Proofgrid shell started at 13269@icpc(local) jg_12936_icpc_1
+0.0.N: clocks: 2, declared: 2, looping: 0, posedge: 2, negedge: 0, noedge: 0, bothedge: 0
+0.0.Hp: clocks: 2, declared: 2, looping: 0, posedge: 2, negedge: 0, noedge: 0, bothedge: 0
+0.0.Ht: clocks: 2, declared: 2, looping: 0, posedge: 2, negedge: 0, noedge: 0, bothedge: 0
+0.0.B: clocks: 2, declared: 2, looping: 0, posedge: 2, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: A trace with 1 cycles was found. [0.40 s]
+INFO (IPF055): 0.0.N: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p1" in 0.00 s.
+INFO (IPF055): 0.0.N: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p7" in 0.00 s.
+INFO (IPF055): 0.0.N: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p29" in 0.00 s.
+INFO (IPF055): 0.0.N: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p6" in 0.00 s.
+INFO (IPF055): 0.0.N: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p8" in 0.00 s.
+0.0.N: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.0.N: Starting proof for property "top_wrapper.riscv_core.if_stage_i._assert_1"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.06 s]
+0.0.B: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.0.B: Starting proof for property "top_wrapper.riscv_core.if_stage_i._assert_1"	[0.00 s].
+0.0.N: Trace Attempt  2	[0.18 s]
+0.0.N: Trace Attempt  2	[0.31 s]
+0.0.B: Trace Attempt  1	[0.13 s]
+0.0.B: Trace Attempt  2	[0.14 s]
+0.0.B: A trace with 2 cycles was found. [0.14 s]
+INFO (IPF055): 0.0.B: A counterexample (cex) with 2 cycles was found for the property "top_wrapper.riscv_core.if_stage_i._assert_1" in 0.06 s.
+INFO (IPF047): 0.0.B: The cover property "top_wrapper.riscv_core.if_stage_i._assert_1:precondition1" was covered in 2 cycles in 0.06 s by the incidental trace "top_wrapper.riscv_core.if_stage_i._assert_1".
+INFO (IPF055): 0.0.B: A counterexample (cex) with 2 cycles was found for the property "top_wrapper.riscv_core.load_store_unit_i._assert_2" in 0.06 s by the incidental trace "top_wrapper.riscv_core.if_stage_i._assert_1".
+INFO (IPF047): 0.0.B: The cover property "top_wrapper.riscv_core.load_store_unit_i._assert_2:precondition1" was covered in 2 cycles in 0.06 s by the incidental trace "top_wrapper.riscv_core.if_stage_i._assert_1".
+INFO (IPF055): 0.0.B: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p9" in 0.06 s by the incidental trace "top_wrapper.riscv_core.if_stage_i._assert_1".
+INFO (IPF055): 0.0.B: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p12" in 0.06 s by the incidental trace "top_wrapper.riscv_core.if_stage_i._assert_1".
+INFO (IPF055): 0.0.B: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p10" in 0.06 s by the incidental trace "top_wrapper.riscv_core.if_stage_i._assert_1".
+0.0.B: Stopped processing property "top_wrapper.riscv_core.if_stage_i._assert_1"	[0.08 s].
+0.0.B: Starting proof for property "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0: ProofGrid usable level: 29
+0.0.B: Trace Attempt  3	[0.01 s]
+0.0.B: Trace Attempt  4	[0.01 s]
+0.0.B: Trace Attempt  5	[0.02 s]
+0.0.N: Stopped processing property "top_wrapper.riscv_core.if_stage_i._assert_1"	[0.08 s].
+0.0.N: Starting proof for property "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  2	[0.06 s]
+0.0.N: Trace Attempt  3	[0.13 s]
+0.0.N: Trace Attempt  4	[0.13 s]
+0.0.N: Trace Attempt  4	[0.28 s]
+0.0.N: Trace Attempt  5	[0.44 s]
+0.0.B: Trace Attempt 10	[0.34 s]
+0.0.B: A trace with 10 cycles was found. [0.54 s]
+INFO (IPF047): 0.0.B: The cover property "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1" was covered in 10 cycles in 0.49 s.
+INFO (IPF047): 0.0.B: The cover property "top_wrapper.riscv_core.id_stage_i._assert_2:precondition1" was covered in 8 cycles in 0.49 s by the incidental trace "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1".
+INFO (IPF047): 0.0.B: The cover property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1:precondition1" was covered in 10 cycles in 0.49 s by the incidental trace "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1".
+INFO (IPF055): 0.0.B: A counterexample (cex) with 2 cycles was found for the property "top_wrapper.riscv_core.debug_unit_i._assert_1" in 0.49 s by the incidental trace "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1".
+INFO (IPF047): 0.0.B: The cover property "top_wrapper.riscv_core.debug_unit_i._assert_1:precondition1" was covered in 2 cycles in 0.49 s by the incidental trace "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1".
+INFO (IPF055): 0.0.B: A counterexample (cex) with 6 cycles was found for the property "HACKDAC_p13" in 0.49 s by the incidental trace "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1".
+INFO (IPF047): 0.0.B: The cover property "top_wrapper.riscv_core.debug_unit_i._assert_2:precondition1" was covered in 2 cycles in 0.49 s by the incidental trace "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1".
+0.0.B: Stopped processing property "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1"	[0.51 s].
+0.0.B: Starting proof for property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.02 s]
+0.0.B: Trace Attempt  3	[0.02 s]
+0.0.B: Trace Attempt  4	[0.03 s]
+0.0.B: Trace Attempt  5	[0.03 s]
+0.0.N: Stopped processing property "top_wrapper.riscv_core.id_stage_i._assert_1:precondition1"	[0.51 s].
+0.0.N: Starting proof for property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  3	[0.12 s]
+0.0.N: Trace Attempt  4	[0.13 s]
+0.0.N: Trace Attempt  4	[0.24 s]
+0: ProofGrid usable level: 23
+0.0.N: Trace Attempt  5	[0.39 s]
+0.0.Hp: Trace Attempt  1	[1.89 s]
+0.0.Hp: A trace with 1 cycles was found. [1.89 s]
+INFO (IPF055): 0.0.Hp: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p2" in 1.13 s.
+INFO (IPF055): 0.0.Hp: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p16" in 1.13 s.
+INFO (IPF055): 0.0.Hp: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p21" in 1.13 s.
+0.0.Hp: A trace with 1 cycles was found. [1.89 s]
+INFO (IPF055): 0.0.Hp: A counterexample (cex) with 1 cycles was found for the property "HACKDAC_p11" in 1.19 s.
+0.0.Ht: Trace Attempt  1	[2.00 s]
+0.0.Ht: Trace Attempt  2	[2.00 s]
+0.0.Ht: A trace with 2 cycles was found. [2.00 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 2 cycles was found for the property "top_wrapper.riscv_core.debug_unit_i._assert_2" in 1.33 s.
+0.0.Ht: Trace Attempt  3	[2.02 s]
+0.0.Ht: A trace with 3 cycles was found. [2.02 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 3 cycles was found for the property "HACKDAC_p4" in 1.40 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 3 cycles was found for the property "HACKDAC_p15" in 1.40 s.
+0.0.Ht: Trace Attempt  4	[2.04 s]
+0.0.Ht: Trace Attempt  5	[2.06 s]
+0.0.Ht: Trace Attempt  7	[2.09 s]
+0.0.Ht: A trace with 7 cycles was found. [2.10 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 7 cycles was found for the property "HACKDAC_p3" in 1.48 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 7 cycles was found for the property "HACKDAC_p27" in 1.48 s.
+0.0.Ht: Trace Attempt  8	[2.12 s]
+0.0.Ht: Trace Attempt  9	[2.15 s]
+0.0.Ht: A trace with 9 cycles was found. [2.15 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 9 cycles was found for the property "HACKDAC_p14" in 1.57 s.
+0.0.Ht: Trace Attempt 10	[2.19 s]
+0.0.Ht: A trace with 10 cycles was found. [2.20 s]
+INFO (IPF047): 0.0.Ht: The cover property "top_wrapper.riscv_core.load_store_unit_i._assert_3:precondition1" was covered in 10 cycles in 1.67 s.
+0.0.N: Trace Attempt  6	[0.91 s]
+0.0.N: Per property time limit expired (1.00 s) [1.14 s]
+0.0.N: Stopped processing property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1"	[1.11 s].
+0.0.B: Trace Attempt 14	[0.80 s]
+0.0.B: Per property time limit expired (1.00 s) [1.19 s]
+0.0.B: Stopped processing property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1"	[1.12 s].
+0.0.B: Starting proof for property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_2"	[0.00 s].
+0.0.N: Starting proof for property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_2"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.01 s]
+0.0.B: Trace Attempt  4	[0.02 s]
+0.0.N: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  5	[0.02 s]
+0.0.N: Trace Attempt  3	[0.05 s]
+0.0.N: Trace Attempt  4	[0.05 s]
+0.0.Ht: Trace Attempt 12	[2.44 s]
+0.0.Ht: A trace with 12 cycles was found. [2.51 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 12 cycles was found for the property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_2" in 1.86 s.
+0.0.N: Trace Attempt  4	[0.12 s]
+0.0.Ht: A trace with 12 cycles was found. [2.58 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 12 cycles was found for the property "top_wrapper.riscv_core.load_store_unit_i._assert_1" in 1.91 s.
+INFO (IPF047): 0.0.Ht: The cover property "top_wrapper.riscv_core.load_store_unit_i._assert_1:precondition1" was covered in 12 cycles in 1.91 s.
+0.0.B: Stopped processing property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_2"	[0.22 s].
+0.0.B: Starting proof for property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1"	[0.00 s].
+0.0.N: Trace Attempt  5	[0.18 s]
+0.0.N: Stopped processing property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_2"	[0.22 s].
+0.0.N: Starting proof for property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  4	[0.02 s]
+0.0.B: Trace Attempt  5	[0.02 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.Ht: Trace Attempt 13	[2.65 s]
+0.0.N: Trace Attempt  2	[0.04 s]
+0: ProofGrid usable level: 9
+0.0.N: Trace Attempt  3	[0.09 s]
+0.0.N: Trace Attempt  4	[0.09 s]
+0.0.N: Trace Attempt  4	[0.16 s]
+0.0.N: Trace Attempt  5	[0.20 s]
+0.0.Ht: Trace Attempt 14	[2.72 s]
+0.0.Ht: A trace with 14 cycles was found. [2.90 s]
+INFO (IPF047): 0.0.Ht: The cover property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1:precondition1" was covered in 14 cycles in 2.27 s.
+0.0.Ht: Trace Attempt 15	[2.95 s]
+0.0.B: Trace Attempt 15	[1.01 s]
+0.0.B: Per property time limit expired (1.00 s) [1.07 s]
+0.0.B: Stopped processing property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1"	[1.02 s].
+0.0.Ht: Trace Attempt 18	[3.28 s]
+0.0.Ht: A trace with 18 cycles was found. [3.66 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 18 cycles was found for the property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1" in 3.04 s.
+0.0.B: Starting proof for property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0: ProofGrid usable level: 7
+0.0.B: Stopped processing property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1"	[0.00 s].
+0.0.B: Starting proof for property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  8	[0.87 s]
+0.0.N: Per property time limit expired (1.00 s) [1.09 s]
+0.0.N: Stopped processing property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1"	[1.13 s].
+0.0.N: Starting proof for property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  1	[0.03 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.N: Trace Attempt  2	[0.03 s]
+0.0.Ht: A trace with 18 cycles was found. [3.72 s]
+INFO (IPF047): 0.0.Ht: The cover property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1:precondition1" was covered in 18 cycles in 3.11 s.
+0.0.B: Trace Attempt  4	[0.05 s]
+0.0.B: Trace Attempt  5	[0.05 s]
+0.0.N: Trace Attempt  3	[0.04 s]
+0.0.N: Stopped processing property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1:precondition1"	[0.06 s].
+0.0.N: Starting proof for property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_2"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.B: Stopped processing property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_1:precondition1"	[0.06 s].
+0.0.B: Starting proof for property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_2"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.02 s]
+0.0.Ht: A trace with 18 cycles was found. [3.77 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 18 cycles was found for the property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_2" in 3.17 s.
+INFO (IPF047): 0.0.Ht: The cover property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_2:precondition1" was covered in 18 cycles in 3.17 s.
+0.0.B: Trace Attempt  4	[0.02 s]
+0.0.B: Trace Attempt  5	[0.02 s]
+0.0.N: Trace Attempt  2	[0.04 s]
+0.0.N: Trace Attempt  3	[0.05 s]
+0.0.N: Stopped processing property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_2"	[0.07 s].
+0.0.N: Starting proof for property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_3"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.B: Stopped processing property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_2"	[0.07 s].
+0.0.B: Starting proof for property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_3"	[0.00 s].
+0.0.N: Trace Attempt  2	[0.03 s]
+0.0.Ht: A trace with 18 cycles was found. [3.82 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 18 cycles was found for the property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_3" in 3.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_3:precondition1" was covered in 18 cycles in 3.25 s.
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.B: Stopped processing property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_3"	[0.07 s].
+0.0.B: Next scan (1) will use per property time limit: 1s * 10 ^ 1 = 10s
+0.0.B: Starting proof for property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1"	[0.00 s].
+0.0.N: Trace Attempt  3	[0.06 s]
+0.0.N: Stopped processing property "top_wrapper.riscv_core.ex_stage_i.mult_i._assert_3"	[0.07 s].
+0.0.N: Next scan (1) will use per property time limit: 1s * 10 ^ 1 = 10s
+0.0.N: Starting proof for property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1"	[0.00 s].
+0.0.Ht: Trace Attempt 19	[3.86 s]
+0.0.B: Trace Attempt  1	[0.02 s]
+0.0.B: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.04 s]
+0.0.B: Trace Attempt  5	[0.05 s]
+0: ProofGrid usable level: 2
+0.0.N: Trace Attempt  1	[2.06 s]
+0.0.N: Trace Attempt  2	[2.12 s]
+0.0.N: Trace Attempt  3	[2.13 s]
+0.0.N: Trace Attempt  5	[2.61 s]
+0.0.N: Validation of fixpoint was successful. Time = 0.08
+0.0.N: Trace Attempt 11	[3.23 s]
+0.0.N: A proof was found: No trace exists. [3.50 s]
+INFO (IPF057): 0.0.N: The property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1" was proven in 3.37 s.
+0.0.N: Stopped processing property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1"	[3.37 s].
+0.0.N: Last scan. Per property time limit: 0s
+0.0.N: Starting proof for property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1"	[0.00 s].
+0.0.N: Trace Attempt  8	[0.19 s]
+0.0.B: Stopped processing property "top_wrapper.riscv_core.id_stage_i.controller_i._assert_1"	[3.62 s].
+0.0.B: Last scan. Per property time limit: 0s
+0.0.B: Starting proof for property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.01 s]
+0.0.B: Trace Attempt  4	[0.02 s]
+0.0.B: Trace Attempt  5	[0.02 s]
+0: ProofGrid usable level: 1
+0.0.N: Trace Attempt  1	[0.41 s]
+0.0.N: Trace Attempt  2	[0.42 s]
+0.0.N: Trace Attempt  3	[0.43 s]
+0.0.N: Validation of fixpoint was successful. Time = 0.00
+0.0.N: Requesting engine job to stop
+0.0.B: Requesting engine job to stop
+0.0.Hp: Requesting engine job to terminate
+0.0.Ht: Requesting engine job to terminate
+INFO (IPF144): 0: Initiating shutdown of proof [8.15 s]
+0.0.N: Trace Attempt  8	[0.54 s]
+0.0.N: A proof was found: No trace exists. [0.56 s]
+INFO (IPF057): 0.0.N: The property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1" was proven in 0.55 s.
+0.0.N: Stopped processing property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1"	[0.55 s].
+0.0.N: Interrupted. [0.56 s]
+0.0.N: Exited with Success (@ 8.18 s)
+0: ProofGrid usable level: 0
+0.0.B: Stopped processing property "top_wrapper.riscv_core.id_stage_i.hwloop_regs_i._assert_1"	[0.37 s].
+0.0.B: Trace Attempt 11	[0.33 s]
+0.0.B: Interrupted. [0.37 s]
+0.0.Hp: Interrupted (multi)
+0.0.Hp: Interrupted. [8.05 s]
+0.0.Hp: Exited with Success (@ 8.21 s)
+0.0.B: Exited with Success (@ 8.23 s)
+0.0.Ht: Interrupted (multi)
+0.0.Ht: Trace Attempt 38	[7.01 s]
+0.0.Ht: Interrupted. [8.12 s]
+0.0.Ht: Exited with Success (@ 8.37 s)
+0: --------------------------------------------------------------
+ProofGrid Summary (utilization 98.28 %)
+--------------------------------------------------------------
+     engines started                               :     4
+     engine jobs started                           :     4
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+      N        0.25        8.01        0.00       96.96 %
+     Hp        0.10        8.01        0.00       98.72 %
+     Ht        0.10        7.93        0.00       98.79 %
+      B        0.10        7.90        0.00       98.69 %
+    all        0.14        7.96        0.00       98.28 %
+
+    Total time in state (seconds)
+    -----------------------------------------
+            Pending     Running        Dead  
+    -----------------------------------------
+               0.56       31.84        0.00
+
+    Data read    : 1.38 MiB
+    Data written : 8.98 kiB
+
+0: All pending notifications were processed.
+INFO (IPF059): Completed proof on task: "<embedded>" for proof thread 0
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 47
+                 assertions                   : 33
+                  - proven                    : 6 (18.1818%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 27 (81.8182%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 14
+                  - unreachable               : 1 (7.14286%)
+                  - bounded_unreachable (user): 0 (0%)
+                  - covered                   : 13 (92.8571%)
+                  - ar_covered                : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+determined
+[<embedded>] % report -summary -force -result -file fpv_result.rpt
+[<embedded>] % exit
+INFO (IPL005): Received request to exit from the console.
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.
+INFO (IPL018): The peak resident set memory use for this session was 1.554 GB.
+INFO (IPL015): The Tcl-thread exited with status 0.
+INFO (IPL016): Exiting the analysis session with status 0.
